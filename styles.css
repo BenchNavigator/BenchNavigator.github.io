@@ -244,10 +244,41 @@ body {
   .btn, .chip-btn { min-height: 42px; padding-top: 10px; padding-bottom: 10px; }
   .cmp-check, .col-compare input { width: 20px; height: 20px; }
 
-  /* Wide results table scrolls sideways instead of squishing */
+  /* Results table -> one stacked card per benchmark (vertical scroll, no
+     sideways scrolling, full names). */
   .overview-text { -webkit-line-clamp: 6; }
-  .results-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; table-layout: auto; }
-  .results-table thead th { position: sticky; top: 0; }
+  .results-table { display: block; width: 100%; border: 0; table-layout: auto; white-space: normal; background: transparent; }
+  .results-table thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0; }
+  .results-table tbody, .results-table tbody tr, .results-table td { display: block; width: 100%; }
+  /* cancel the desktop fixed column-width percentages in card mode
+     (same specificity as the nth-child width rules, but defined later) */
+  .results-table tbody td:nth-child(n) { width: auto; }
+  .results-table tbody tr {
+    border: 1px solid var(--border); background: var(--surface);
+    margin-bottom: 12px; padding: 12px 14px 14px; position: relative;
+  }
+  .results-table tbody tr:nth-child(odd) { background: var(--surface); }   /* drop zebra in card mode */
+  .results-table td { border: 0; padding: 5px 0; }
+  /* field name above each value */
+  .results-table td[data-label]::before {
+    content: attr(data-label); display: block;
+    font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--muted); margin-bottom: 3px;
+  }
+  /* compare checkbox tucked into the top-right corner */
+  .results-table td.col-compare { position: absolute; top: 10px; right: 12px; width: auto; padding: 0; }
+  /* benchmark name: large heading, full width, wraps fully */
+  .results-table td.col-name { padding-right: 36px; }
+  .results-table .benchmark-name { display: block; overflow: visible; -webkit-line-clamp: unset; font-size: 17px; line-height: 1.3; }
+  /* Paper / GitHub / HF shown inline as a small row */
+  .results-table td.col-link { display: inline-block; width: auto; margin-right: 18px; padding-top: 8px; }
+  .results-table td.col-link[data-label]::before { display: inline; margin-right: 4px; }
+  /* extra columns stay hidden unless "Show Extra Columns" is on */
+  .results-table td.col-extra { display: none; }
+  .results-table.show-extra td.col-extra { display: block; }
+  /* expanded detail row sits flush under its card */
+  .results-table tr.card-row { margin-top: -12px; border-top: 0; padding: 0; }
+  .results-table tr.card-row td { padding: 0; }
 
   /* Benchmark detail card: one column */
   .bench-card .card-grid { grid-template-columns: 1fr; }

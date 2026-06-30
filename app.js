@@ -2,7 +2,7 @@
 // Keeps your table / filters exactly as-is.
 
 // Removed: import { benchmarkData } from './data.js';
-import { filterAndSortData, FACETS } from './logic.js?v=2';
+import { filterAndSortData, FACETS } from './logic.js?v=4';
 import {
   refreshFacets,
   getFilterValues,
@@ -24,7 +24,7 @@ import {
   openComparison,
   initHeaderSort,
   setActiveSort
-} from './ui.js?v=2';
+} from './ui.js?v=4';
 
 /* =========================
    JSONL LOADING + ADAPTER
@@ -112,7 +112,7 @@ async function loadDataEither() {
     }
   }
   console.warn('BenchmarkCards load failed — falling back to bundled sample data');
-  const { benchmarkData } = await import('./data.js?v=2');
+  const { benchmarkData } = await import('./data.js?v=4');
   return benchmarkData;
 }
 

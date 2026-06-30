@@ -1,5 +1,5 @@
 // ----- UI helpers -----
-import { recordsMatchingExcept, FACETS, parseSort } from './logic.js?v=2';
+import { recordsMatchingExcept, FACETS, parseSort } from './logic.js?v=4';
 
 function $(id){ return document.getElementById(id); }
 
@@ -231,17 +231,17 @@ function renderRow(b, i){
 
   return `<tr data-idx="${i}">
     <td class="col-compare"><input type="checkbox" class="cmp-check" data-idx="${i}" title="Add to comparison" aria-label="Select ${name} to compare" ${isSel ? 'checked' : ''} /></td>
-    <td><span class="benchmark-name" title="${name}" role="button" tabindex="0">${name}</span></td>
-    <td>${tagCell(b.domains, '', 'domain', 2)}</td>
-    <td>${task !== 'N/A' ? `<span class="cell-box">${task}</span>` : '<span class="muted-na">N/A</span>'}</td>
-    <td><span class="cell-box">${prettyModality(b.modality)}</span></td>
-    <td>${langs}</td>
-    <td>${tagCell(b.risks, 'risk-tag', 'risk', 3)}</td>
-    <td class="col-extra">${tagCell(b.audience, '', 'audience', 2)}</td>
-    <td class="col-extra">${size}</td>
-    <td class="col-link">${checkLink(b.paper, 'Paper')}</td>
-    <td class="col-link">${checkLink(b.github, 'GitHub')}</td>
-    <td class="col-link">${checkLink(b.huggingface, 'HuggingFace')}</td>
+    <td class="col-name"><span class="benchmark-name" title="${name}" role="button" tabindex="0">${name}</span></td>
+    <td data-label="Domain">${tagCell(b.domains, '', 'domain', 2)}</td>
+    <td data-label="Task">${task !== 'N/A' ? `<span class="cell-box">${task}</span>` : '<span class="muted-na">N/A</span>'}</td>
+    <td data-label="Modality"><span class="cell-box">${prettyModality(b.modality)}</span></td>
+    <td data-label="Languages">${langs}</td>
+    <td data-label="AI Risk Atlas">${tagCell(b.risks, 'risk-tag', 'risk', 3)}</td>
+    <td class="col-extra" data-label="Audience">${tagCell(b.audience, '', 'audience', 2)}</td>
+    <td class="col-extra" data-label="Size">${size}</td>
+    <td class="col-link" data-label="Paper">${checkLink(b.paper, 'Paper')}</td>
+    <td class="col-link" data-label="GitHub">${checkLink(b.github, 'GitHub')}</td>
+    <td class="col-link" data-label="Hugging Face">${checkLink(b.huggingface, 'HuggingFace')}</td>
   </tr>`;
 }
 
