@@ -17,3 +17,24 @@ serve.err.log
 .claude/
 .vscode/
 .idea/
+
+# Source data & build artifacts (not part of the hosted platform)
+ALL_*ARDS_TRUE/
+paper_figures/
+arxiv_download_index.csv
+arxiv_index.csv
+build_cards.py
+build_stats.py
+data_quality_agent.py
+serve.py
+datasets_tasks_cleaned.jsonl
+datasets_tasks_full_enriched.jsonl
+datasets_tasks_full_enriched_enriched.jsonl
+paper_text.txt
+test.ipynb
+test_svg.py
+
+# Mascot (removed)
+husky.png
+husky_scratch.txt
+mascot.js
