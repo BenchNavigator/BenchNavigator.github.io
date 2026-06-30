@@ -2,7 +2,7 @@
 // Keeps your table / filters exactly as-is.
 
 // Removed: import { benchmarkData } from './data.js';
-import { filterAndSortData, FACETS } from './logic.js?v=4';
+import { filterAndSortData, FACETS } from './logic.js?v=5';
 import {
   refreshFacets,
   getFilterValues,
@@ -24,7 +24,7 @@ import {
   openComparison,
   initHeaderSort,
   setActiveSort
-} from './ui.js?v=4';
+} from './ui.js?v=5';
 
 /* =========================
    JSONL LOADING + ADAPTER
@@ -47,8 +47,13 @@ async function loadJSONL(path) {
 // Adapt one real BenchmarkCard (from build_cards.py) into the UI schema. These
 // records carry the REAL domains / tasks / audience / AI-risk facets, which is
 // what makes the faceted filters work instead of collapsing to zero.
+// "Natural Language Processing" is tagged on ~79% of cards, so as a Domain it
+// carries no signal and clutters every card / the Domain filter. Drop it.
+const DOMAIN_DENYLIST = new Set(['natural language processing', 'nlp']);
+
 function adaptCard(r) {
-  const domains = Array.isArray(r.domains) ? r.domains : [];
+  const domains = (Array.isArray(r.domains) ? r.domains : [])
+    .filter(d => d && !DOMAIN_DENYLIST.has(String(d).trim().toLowerCase()));
   const tasks = Array.isArray(r.tasks) ? r.tasks : [];
   const atlasRisks = Array.isArray(r.atlas_risks) ? r.atlas_risks : [];
   const risks = Array.isArray(r.risk_categories) && r.risk_categories.length
@@ -112,7 +117,7 @@ async function loadDataEither() {
     }
   }
   console.warn('BenchmarkCards load failed — falling back to bundled sample data');
-  const { benchmarkData } = await import('./data.js?v=4');
+  const { benchmarkData } = await import('./data.js?v=5');
   return benchmarkData;
 }
 

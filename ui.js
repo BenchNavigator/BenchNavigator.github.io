@@ -1,5 +1,5 @@
 // ----- UI helpers -----
-import { recordsMatchingExcept, FACETS, parseSort } from './logic.js?v=4';
+import { recordsMatchingExcept, FACETS, parseSort } from './logic.js?v=5';
 
 function $(id){ return document.getElementById(id); }
 
