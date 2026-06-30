@@ -1,0 +1,6 @@
+# BenchNavigator security contact (RFC 9116)
+Contact: https://github.com/BenchNavigator/BenchNavigator.github.io/security/advisories/new
+Expires: 2027-06-29T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://benchnavigator.github.io/.well-known/security.txt
+Policy: https://github.com/BenchNavigator/BenchNavigator.github.io/blob/main/SECURITY.md
