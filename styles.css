@@ -329,6 +329,16 @@ body {
 .chart-grid.one { grid-template-columns: 1fr; }
 @media (max-width: 900px) { .chart-grid { grid-template-columns: 1fr; } }
 
+/* ============================================================= */
+/* Footer                                                         */
+/* ============================================================= */
+.site-footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 18px 0; }
+.site-footer .container { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 0; padding-bottom: 0; color: var(--muted); font-size: 13px; }
+.site-footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
+.site-footer a { color: var(--muted); text-decoration: none; }
+.site-footer a:hover { color: var(--text); text-decoration: underline; }
+@media (max-width: 800px) { .site-footer .container { justify-content: center; text-align: center; } }
+
 .panel { border: 1px solid var(--border); background: var(--surface); padding: 16px 18px; }
 .panel h3 { margin: 0 0 2px; font-size: 18px; font-weight: 800; letter-spacing: -0.01em; }
 .panel .panel-sub { margin: 0 0 12px; font-size: 13px; color: var(--muted); }

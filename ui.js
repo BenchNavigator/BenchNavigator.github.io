@@ -1,5 +1,5 @@
 // ----- UI helpers -----
-import { recordsMatchingExcept, FACETS, parseSort } from './logic.js?v=5';
+import { recordsMatchingExcept, FACETS, parseSort } from './logic.js?v=6';
 
 function $(id){ return document.getElementById(id); }
 
@@ -435,6 +435,17 @@ function toggleCardForRow(tr){
   row.innerHTML = `<td colspan="${TABLE_COLS}">${renderCard(b)}</td>`;
   tr.after(row);
   tr.classList.add('expanded');
+}
+
+// Re-render any expanded card in place (used after lazy detail text loads).
+export function rerenderOpenCards(){
+  document.querySelectorAll('tr.card-row').forEach(cr => {
+    const tr = cr.previousElementSibling;
+    if (!tr) return;
+    const b = lastRendered[+tr.dataset.idx];
+    const td = cr.querySelector('td');
+    if (b && td) td.innerHTML = renderCard(b);
+  });
 }
 
 // Wire row-level expand (click name) + compare-checkbox behavior.

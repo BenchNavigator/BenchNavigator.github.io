@@ -2,7 +2,7 @@
 // Keeps your table / filters exactly as-is.
 
 // Removed: import { benchmarkData } from './data.js';
-import { filterAndSortData, FACETS } from './logic.js?v=5';
+import { filterAndSortData, FACETS } from './logic.js?v=6';
 import {
   refreshFacets,
   getFilterValues,
@@ -23,8 +23,9 @@ import {
   clearSelection,
   openComparison,
   initHeaderSort,
-  setActiveSort
-} from './ui.js?v=5';
+  setActiveSort,
+  rerenderOpenCards
+} from './ui.js?v=6';
 
 /* =========================
    JSONL LOADING + ADAPTER
@@ -62,14 +63,18 @@ function adaptCard(r) {
   const audience = Array.isArray(r.audience) ? r.audience : [];
   const languages = Array.isArray(r.languages) ? r.languages : [];
   // documentation completeness: same 4 card fields used by the dashboard.
+  // slim index ships a `has_overview` boolean instead of the full text
+  const hasOverview = (r.has_overview != null) ? !!r.has_overview : !!r.overview;
   const docPresent = [
-    r.overview,
+    hasOverview,
     languages.length,
     r.size_category || r.size_text,
     r.modality,
   ].filter(Boolean).length;
 
   return {
+    // stable id used to merge in the lazily-loaded detail text
+    _id: r.id || (r.arxiv_id ? r.arxiv_id : ('name:' + (r.name || ''))),
     name: r.name || 'Untitled',
     repo_id: r.arxiv_id ? `arXiv:${r.arxiv_id}` : '',
     data_type: r.primary_task || tasks[0] || 'N/A',
@@ -106,8 +111,28 @@ function adaptCard(r) {
   };
 }
 
-// Prefer audited BenchmarkCards; then raw BenchmarkCards; then legacy fallbacks.
+async function loadJSON(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error(`Failed to fetch ${path}: ${res.status}`);
+  return res.json();
+}
+
+// True when the loaded data still needs its heavy detail text merged in
+// (i.e. we loaded the slim index). False when a full source was used.
+let detailsNeeded = false;
+
+// Perf: load a slim index first (≈46% smaller) so the table is interactive
+// sooner; the heavy card text (overview/goal/source/annotation) is merged in
+// afterwards by loadDetails(). Falls back to the full JSONL if the slim index
+// is unavailable, so the app always works.
 async function loadDataEither() {
+  try {
+    const slim = await loadJSON('cards.min.json?v=6');
+    if (Array.isArray(slim) && slim.length) { detailsNeeded = true; return slim.map(adaptCard); }
+  } catch (e) {
+    console.warn('slim index unavailable, falling back to full cards', e);
+  }
+  detailsNeeded = false;
   for (const path of ['benchmark_cards_cleaned.jsonl', 'benchmark_cards.jsonl']) {
     try {
       const raw = await loadJSONL(path);
@@ -117,8 +142,29 @@ async function loadDataEither() {
     }
   }
   console.warn('BenchmarkCards load failed — falling back to bundled sample data');
-  const { benchmarkData } = await import('./data.js?v=5');
+  const { benchmarkData } = await import('./data.js?v=6');
   return benchmarkData;
+}
+
+// Merge the heavy detail text into the already-rendered records, then refresh
+// any card the user has already expanded. Runs off the critical path.
+async function loadDetails(records) {
+  try {
+    const det = await loadJSON('cards.details.json?v=6');
+    const byId = new Map(records.map(r => [r._id, r]));
+    for (const id in det) {
+      const r = byId.get(id);
+      if (!r) continue;
+      const h = det[id];
+      r.overview = h.overview || ''; r.goal = h.goal || '';
+      r.dataSource = h.data_source || ''; r.annotation = h.annotation || '';
+      r.limitations = h.limitations || ''; r.format = h.format || '';
+    }
+    detailsNeeded = false;
+    rerenderOpenCards();   // fill in any card already open
+  } catch (e) {
+    console.warn('detail text load failed; cards show summary fields only', e);
+  }
 }
 
 /* =========================
@@ -131,6 +177,12 @@ async function loadDataEither() {
   const $ = (id) => document.getElementById(id);
   const on = (el, evt, fn) => el && el.addEventListener(evt, fn);
   const debounce = (fn, ms=200) => { let t; return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args),ms); }; };
+
+  // Analytics: fire a GA4 event if analytics is present (no-op otherwise).
+  const track = (name, params={}) => {
+    try { if (typeof window.gtag === 'function') window.gtag('event', name, params); } catch (_) {}
+  };
+  const trackSearch = debounce((term) => { if (term) track('search', { search_term: term }); }, 1000);
 
   const recompute = () => {
     const filters = getFilterValues();
@@ -159,6 +211,13 @@ async function loadDataEither() {
       applyStateFromURL();
       recompute();
 
+      // Perf: pull the heavy card text in the background once the table is up.
+      if (detailsNeeded) {
+        const kick = () => loadDetails(state.allData);
+        if ('requestIdleCallback' in window) requestIdleCallback(kick, { timeout: 2500 });
+        else setTimeout(kick, 300);
+      }
+
       // Row expand (documentation card) + compare-checkbox selection
       const compareBtn = $('compareBtn');
       const clearSelBtn = $('clearSelBtn');
@@ -172,7 +231,7 @@ async function loadDataEither() {
       initHeaderSort(() => { showLoadingState(); recompute(); });   // click column headers to sort
       on(compareBtn, 'click', () => {
         const sel = getSelected();
-        if (sel.length >= 1) openComparison(sel);
+        if (sel.length >= 1) { openComparison(sel); track('compare', { count: sel.length }); }
       });
       on(clearSelBtn, 'click', () => clearSelection());
       on($('showMoreBtn'), 'click', () => renderMore());
@@ -211,15 +270,19 @@ async function loadDataEither() {
     }
 
     // Search + scope
-    on($('searchInput'), 'input', debounce(()=>{ showLoadingState(); recompute(); }, 150));
+    on($('searchInput'), 'input', debounce((e)=>{ showLoadingState(); recompute(); trackSearch(($('searchInput')?.value || '').trim()); }, 150));
     ['searchName','searchTasks','searchDescription','searchDomains','searchRisks','searchAudience']
       .forEach(id => on($(id), 'change', ()=>{ showLoadingState(); recompute(); }));
 
     // Facets (ids come from FACETS — single source of truth)
-    FACETS.forEach(facet => on($(facet.sel), 'change', ()=>{ showLoadingState(); recompute(); }));
+    FACETS.forEach(facet => on($(facet.sel), 'change', ()=>{
+      showLoadingState(); recompute();
+      const v = $(facet.sel)?.value;
+      if (v) track('filter', { filter_name: facet.key, filter_value: v });
+    }));
 
     // Sort dropdown -> shared sort state (kept in sync with header clicks)
-    on($('sortSelect'), 'change', ()=>{ setActiveSort($('sortSelect').value); showLoadingState(); recompute(); });
+    on($('sortSelect'), 'change', ()=>{ setActiveSort($('sortSelect').value); showLoadingState(); recompute(); track('sort', { sort_by: $('sortSelect').value }); });
 
     // Reset
     const doReset = () => {
@@ -242,8 +305,10 @@ async function loadDataEither() {
     });
     exportDropdown?.querySelectorAll('[data-export]').forEach(btn =>
       on(btn, 'click', () => {
-        exportResults(state.filteredData, btn.getAttribute('data-export'));
+        const fmt = btn.getAttribute('data-export');
+        exportResults(state.filteredData, fmt);
         exportDropdown.classList.remove('open');
+        track('export', { format: fmt, count: state.filteredData.length });
       }));
     document.addEventListener('click', (e) => {
       if (exportDropdown && !exportDropdown.contains(e.target)) exportDropdown.classList.remove('open');
@@ -257,6 +322,15 @@ async function loadDataEither() {
       if (selId && $(selId)) { $(selId).value = value || ''; }
       showLoadingState();
       recompute();
+    });
+
+    // Outbound link clicks (Paper / GitHub / HF / Homepage)
+    document.addEventListener('click', (e) => {
+      const a = e.target.closest && e.target.closest('a[href^="http"]');
+      if (!a) return;
+      let host = '';
+      try { host = new URL(a.href).hostname; } catch (_) {}
+      track('outbound_click', { link_url: a.href, link_domain: host });
     });
 
     // Keyboard shortcut to focus search
