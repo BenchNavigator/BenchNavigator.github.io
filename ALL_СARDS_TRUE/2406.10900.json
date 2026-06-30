@@ -1,0 +1,93 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "AUTOHALLUSION",
+    "abbreviation": "N/A",
+    "overview": "AUTOHALLUSION is the first automated benchmark generation approach that employs several key strategies to create a diverse range of hallucination examples for evaluating large vision-language models (LVLMs), which are susceptible to hallucinations. This benchmark allows the investigation of common failure patterns and reasons for hallucinations in LVLMs.",
+    "data_type": "visual-question pairs",
+    "domains": [
+      "Computer Vision"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "CHAIR",
+      "POPE",
+      "OpenCHAIR",
+      "HalluionBench",
+      "Hal-Eval",
+      "CorrelationQA"
+    ],
+    "resources": [
+      "https://github.com/wuxiyang1996/AutoHallusion"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "The primary objective of the benchmark is to create a diverse set of hallucination examples that can better evaluate the reliability of LVLMs and aid in understanding their hallucination mechanisms.",
+    "audience": [
+      "ML Researchers",
+      "Industry Practitioners",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Visual Question Answering",
+      "Object Detection"
+    ],
+    "limitations": "The dataset has limitations in terms of diversity of questions, as they mainly focus on object existence and spatial relations without exploring attributes like color and pattern.",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Images were generated using image generation models like DALL-E-3, alongside existing datasets such as the Common Objects in Context (COCO) dataset.",
+    "size": "200 examples",
+    "format": "N/A",
+    "annotation": "Automatically generated"
+  },
+  "methodology": {
+    "methods": [
+      "Automated Metrics",
+      "Probing Methods"
+    ],
+    "metrics": [
+      "Attack Success Rate (ASR)",
+      "Manipulation Attack Success Rate (MASR)",
+      "Conflict Attack Success Rate (CASR)"
+    ],
+    "calculation": "Metrics are calculated based on comparing generated responses of LVLMs with ground truth based on hallucination scenarios.",
+    "interpretation": "Higher rates of ASR, MASR, and CASR suggest better hallucination induction and detection capabilities of the LVLMs.",
+    "baseline_results": "N/A",
+    "validation": "Extensive evaluations conducted across top-tier LVLMs including GPT-4V(ision), Gemini Pro Vision, Claude 3, and LLaV A-1.5."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Bias",
+      "Accuracy"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Unrepresentative data"
+          ]
+        },
+        {
+          "category": "Fairness",
+          "subcategory": [
+            "Data bias"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": [
+      "Potential for inducing misinformation through hallucinations."
+    ]
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

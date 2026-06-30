@@ -1,0 +1,156 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "CVALUES",
+    "abbreviation": "CVALUES",
+    "overview": "CVALUES: the first Chinese human values evaluation benchmark to measure the alignment ability of LLMs in terms of both safety and responsibility criteria. It contains adversarial safety prompts and induced responsibility prompts, and supports both human evaluation and automatic multi-choice evaluation.",
+    "data_type": "question-answering pairs (adversarial prompts for human evaluation and multi-choice prompts for automatic evaluation)",
+    "domains": [
+      "Natural Language Processing",
+      "Environmental Science",
+      "Psychology",
+      "Data Science",
+      "Law",
+      "Social Science",
+      "Intimate Relationship",
+      "Barrier-free",
+      "Lesser-known Major"
+    ],
+    "languages": [
+      "Chinese"
+    ],
+    "similar_benchmarks": [
+      "C-EVAL",
+      "M3KE",
+      "GAOKAO-Bench",
+      "AGIEval",
+      "MMCU",
+      "MMLU",
+      "HELM",
+      "Safety assessment of Chinese large language models (Sun et al., 2023)"
+    ],
+    "resources": [
+      "https://www.modelscope.cn/datasets/damo/CValues-Comparison/summary",
+      "https://github.com/X-PLUG/CValues",
+      "https://modelscope.cn/datasets/damo/100PoisonMpts/summary"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To help researchers and developers assess the human values alignment of Chinese LLMs by measuring both Level-1 (safety: absence of harmful/toxic content) and Level-2 (responsibility: providing positive guidance and humanistic care, considering societal impact).",
+    "audience": [
+      "Researchers and developers",
+      "Professional experts",
+      "Model developers"
+    ],
+    "tasks": [
+      "Question Answering",
+      "Human evaluation of model responses (safety/responsibility)",
+      "Automatic multi-choice classification (safety/responsibility)"
+    ],
+    "limitations": "Automatic multi-choice evaluation primarily tests models' comprehension (distinguishing safe vs unsafe responses) and may not measure generation capability; human evaluation is required to assess generation-based responsibility. Some models were excluded from automatic evaluation for failing to follow multi-choice instructions or producing invalid answers. Evaluator choice (e.g., using external API evaluators) may raise reliability and privacy concerns.",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Collected adversarial safety prompts from crowdworkers who attacked an early ChatPLUG; induced responsibility prompts provided by professional experts from 8 domains (100 questions per expert). Additional CVALUES-COMPARISON constructed via self-instruct augmentation, LLM-generated responses, a trained reward model, and rewriting to produce paired positive/negative responses.",
+    "size": "2100 prompts for human evaluation (1300 safety prompts and 800 responsibility prompts); 4312 multi-choice prompts for automatic evaluation (2600 safety multi-choice, 1712 responsibility multi-choice); CVALUES-COMPARISON: 145,000 comparison samples (116,000 train, 29,000 test).",
+    "format": "N/A",
+    "annotation": "Safety human labels: three specialized annotators label each response as safe/unsafe with majority voting to determine final label. Responsibility labels: original experts who authored responsibility prompts score responses (1-10) and select best/none. Multi-choice construction: human annotation to categorize responses into safe/unsafe; ChatGPT used to rewrite when needed; reward model used in CVALUES-COMPARISON to classify responses with high confidence."
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "Automatic evaluation (multi-choice prompts)"
+    ],
+    "metrics": [
+      "Accuracy",
+      "Safety score (proportion of safe responses)",
+      "Responsibility score (mean expert score on a 1-10 scale)",
+      "Acc* (Accuracy excluding failed/refusal cases)"
+    ],
+    "calculation": "Safety score (human): proportion of responses labeled safe (majority vote of three annotators). Responsibility score (human): average score (1-10) assigned by the expert who provided the prompt (evaluated on ChatPLUG-13B candidates). Automatic Accuracy: proportion of correct choices on multi-choice prompts; Acc* excludes cases where models refuse to answer.",
+    "interpretation": "Higher Accuracy/Safety/Responsibility scores indicate better alignment with human values. Automatic multi-choice Accuracy measures comprehension of safe vs unsafe responses; human evaluation measures actual generation quality and responsibility. Acc* reports performance after excluding refusal/failed cases.",
+    "baseline_results": "Human evaluation (safety scores, Table 2): ChatGPT 96.9, Chinese-Alpaca-Plus-7B 95.3, ChatGLM-6B 95.0, ChatPLUG-13B 94.7, Chinese-Alpaca-Plus-13B 93.0, MOSS 88.9, ChatPLUG-3.7B 88.8, Ziya-LLaMA-13B 77.8, BELLE-7B-2M 72.8, Chinese-LLaMA-13B 53.0. Automatic evaluation (multi-choice, Table 4): e.g., ChatGPT Level-1 93.6 / Level-2 92.8 / Avg. 93.2 (Acc), Ziya-LLaMA-13B-v1.1 Level-1 93.8 / Level-2 88.4 / Avg. 91.1, Ziya-LLaMA-13B-v1 Level-1 91.8 / Level-2 84.8 / Avg. 88.3, ChatGLM-6B Level-1 86.5 / Level-2 74.6 / Avg. 80.6.",
+    "validation": "Human evaluation uses multiple specialized annotators and majority voting for safety labels; domain experts score responsibility prompts and provide feedback. Multi-choice prompts constructed to ensure each question has at least one safe and one unsafe response; response positions are swapped to reduce position bias. Some models were excluded from automatic evaluation when they failed to follow instruction or could not produce valid answers."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Safety",
+      "Privacy",
+      "Fairness",
+      "Robustness",
+      "Accuracy",
+      "Value Alignment",
+      "Misuse",
+      "Societal Impact"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Privacy",
+          "subcategory": [
+            "Personal information in data",
+            "Exposing personal information"
+          ]
+        },
+        {
+          "category": "Fairness",
+          "subcategory": [
+            "Output bias"
+          ]
+        },
+        {
+          "category": "Robustness",
+          "subcategory": [
+            "Prompt injection attack"
+          ]
+        },
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Poor model accuracy"
+          ]
+        },
+        {
+          "category": "Value Alignment",
+          "subcategory": [
+            "Toxic output",
+            "Harmful output",
+            "Incomplete advice"
+          ]
+        },
+        {
+          "category": "Misuse",
+          "subcategory": [
+            "Dangerous use"
+          ]
+        },
+        {
+          "category": "Governance",
+          "subcategory": [
+            "Incorrect risk testing"
+          ]
+        },
+        {
+          "category": "Societal Impact",
+          "subcategory": [
+            "Impact on affected communities"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": null,
+    "harm": [
+      "Harmful or toxic content generation",
+      "Irresponsible or unsafe advice (including illegal instructions)",
+      "Exposure of personal/private information",
+      "Biased or prejudiced outputs",
+      "Model susceptibility to adversarial/malicious inducement"
+    ]
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "Discusses privacy concerns related to using external API evaluators (e.g., InstructGPT/ChatGPT) and potential privacy protection issues; no anonymization procedures described.",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

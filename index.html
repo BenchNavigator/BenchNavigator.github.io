@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <title>BenchNavigator – AI Benchmark Repository</title>
+  <link rel="stylesheet" href="styles.css?v=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="masthead">
+        <div class="brand" style="display: flex; align-items: center;">
+          <canvas id="benchMascot" width="36" height="36" style="width: 48px; height: 48px; image-rendering: pixelated; margin-right: 15px;" aria-label="BenchNavigator Husky Mascot" title="Woof!"></canvas>
+          <h1 class="site-title">BenchNavigator</h1>
+          <nav class="site-nav">
+            <a href="index.html" class="active">Explore</a>
+            <a href="dashboard.html">Insights</a>
+          </nav>
+        </div>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <i id="themeIcon" class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h2 class="hero-headline">Discovery infrastructure for LLM benchmarks.</h2>
+      <p class="hero-description">Explore, filter, and compare <strong id="heroCount">thousands</strong> of AI datasets and evaluation tools. Identify the right benchmarks based on domain, task, languages, and AI Risk Atlas categories.</p>
+    </section>
+
+    <form id="filterForm" autocomplete="off">
+      <div class="search-section">
+        <div class="search-bar">
+          <input id="searchInput"
+                 class="search-input"
+                 type="text"
+                 placeholder="Search benchmarks by name, domain, task, or keywords…"
+                 aria-label="Search benchmarks" />
+        </div>
+      </div>
+
+      <div class="filters-section">
+        <div class="filters-header">
+          <span>Filter Benchmarks</span>
+          <div class="filters-header-actions">
+            <button type="button" id="toggleAdvanced" class="chip-btn" aria-expanded="false">Show Advanced Filters</button>
+            <button type="button" id="toggleColumns" class="chip-btn" aria-pressed="false">Show Extra Columns</button>
+          </div>
+        </div>
+
+        <div class="filters-grid">
+          <div class="filter-group"><label for="domainFilter">Domain</label>
+            <select id="domainFilter"><option value="">All Domains</option></select></div>
+          <div class="filter-group"><label for="taskFilter">Primary Task</label>
+            <select id="taskFilter"><option value="">All Tasks</option></select></div>
+          <div class="filter-group"><label for="modalityFilter">Modality</label>
+            <select id="modalityFilter"><option value="">All Modalities</option></select></div>
+          <div class="filter-group"><label for="sizeFilter">Size Category</label>
+            <select id="sizeFilter"><option value="">All Sizes</option></select></div>
+          <div class="filter-group"><label for="languageFilter">Language</label>
+            <select id="languageFilter"><option value="">All Languages</option></select></div>
+          <div class="filter-group"><label for="datatypeFilter">Data Type</label>
+            <select id="datatypeFilter"><option value="">All Data Types</option></select></div>
+          <div class="filter-group"><label for="annotationFilter">Annotation Method</label>
+            <select id="annotationFilter"><option value="">All Methods</option></select></div>
+          <div class="filter-group"><label for="riskFilter">AI Risk Atlas Category</label>
+            <select id="riskFilter"><option value="">All Categories</option></select></div>
+        </div>
+
+        <div class="filters-grid advanced-grid" id="advancedPanel" hidden>
+          <div class="filter-group"><label for="audienceFilter">Audience</label>
+            <select id="audienceFilter"><option value="">All Audiences</option></select></div>
+          <div class="filter-group"><label for="metricFilter">Metric</label>
+            <select id="metricFilter"><option value="">All Metrics</option></select></div>
+          <div class="filter-group"><label for="methodFilter">Method</label>
+            <select id="methodFilter"><option value="">All Methods</option></select></div>
+          <div class="filter-group"><label for="statusFilter">Quality Status</label>
+            <select id="statusFilter"><option value="">All Statuses</option></select></div>
+          <div class="filter-group"><label for="sortSelect">Sort by</label>
+            <select id="sortSelect">
+              <option value="name-asc">Name (A–Z)</option>
+              <option value="name-desc">Name (Z–A)</option>
+              <option value="domain-asc">Domain (A–Z)</option>
+              <option value="task-asc">Task (A–Z)</option>
+              <option value="size-desc">Size (largest)</option>
+              <option value="size-asc">Size (smallest)</option>
+            </select></div>
+          <div class="filter-group search-scope">
+            <label>Search in</label>
+            <div class="search-options">
+              <label class="search-option"><input id="searchName" type="checkbox" checked /> Name</label>
+              <label class="search-option"><input id="searchTasks" type="checkbox" checked /> Tasks</label>
+              <label class="search-option"><input id="searchDescription" type="checkbox" /> Overview</label>
+              <label class="search-option"><input id="searchDomains" type="checkbox" checked /> Domains</label>
+              <label class="search-option"><input id="searchRisks" type="checkbox" /> Risks</label>
+              <label class="search-option"><input id="searchAudience" type="checkbox" /> Audience</label>
+            </div>
+          </div>
+          <div class="filter-group reset-group">
+            <button type="button" id="resetBtn" class="btn secondary">Reset Filters</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="activeFiltersContainer" class="active-filters-container" aria-live="polite"></div>
+
+      <div class="results-bar">
+        <span id="resultCount" class="result-count" aria-live="polite"></span>
+        <span class="spacer"></span>
+        <span id="selectedCount" class="result-count">0 selected</span>
+        <button type="button" id="clearSelBtn" class="btn secondary" hidden>Clear</button>
+        <button type="button" id="compareBtn" class="btn" disabled>Compare Selected</button>
+        <div class="dropdown" id="exportDropdown">
+          <button type="button" id="exportBtn" class="btn">Export ▾</button>
+          <div class="dropdown-menu">
+            <button type="button" data-export="csv">Download CSV</button>
+            <button type="button" data-export="json">Download JSON</button>
+            <button type="button" data-export="md">Download Markdown</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div id="tableView">
+      <div id="loading" class="loading" hidden>
+        <div class="skeleton-table">
+          <div class="skeleton-row"></div>
+          <div class="skeleton-row"></div>
+          <div class="skeleton-row"></div>
+          <div class="skeleton-row"></div>
+          <div class="skeleton-row"></div>
+        </div>
+      </div>
+      <table class="results-table" aria-label="Benchmark results">
+        <thead>
+          <tr>
+            <th class="col-compare">Compare</th>
+            <th class="sortable" data-sort="name">Name</th>
+            <th class="sortable" data-sort="domain">Domain</th>
+            <th class="sortable" data-sort="task">Task</th>
+            <th class="sortable" data-sort="modality" title="Type of data evaluated (e.g., text, image, math)">Modality</th>
+            <th class="sortable" data-sort="language">Languages</th>
+            <th class="sortable" data-sort="risk" title="Risk categories the benchmark evaluates (e.g., Bias, Toxicity)">AI Risk Atlas</th>
+            <th class="col-extra sortable" data-sort="audience">Audience</th>
+            <th class="col-extra sortable" data-sort="size">Size</th>
+            <th class="col-link sortable" data-sort="paper">Paper</th>
+            <th class="col-link sortable" data-sort="github">GitHub</th>
+            <th class="col-link sortable" data-sort="hf">HF</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+      <div id="showMoreBar" class="show-more-bar" hidden>
+        <button type="button" id="showMoreBtn" class="btn">Show more</button>
+        <span id="showMoreInfo" class="result-count"></span>
+      </div>
+    </div>
+
+    <div id="emptyState" class="empty-state" hidden>
+      <div class="empty-state-content">
+        <i class="fa-solid fa-magnifying-glass empty-icon"></i>
+        <h3>No benchmarks found</h3>
+        <p>There are no benchmarks matching your current filters.</p>
+        <button type="button" id="clearEmptyFiltersBtn" class="btn">Clear All Filters</button>
+        <div class="suggested-searches">
+          <span>Try exploring:</span>
+          <div class="tag-container" style="justify-content: center;">
+            <button type="button" class="tag" data-tag="domain" data-value="Medical">Medical Domain</button>
+            <button type="button" class="tag" data-tag="task" data-value="Reasoning">Reasoning Tasks</button>
+            <!-- we will use the existing languageFilter if there is a 'Multilingual' language, otherwise we can just clear it. Let's use specific known domains/tasks -->
+            <button type="button" class="tag" data-tag="risk" data-value="Toxicity">Toxicity</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="mascot.js?v=4"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

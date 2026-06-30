@@ -1,0 +1,80 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "HaluEval-Wild",
+    "abbreviation": "N/A",
+    "overview": "HaluEval-Wild is the first benchmark specifically designed to evaluate LLM hallucinations in the wild using a dataset of 500 challenging user queries categorized into five distinct types, facilitating a fine-grained analysis of hallucination rates across various LLMs.",
+    "data_type": "text",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [],
+    "resources": [
+      "https://github.com/HaluEval-Wild/HaluEval-Wild"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "The primary objective of HaluEval-Wild is to provide a comprehensive benchmark to evaluate and enhance the robustness of language models in the face of real-world hallucination challenges.",
+    "audience": [
+      "ML Researchers",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Hallucination Detection"
+    ],
+    "limitations": "While HaluEval-Wild offers valuable insights into LLM hallucinations, it may not fully encapsulate the breadth of everyday user-LLM interactions and relies on manual verification for categorization accuracy.",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Challenging queries curated from the ShareGPT dataset, filtered for complexity and hallucination potential.",
+    "size": "500 examples",
+    "format": "N/A",
+    "annotation": "Manual verification of query categorization and reference answer generation."
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "Automated metrics"
+    ],
+    "metrics": [
+      "Hallucination rate"
+    ],
+    "calculation": "Models are evaluated based on the proportion of hallucinated responses relative to the reference answers.",
+    "interpretation": "A response is considered non-hallucinatory if it matches the reference answer or admits the inability to fulfill the request.",
+    "baseline_results": "Hallucination rates range significantly across models, with identifiable trends related to model types and architectures.",
+    "validation": "Validation included manual verification and a rigorous filtering process against hallucination-prone patterns."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Robustness",
+      "Accuracy"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Unrepresentative data"
+          ]
+        },
+        {
+          "category": "Robustness",
+          "subcategory": [
+            "Hallucination"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": []
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "Data entries were reviewed to ensure no personally identifiable information (PII) is included.",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

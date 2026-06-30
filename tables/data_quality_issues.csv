@@ -1,0 +1,10 @@
+issue,count,pct,severity,action,description
+missing_annotation,499,10.7,info,flagged,Annotation method is not documented
+missing_language,282,6.0,info,flagged,Language is not documented
+missing_size,281,6.0,info,flagged,Dataset size is not documented
+missing_risk,138,2.9,info,flagged,AI Risk Atlas category is not documented
+missing_audience,104,2.2,info,flagged,Intended audience is not documented
+missing_data_source,4,0.1,warn,flagged,Data source is not documented
+missing_overview,0,0.0,warn,flagged,Overview is missing or too short
+missing_goal,0,0.0,warn,flagged,Purpose / goal is not documented
+no_source_links,0,0.0,warn,flagged,No outbound source/provenance links

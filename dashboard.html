@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <title>BenchNavigator – Insights</title>
+  <link rel="stylesheet" href="styles.css?v=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="masthead">
+        <div class="brand" style="display: flex; align-items: center;">
+          <canvas id="benchMascot" width="36" height="36" style="width: 48px; height: 48px; image-rendering: pixelated; margin-right: 15px;" aria-label="BenchNavigator Husky Mascot" title="Woof!"></canvas>
+          <h1 class="site-title">BenchNavigator</h1>
+          <nav class="site-nav">
+            <a href="index.html">Explore</a>
+            <a href="dashboard.html" class="active">Insights</a>
+          </nav>
+          <span class="site-tagline">Discovery infrastructure for LLM benchmarks</span>
+        </div>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <i id="themeIcon" class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <p class="dash-intro">
+      A landscape view of the BenchmarkCards behind BenchNavigator, paired with the
+      practitioner-survey priorities that shaped the interface. The recurring theme is that
+      benchmark documentation is <em>abundant but uneven</em>: useful metadata exists, but is
+      reported inconsistently across sources.
+    </p>
+
+    <div class="toolbar">
+      <span id="datasetSummary" class="result-count">Loading…</span>
+      <span class="spacer"></span>
+      <a class="btn secondary" href="tables/" id="tablesLink" title="Open the saved CSV tables folder">Saved tables (CSV)</a>
+      <button class="btn" id="downloadStats" type="button">Download stats.json</button>
+    </div>
+
+    <div id="statCards" class="stat-cards"></div>
+
+    <!-- ===================== ECOSYSTEM ===================== -->
+    <div class="section-head"><h2 id="landscapeTitle">BenchmarkCard landscape</h2></div>
+
+    <div class="chart-grid one">
+      <section class="panel" id="p-growth">
+        <h3>Cumulative growth of LLM benchmarks</h3>
+        <p class="panel-sub" id="growthSub">New benchmark/eval papers indexed per month on arXiv, cumulative.</p>
+        <div class="chart-host" id="chart-growth"></div>
+        <p class="panel-foot" id="growthFoot">Rapid proliferation is exactly what makes discovery and comparison hard — the problem BenchNavigator targets.</p>
+      </section>
+    </div>
+
+    <div class="chart-grid">
+      <section class="panel">
+        <h3>Modality coverage</h3>
+        <p class="panel-sub">First release is text-centric by design; other modalities are planned.</p>
+        <div class="donut-row">
+          <div class="chart-host" id="chart-modality"></div>
+          <div class="legend" id="legend-modality"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3>Top tasks</h3>
+        <p class="panel-sub">From normalized task tags (multi-label; a benchmark can serve several).</p>
+        <div class="chart-host" id="chart-tasks"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Language coverage</h3>
+        <p class="panel-sub">Top languages by primary-language tag. English dominates; long tail of low-resource languages.</p>
+        <div class="chart-host" id="chart-language"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Source link types</h3>
+        <p class="panel-sub" id="linkTypeSub">Which provenance links are available in the cards.</p>
+        <div class="chart-host" id="chart-link-types"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Dataset size buckets</h3>
+        <p class="panel-sub">Practitioner comfort zone clusters in the low thousands (1K–10K).</p>
+        <div class="chart-host" id="chart-size"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Source links</h3>
+        <p class="panel-sub">Share with at least one paper, GitHub, Hugging Face, or homepage link.</p>
+        <div class="donut-row">
+          <div class="chart-host" id="chart-oss"></div>
+          <div class="legend" id="legend-oss"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===================== THE GAP ===================== -->
+    <div class="section-head"><h2>The metadata gap — the paper's core finding</h2></div>
+
+    <div class="chart-grid">
+      <section class="panel">
+        <h3>Documentation completeness</h3>
+        <p class="panel-sub" id="completenessSub">How many of 4 key fields each BenchmarkCard reports.</p>
+        <div class="chart-host" id="chart-completeness"></div>
+        <p class="panel-foot" id="completenessFoot">Metadata exists but is unevenly filled.</p>
+      </section>
+
+      <section class="panel">
+        <h3>Most-often missing fields</h3>
+        <p class="panel-sub">Which metadata fields are absent most frequently across the corpus.</p>
+        <div class="chart-host" id="chart-missing"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Artifact availability</h3>
+        <p class="panel-sub" id="artifactAvailabilitySub">Optional arXiv artifact-link scrape.</p>
+        <div class="donut-row">
+          <div class="chart-host" id="chart-availability"></div>
+          <div class="legend" id="legend-availability"></div>
+        </div>
+        <p class="panel-foot" id="artifactAvailabilityFoot"></p>
+      </section>
+
+      <section class="panel">
+        <h3>Where artifacts are hosted</h3>
+        <p class="panel-sub" id="artifactHostingSub">Hosting platform distribution when artifact-link scrape data is available.</p>
+        <div class="chart-host" id="chart-hosting"></div>
+        <p class="panel-foot" id="artifactHostingFoot"></p>
+      </section>
+    </div>
+
+    <!-- ===================== DATA QUALITY ===================== -->
+    <div class="section-head"><h2 id="dqTitle">Data-quality audit</h2></div>
+
+    <p class="dash-intro" style="margin-top:0">
+      Produced by <code>data_quality_agent.py</code>, which sweeps every BenchmarkCard and
+      <strong>flags</strong> — never fabricates — missing documentation, in keeping with the paper's
+      stance of making gaps visible rather than inferring them.
+    </p>
+
+    <div id="dqCards" class="stat-cards"></div>
+
+    <div class="chart-grid">
+      <section class="panel">
+        <h3>Issues found across the corpus</h3>
+        <p class="panel-sub">Flagged documentation gaps across the current BenchmarkCards corpus.</p>
+        <div class="chart-host" id="chart-dq-issues"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Per-card approval score</h3>
+        <p class="panel-sub">Distribution of a 0–100 score after explicit missing-evidence penalties.</p>
+        <div class="chart-host" id="chart-dq-scores"></div>
+        <p class="panel-foot" id="dq-foot"></p>
+      </section>
+    </div>
+
+    <!-- ===================== PRACTITIONERS ===================== -->
+    <div class="section-head"><h2>What practitioners prioritize (survey, N=23)</h2></div>
+
+    <div class="chart-grid">
+      <section class="panel">
+        <h3>Scientific quality factors</h3>
+        <p class="panel-sub">% of respondents citing each as influential in selection.</p>
+        <div class="chart-host" id="chart-scientific"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Coverage factors</h3>
+        <p class="panel-sub">Domain relevance is the gatekeeper.</p>
+        <div class="chart-host" id="chart-coverage"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Information sources used</h3>
+        <p class="panel-sub">Where practitioners look when selecting a benchmark.</p>
+        <div class="chart-host" id="chart-sources"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Desired BenchNavigator features</h3>
+        <p class="panel-sub">Mean importance (1–5). Drives the prototype's feature set.</p>
+        <div class="chart-host" id="chart-features"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Selection constraints</h3>
+        <p class="panel-sub">Mean importance (1–5). Validation &amp; quality ranks highest.</p>
+        <div class="chart-host" id="chart-constraints"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Trust in evaluation methods</h3>
+        <p class="panel-sub">Mean trust (1–5). Human eval is trusted most; LLM-as-judge least.</p>
+        <div class="chart-host" id="chart-trust"></div>
+      </section>
+    </div>
+
+    <p class="dash-intro" style="margin-top:28px">
+      <strong>Note.</strong> Landscape charts are computed from
+      <code>benchmark_cards.jsonl</code>; optional arXiv artifact charts render only when the scrape
+      files are present. Survey charts are transcribed from the paper's Appendix C. Regenerate with
+      <code>python build_stats.py</code>.
+    </p>
+
+    <div id="loadError" class="empty-state" hidden>
+      <p>Couldn't load <code>stats.json</code>. Run <code>python build_stats.py</code>, then serve this
+      folder over HTTP (e.g. <code>python -m http.server</code>) — opening the file directly via
+      <code>file://</code> blocks data loading.</p>
+    </div>
+  </div>
+
+  <script src="mascot.js?v=4"></script>
+  <script src="charts.js"></script>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

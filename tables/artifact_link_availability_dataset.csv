@@ -1,0 +1,5 @@
+signal,count,pct
+has_paper,4680,100.0
+has_github,2849,60.9
+has_huggingface,655,14.0
+has_homepage,1321,28.2

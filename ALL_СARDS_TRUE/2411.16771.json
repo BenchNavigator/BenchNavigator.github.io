@@ -1,0 +1,84 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "VIDHAL (Video Hallucination Benchmark)",
+    "abbreviation": "VIDHAL",
+    "overview": "VIDHAL is a benchmark specifically designed to evaluate video-based hallucinations in Vision Large Language Models (VLLMs). It includes video instances sourced from public datasets with annotations representing varying levels of hallucination, enabling fine-grained evaluation of VLLMs through a novel caption ordering task.",
+    "data_type": "video-caption pairs",
+    "domains": [
+      "Natural Language Processing",
+      "Computer Vision"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": null,
+    "resources": [
+      "https://github.com/Lookuz/VidHal"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To evaluate and benchmark the performance of Vision Large Language Models (VLLMs) in understanding and generating video content without hallucination.",
+    "audience": [
+      "ML Researchers",
+      "Model Developers",
+      "Domain Experts"
+    ],
+    "tasks": [
+      "Video Question Answering",
+      "Caption Ordering"
+    ],
+    "limitations": "N/A",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Public video understanding datasets (TempCompass, Perception Test, MVBench, AutoEval-Video)",
+    "size": "1,000 video instances",
+    "format": "N/A",
+    "annotation": "Video instances annotated with multiple captions of varying degrees of hallucination."
+  },
+  "methodology": {
+    "methods": [
+      "Multiple-choice question answering (MCQA)",
+      "Caption ordering"
+    ],
+    "metrics": [
+      "MCQA Accuracy",
+      "Normalized Discounted Cumulative Gain (NDCG)"
+    ],
+    "calculation": "Accuracy is calculated based on the proportion of correct answers in the MCQA task and on the ranking of captions in the caption ordering task.",
+    "interpretation": "A higher accuracy score indicates better performance, with the NDCG metric capturing the ranked order of captions and rewarding partially correct rankings.",
+    "baseline_results": "N/A",
+    "validation": "Human validation was performed to ensure the reliability of the generated captions."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Accuracy",
+      "Robustness"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Unrepresentative data"
+          ]
+        },
+        {
+          "category": "Robustness",
+          "subcategory": [
+            "Prompt injection attack"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": []
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

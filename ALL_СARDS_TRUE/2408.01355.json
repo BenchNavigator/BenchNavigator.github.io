@@ -1,0 +1,102 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "Hallu-PI",
+    "abbreviation": "N/A",
+    "overview": "Hallu-PI is the first benchmark designed to evaluate hallucination in Multi-modal Large Language Models (MLLMs) within perturbed inputs. It consists of seven perturbed scenarios, containing 1,260 perturbed images from 11 object types, assessed for both generative and discriminative tasks.",
+    "data_type": "perturbed images",
+    "domains": [
+      "Natural Language Processing",
+      "Computer Vision"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "AMBER",
+      "POPE",
+      "HaELM",
+      "M-HalDetect",
+      "Halle-Switch"
+    ],
+    "resources": [
+      "https://github.com/NJUNLP/Hallu-PI"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To evaluate hallucinations in Multi-modal Large Language Models when subjected to perturbed inputs.",
+    "audience": [
+      "ML Researchers",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Discriminative Tasks",
+      "Generative Tasks"
+    ],
+    "limitations": "N/A",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Data consists of 1,260 perturbed images collected from various sources catering to 11 distinct object categories.",
+    "size": "1,260 images",
+    "format": "JPEG",
+    "annotation": "Deeply annotated with hallucination types including existence, attribute, and relation."
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "Automated metrics"
+    ],
+    "metrics": [
+      "Accuracy",
+      "F1 Score",
+      "CHAIR",
+      "Cover",
+      "Hal",
+      "Cog"
+    ],
+    "calculation": "Metrics are calculated based on comparison of MLLM responses against annotated ground truth.",
+    "interpretation": "Lower scores on metrics indicate higher hallucination rates while higher scores on accuracy metrics indicate better model performance.",
+    "baseline_results": "Experimental results on 12 mainstream MLLMs reveal significant hallucinations when dealing with perturbed scenarios.",
+    "validation": "Extensive experiments were conducted to validate the benchmark on various models"
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Bias",
+      "Accuracy",
+      "Robustness"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Poor model accuracy"
+          ]
+        },
+        {
+          "category": "Robustness",
+          "subcategory": [
+            "Evasion attack"
+          ]
+        },
+        {
+          "category": "Fairness",
+          "subcategory": [
+            "Data bias"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": [
+      "Severe bias in MLLM performance under different hallucination scenarios"
+    ]
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "MedHallBench",
+    "abbreviation": "N/A",
+    "overview": "MedHallBench is a comprehensive benchmark framework for evaluating and mitigating hallucinations in Medical Large Language Models (MLLMs) using expert-validated medical case scenarios along with established medical databases.",
+    "data_type": "question-answering pairs",
+    "domains": [
+      "Healthcare"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "MedQA",
+      "MedMCQA",
+      "MultiMedQA",
+      "Med-HALT"
+    ],
+    "resources": [
+      "N/A"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To provide a foundational framework for addressing hallucinations in medical large language models and to ensure their reliability in healthcare applications.",
+    "audience": [
+      "ML Researchers",
+      "Healthcare Professionals",
+      "Medical Data Scientists"
+    ],
+    "tasks": [
+      "Evaluating Hallucination in Medical Language Models"
+    ],
+    "limitations": "N/A",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Expert-validated medical case scenarios and established medical databases.",
+    "size": "N/A",
+    "format": "N/A",
+    "annotation": "Expert annotation by medical professionals with structured evaluations."
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "Automated metrics"
+    ],
+    "metrics": [
+      "Accuracy",
+      "ACHMI (Assessment of Caption Hallucinations in Medical Imagery)"
+    ],
+    "calculation": "The ACHMI metrics assess the proportion of hallucinated components in model outputs and compare them with ground truth.",
+    "interpretation": "Lower ACHMI values indicate fewer hallucinations.",
+    "baseline_results": "N/A",
+    "validation": "Evaluation by expert medical professionals to establish a gold standard."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Accuracy",
+      "Fairness",
+      "Robustness"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Poor model accuracy"
+          ]
+        },
+        {
+          "category": "Fairness",
+          "subcategory": [
+            "Output bias"
+          ]
+        },
+        {
+          "category": "Robustness",
+          "subcategory": [
+            "Hallucination"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": "N/A"
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

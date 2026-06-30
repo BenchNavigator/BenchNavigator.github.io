@@ -1,0 +1,132 @@
+{
+ "total": 4680,
+ "records_fixed": 0,
+ "records_with_flags": 1011,
+ "clean_records": 3669,
+ "review_status": {
+  "approved": 3669,
+  "needs_review": 1007,
+  "incomplete": 4
+ },
+ "issues": [
+  {
+   "issue": "missing_annotation",
+   "count": 499,
+   "pct": 10.7,
+   "severity": "info",
+   "action": "flagged",
+   "description": "Annotation method is not documented"
+  },
+  {
+   "issue": "missing_language",
+   "count": 282,
+   "pct": 6.0,
+   "severity": "info",
+   "action": "flagged",
+   "description": "Language is not documented"
+  },
+  {
+   "issue": "missing_size",
+   "count": 281,
+   "pct": 6.0,
+   "severity": "info",
+   "action": "flagged",
+   "description": "Dataset size is not documented"
+  },
+  {
+   "issue": "missing_risk",
+   "count": 138,
+   "pct": 2.9,
+   "severity": "info",
+   "action": "flagged",
+   "description": "AI Risk Atlas category is not documented"
+  },
+  {
+   "issue": "missing_audience",
+   "count": 104,
+   "pct": 2.2,
+   "severity": "info",
+   "action": "flagged",
+   "description": "Intended audience is not documented"
+  },
+  {
+   "issue": "missing_data_source",
+   "count": 4,
+   "pct": 0.1,
+   "severity": "warn",
+   "action": "flagged",
+   "description": "Data source is not documented"
+  },
+  {
+   "issue": "missing_overview",
+   "count": 0,
+   "pct": 0.0,
+   "severity": "warn",
+   "action": "flagged",
+   "description": "Overview is missing or too short"
+  },
+  {
+   "issue": "missing_goal",
+   "count": 0,
+   "pct": 0.0,
+   "severity": "warn",
+   "action": "flagged",
+   "description": "Purpose / goal is not documented"
+  },
+  {
+   "issue": "no_source_links",
+   "count": 0,
+   "pct": 0.0,
+   "severity": "warn",
+   "action": "flagged",
+   "description": "No outbound source/provenance links"
+  }
+ ],
+ "score_histogram": [
+  [
+   "0",
+   0
+  ],
+  [
+   "10",
+   0
+  ],
+  [
+   "20",
+   0
+  ],
+  [
+   "30",
+   0
+  ],
+  [
+   "40",
+   0
+  ],
+  [
+   "50",
+   0
+  ],
+  [
+   "60",
+   4
+  ],
+  [
+   "70",
+   8
+  ],
+  [
+   "80",
+   249
+  ],
+  [
+   "90",
+   750
+  ],
+  [
+   "100",
+   3669
+  ]
+ ],
+ "mean_score": 98.0
+}

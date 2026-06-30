@@ -1,0 +1,11 @@
+feature,mean_importance_1to5
+"Evidence score (docs, seeds, human eval)",4.1
+Explainers: why a benchmark was recommended,3.9
+One-click export (JSON/Markdown),3.8
+Domain-specific tailoring,3.8
+Contamination risk & provenance indicators,3.7
+"Maintenance score (updates, activity)",3.6
+Ranked recommendations,3.4
+Compute cost / time estimator,3.3
+Visualizations of results,3.2
+Support for custom metrics,3.1

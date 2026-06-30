@@ -1,0 +1,68 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "FLAMES (Fairness, Legality, Data protection, Morality, Safety)",
+    "abbreviation": "FLAMES",
+    "overview": "FLAMES is a highly adversarial benchmark developed to evaluate the value alignment of large language models (LLMs) specifically in the context of Chinese culture and values, utilizing complex prompts designed to test safety, fairness, morality, and other ethical considerations.",
+    "data_type": "text",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "Chinese"
+    ],
+    "similar_benchmarks": [],
+    "resources": [
+      "https://github.com/AIFlames/Flames"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To provide a comprehensive evaluation framework for assessing the value alignment of large language models with human values, particularly focusing on safety and ethical behavior.",
+    "audience": [
+      "ML Researchers",
+      "AI Developers"
+    ],
+    "tasks": [
+      "Ethical Evaluation"
+    ],
+    "limitations": "N/A",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "FLAMES-prompt dataset created through manual crafting and testing of prompts on various LLMs.",
+    "size": "2,251 prompts",
+    "format": "JSON",
+    "annotation": "Responses from 17 LLMs were rigorously annotated by human evaluators for safety, fairness, and alignment with Chinese values."
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "Automated metrics"
+    ],
+    "metrics": [
+      "Harmless Rate",
+      "Harmless Score"
+    ],
+    "calculation": "Harmless Rate is calculated as the percentage of completely harmless responses out of total responses for each dimension. Harmless Score is calculated based on the overall scores assigned to the responses.",
+    "interpretation": "Higher scores indicate better alignment with human values, while lower scores reveal potential safety vulnerabilities or ethical shortcomings.",
+    "baseline_results": null,
+    "validation": "The benchmark was validated through consistent evaluation processes across different LLMs using a specified scoring method."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Safety",
+      "Fairness"
+    ],
+    "atlas_risks": {
+      "risks": []
+    },
+    "demographic_analysis": null,
+    "harm": []
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "All prompts and responses are anonymized, ensuring individual privacy is maintained.",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "All data collection and annotations comply with necessary ethical guidelines."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "HalluDial (A Large-Scale Benchmark for Automatic Dialogue-Level Hallucination Evaluation)",
+    "abbreviation": "HalluDial",
+    "overview": "HalluDial is the first comprehensive large-scale benchmark for automatic dialogue-level hallucination evaluation, covering both spontaneous and induced hallucination scenarios, including factuality and faithfulness hallucinations with a total of 146,856 samples.",
+    "data_type": "dialogue samples",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "TruthfulQA",
+      "HaluEval"
+    ],
+    "resources": [
+      "https://github.com/FlagOpen/HalluDial"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To study and evaluate hallucinations of large language models in information-seeking dialogues.",
+    "audience": [
+      "Researchers",
+      "Developers"
+    ],
+    "tasks": [
+      "Hallucination Detection",
+      "Evaluation of Language Models"
+    ],
+    "limitations": "While the HalluDial dataset is relatively large, it may not fully capture all real-world conversation scenarios.",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Derived from an information-seeking dialogue dataset.",
+    "size": "146,856 samples",
+    "format": "N/A",
+    "annotation": "Automatically annotated using GPT-4."
+  },
+  "methodology": {
+    "methods": [
+      "Automated metrics",
+      "Model-based evaluation"
+    ],
+    "metrics": [
+      "F1 Score",
+      "Accuracy",
+      "Average Precision",
+      "Average Recall"
+    ],
+    "calculation": "Metrics are calculated based on hallucination detection tasks using evaluators like HalluJudge and other language models.",
+    "interpretation": "A higher F1 score indicates better performance in detecting hallucinations.",
+    "baseline_results": "HalluJudge achieved an F1 Score of 84.92.",
+    "validation": "Validation through performance comparison with established LLMs."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Bias",
+      "Accuracy"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Unrepresentative data"
+          ]
+        },
+        {
+          "category": "Fairness",
+          "subcategory": [
+            "Data bias"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": "May contain potentially sensitive topics related to big events."
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "All dialogues are sourced from publicly available data, minimizing privacy risks.",
+    "data_licensing": "CC BY-NC-SA",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

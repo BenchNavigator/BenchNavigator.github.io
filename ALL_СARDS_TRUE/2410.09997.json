@@ -1,0 +1,87 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "Collu-Bench",
+    "abbreviation": "N/A",
+    "overview": "Collu-Bench is a benchmark for predicting code hallucinations of large language models (LLMs) across code generation (CG) and automated program repair (APR) tasks, including 13,234 code hallucination instances collected from five datasets and 11 diverse LLMs.",
+    "data_type": "code hallucination instances",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "TruthfulQA",
+      "FELM",
+      "HaluEval",
+      "HalluCode",
+      "CodeHalu"
+    ],
+    "resources": [
+      "https://huggingface.co/datasets/lt-asset/collu-bench"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To evaluate and analyze the prediction of code hallucinations in LLMs.",
+    "audience": [
+      "ML Researchers",
+      "Domain Experts"
+    ],
+    "tasks": [
+      "Code Generation",
+      "Automated Program Repair"
+    ],
+    "limitations": "Errors in the target hallucination token index due to reliance on an automated pipeline.",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "13,234 code hallucination instances collected from five datasets and 11 diverse LLMs.",
+    "size": "13,234 instances",
+    "format": "N/A",
+    "annotation": "N/A"
+  },
+  "methodology": {
+    "methods": [
+      "Traditional Machine Learning",
+      "Neural Networks"
+    ],
+    "metrics": [
+      "Accuracy"
+    ],
+    "calculation": "Accuracy is calculated based on the ratio of correctly predicted hallucination tokens.",
+    "interpretation": "An accuracy of 33.15% indicates the current limits of prediction performance.",
+    "baseline_results": "Accuracy ranges from 22.03% to 33.15%.",
+    "validation": "Evaluated through experiments using different models."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Accuracy",
+      "Robustness"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Unrepresentative data"
+          ]
+        },
+        {
+          "category": "Robustness",
+          "subcategory": [
+            "Data poisoning"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": "N/A"
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

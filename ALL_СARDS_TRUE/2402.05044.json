@@ -1,0 +1,82 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "SALAD-Bench (SAfety evaluation for LLMs, Attack and Defense approaches)",
+    "abbreviation": "SALAD-Bench",
+    "overview": "SALAD-Bench is a safety benchmark specifically designed for evaluating Large Language Models, attack, and defense methods. It features extensive categories and intricate taxonomies to assess safety threats and vulnerabilities.",
+    "data_type": "question-answering pairs",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "ToxicChat",
+      "SAFETYPROMPTS",
+      "SafetyBench",
+      "Do-Not-Answer",
+      "DoAnythingNow",
+      "AdvBench",
+      "MaliciousInstruct",
+      "CValues",
+      "ToxiGen"
+    ],
+    "resources": [
+      "https://github.com/OpenSafetyLab/SALAD-BENCH"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To provide a comprehensive and hierarchical framework for assessing the safety of LLMs, including both attack and defense methods.",
+    "audience": [
+      "ML Researchers",
+      "AI Safety Practitioners",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Safety Evaluation",
+      "Attack Evaluation",
+      "Defense Evaluation"
+    ],
+    "limitations": "N/A",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Publicly available data and self-instructed data.",
+    "size": "30,000 questions",
+    "format": "N/A",
+    "annotation": "Auto-labeling through LLMs and manual verification."
+  },
+  "methodology": {
+    "methods": [
+      "Automated metrics",
+      "LLM-based evaluation"
+    ],
+    "metrics": [
+      "Accuracy",
+      "F1 Score"
+    ],
+    "calculation": "Metrics are calculated based on the evaluators' performance against a defined safety taxonomy.",
+    "interpretation": "Higher accuracy and F1 score indicate better safety performance in LLM evaluations.",
+    "baseline_results": "N/A",
+    "validation": "Evaluation was tested against multiple existing safety benchmarks."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Safety",
+      "Privacy",
+      "Robustness"
+    ],
+    "atlas_risks": {
+      "risks": []
+    },
+    "demographic_analysis": "N/A",
+    "harm": []
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

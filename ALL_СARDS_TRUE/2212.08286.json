@@ -1,0 +1,106 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "ALERT",
+    "abbreviation": "ALERT",
+    "overview": "ALERT, a benchmark and suite of analyses for evaluating reasoning skills of language models. ALERT enables comparing pre-trained and finetuned models on complex tasks that require reasoning skills to solve them. The benchmark provides a test bed to assess any language model on fine-grained reasoning skills, spanning over 20 datasets and covering 10 different reasoning skills.",
+    "data_type": "text (question-answering pairs and generation tasks)",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [],
+    "similar_benchmarks": [
+      "Natural Instruction V2 (NIV2)",
+      "BIG-Bench",
+      "MMLU",
+      "Curriculum benchmark"
+    ],
+    "resources": [
+      "N/A"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To benchmark different large language models on various fine-grained reasoning skills and provide analyses to assess reasoning abilities, the role of finetuning, data memorization, reasoning skill transfer, and prompt template memorization.",
+    "audience": [],
+    "tasks": [
+      "Question Answering",
+      "Text Generation",
+      "Text Classification",
+      "Textual Entailment"
+    ],
+    "limitations": "Missing some reasoning skills such as symbolic reasoning and compositionality reasoning. Limited compute prevented training larger models. Some datasets contain noise where even human experts are unable to provide accurate answers for certain instances.",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Selected tasks from Natural Instruction V2 (NIV2) and public datasets; ALERT is constructed from over 20 datasets covering 10 reasoning skills (detailed in Table 4).",
+    "size": "20 datasets (individual dataset sizes vary); total aggregated size not provided",
+    "format": "Various formats as provided by original datasets (examples include CSV and JSONL)",
+    "annotation": "Reasoning-skill labels were manually checked and corrected; for each task only the predominant reasoning skill label is retained."
+  },
+  "methodology": {
+    "methods": [
+      "Prompt-based evaluation (zero-shot, few-shot, chain-of-thought)",
+      "Automated metrics (ROUGE-L, Exact Match, Relaxed Match)",
+      "Reasoning-chain evaluation using ROSCOE suite",
+      "Model comparison (pretrained OPT vs meta-finetuned OPT-FT vs CoT-finetuned OPT-CoT)",
+      "Template-variation evaluation (five prompt templates; report average and max across templates)"
+    ],
+    "metrics": [
+      "ROUGE-L",
+      "Exact Match",
+      "Relaxed Match (normalize to lowercase, remove punctuation and extra whitespace)",
+      "ROSCOE suite (e.g., Faithfulness-Step, Faithfulness-Token, Info-Step, Repetition-Token, Info-Chain, Repetition-Step, Source Consistency, Self-Consistency, Perplexity-Step, Perplexity-Chain, Grammar)"
+    ],
+    "calculation": "Classification tasks are treated as generation by appending choices to prompts. For each dataset, scores are reported as the average and max among five templates; aggregated results are averages across datasets. Relaxed-match normalizes predictions and references to lowercase and removes punctuation and extra whitespace.",
+    "interpretation": "Default score refers to the aggregated max score among the five templates. Exact Match is sensitive to format adherence; Relaxed Match reduces sensitivity to formatting differences. ROSCOE metrics evaluate chain quality across multiple perspectives (faithfulness, similarity, logical inference, language coherence).",
+    "baseline_results": "Rationale-based finetuning (OPT-CoT) improves 1.3B model by 3.89% aggregated max ROUGE-L and 3.83% aggregated max Exact Match; for 13B, OPT-CoT improves by 15.22% aggregated max ROUGE-L and 12.64% aggregated max Exact Match. OPT-FT sometimes yields worse results than pretrained OPT. ROSCOE averaged metrics are reported in Table 10 (examples: ROSCOE- SA Faithfulness-Token: OPT-13B=0.936, OPT-FT-13B=0.923, OPT-CoT-13B=0.940).",
+    "validation": "Checkpoint selection uses a development set compiled from NIV2 tasks that do not overlap with finetuning or evaluation data (dev datasets: task 247 Dream, task 118 SemEval, task 10 open-vocabulary math, and anli r1 entailment)."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Robustness",
+      "Accuracy",
+      "Value Alignment",
+      "Fairness"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Multi-category",
+          "subcategory": [
+            "Prompt priming"
+          ]
+        },
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Unrepresentative data"
+          ]
+        },
+        {
+          "category": "Value Alignment",
+          "subcategory": [
+            "Toxic output"
+          ]
+        },
+        {
+          "category": "Fairness",
+          "subcategory": [
+            "Data bias"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": null,
+    "harm": [
+      "Generation of toxic and unwanted content",
+      "Reduced robustness to different prompt templates leading to poor generalization"
+    ]
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "Various dataset licenses are used across ALERT datasets and are listed in Appendix D, including but not limited to MIT, Apache 2.0, CC BY-NC 4.0, CC BY-SA 3.0, CC BY 4.0, CC BY-NC-3.0, AFL 3.0, BSD-3-Clause. Refer to Appendix D for per-dataset licensing details.",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

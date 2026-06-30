@@ -1,0 +1,75 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "OAEI-LLM (Ontology Alignment Evaluation Initiative - Large Language Model)",
+    "abbreviation": "OAEI-LLM",
+    "overview": "The OAEI-LLM dataset is an extended version of the Ontology Alignment Evaluation Initiative (OAEI) datasets that evaluate LLM-specific hallucinations in Ontology Matching (OM) tasks. It measures the degree of hallucination by LLMs in OM tasks by comparing original human-labelled results with LLM-generated results and categorizes different types of hallucinations.",
+    "data_type": "mapping pairs",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [],
+    "resources": [
+      "https://oaei.ontologymatching.org/doc/oaei-deontology.2.html"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To measure the degree of hallucination by large language models in ontology matching tasks through an extended dataset.",
+    "audience": [
+      "ML Researchers",
+      "Domain Experts"
+    ],
+    "tasks": [
+      "Ontology Matching"
+    ],
+    "limitations": "Demonstrates only one-to-one equivalent mappings; more complex scenarios may cause additional types of LLM hallucinations.",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Extended Ontology Alignment Evaluation Initiative datasets",
+    "size": "Varied based on usage",
+    "format": "Extended EDOAL mapping schema",
+    "annotation": "Annotations based on comparing human-labelled results with LLM-generated results."
+  },
+  "methodology": {
+    "methods": [
+      "LLM evaluation for mapping assessment"
+    ],
+    "metrics": [
+      "Precision",
+      "Recall",
+      "F1 Score"
+    ],
+    "calculation": "Metrics are calculated by comparing generated mappings against the original OAEI reference.",
+    "interpretation": "High precision indicates fewer false mappings while high recall indicates fewer missing mappings.",
+    "baseline_results": null,
+    "validation": "Validation occurs through comparison with the OAEI Reference."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Accuracy"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Unrepresentative data",
+            "Poor model accuracy"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": null,
+    "harm": []
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "CC BY 4.0",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

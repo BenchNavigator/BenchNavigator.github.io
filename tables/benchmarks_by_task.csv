@@ -1,0 +1,5349 @@
+task,count,pct
+Question Answering,801,17.1
+Text Classification,352,7.5
+Visual Question Answering,174,3.7
+Named Entity Recognition,154,3.3
+Code Generation,147,3.1
+Sentiment Analysis,114,2.4
+Text Generation,96,2.1
+Machine Translation,92,2.0
+Natural Language Inference,81,1.7
+Image Captioning,76,1.6
+Mathematical Reasoning,68,1.5
+Summarization,58,1.2
+Information Retrieval,46,1.0
+Dialogue Generation,46,1.0
+Image Classification,46,1.0
+Text Summarization,45,1.0
+Instruction Following,45,1.0
+Reading Comprehension,44,0.9
+Relation Extraction,41,0.9
+Information Extraction,40,0.9
+Object Detection,39,0.8
+Language Modeling,39,0.8
+Reasoning,36,0.8
+Safety Evaluation,33,0.7
+Commonsense Reasoning,31,0.7
+Mathematical Problem Solving,31,0.7
+Emotion Recognition,28,0.6
+Bias Evaluation,27,0.6
+Logical Reasoning,26,0.6
+Spatial Reasoning,24,0.5
+Part-of-Speech Tagging,24,0.5
+Hallucination Detection,24,0.5
+Binary Classification,23,0.5
+Classification,23,0.5
+Visual Reasoning,22,0.5
+Hate Speech Detection,22,0.5
+Temporal Reasoning,21,0.4
+Automatic Speech Recognition,20,0.4
+Response Generation,20,0.4
+Natural Language Processing,20,0.4
+Data Analysis,20,0.4
+Planning,20,0.4
+Bias Detection,19,0.4
+Video Question Answering,19,0.4
+Coreference Resolution,18,0.4
+Image Generation,18,0.4
+Code Completion,18,0.4
+Multimodal Reasoning,18,0.4
+Speech Recognition,17,0.4
+Problem Solving,17,0.4
+Video Captioning,17,0.4
+Decision Making,17,0.4
+Task Planning,17,0.4
+Counting,16,0.3
+Semantic Parsing,16,0.3
+Multi-label Classification,16,0.3
+Machine Reading Comprehension,16,0.3
+Optical Character Recognition,16,0.3
+Text-to-Image Generation,16,0.3
+Model Evaluation,16,0.3
+Topic Classification,15,0.3
+Action Recognition,15,0.3
+Multiple Choice Question Answering,15,0.3
+Question Generation,15,0.3
+Vulnerability Detection,15,0.3
+Visual Grounding,14,0.3
+Natural Language Generation,14,0.3
+Image Retrieval,14,0.3
+Anomaly Detection,14,0.3
+Fact Verification,13,0.3
+Event Extraction,12,0.3
+Topic Modeling,12,0.3
+Grammatical Error Correction,12,0.3
+Translation,12,0.3
+Error Detection,12,0.3
+Safety Assessment,12,0.3
+Task Completion,12,0.3
+Slot Filling,11,0.2
+Language Identification,11,0.2
+Emotion Classification,11,0.2
+Intent Classification,11,0.2
+Time Series Forecasting,11,0.2
+Numerical Reasoning,11,0.2
+Extractive Question Answering,11,0.2
+Textual Entailment,11,0.2
+Fact Checking,11,0.2
+Emotion Detection,11,0.2
+Code Translation,11,0.2
+Perception,11,0.2
+Risk Assessment,11,0.2
+Multiple-choice Question Answering,10,0.2
+Text-to-SQL,10,0.2
+Natural Language Understanding,10,0.2
+Stance Detection,10,0.2
+Toxicity Detection,10,0.2
+Text Simplification,10,0.2
+Program Synthesis,10,0.2
+Image Segmentation,10,0.2
+Causal Reasoning,10,0.2
+Object Localization,9,0.2
+Word Sense Disambiguation,9,0.2
+Multi-hop Reasoning,9,0.2
+Document Classification,9,0.2
+Intent Detection,9,0.2
+Segmentation,9,0.2
+Event Detection,9,0.2
+Multiple-Choice Question Answering,9,0.2
+Semantic Textual Similarity,9,0.2
+Explanation Generation,9,0.2
+Document Understanding,9,0.2
+Retrieval,9,0.2
+Node Classification,9,0.2
+Object Counting,9,0.2
+Bias Measurement,9,0.2
+Image Editing,9,0.2
+Clustering,9,0.2
+Reasoning Evaluation,9,0.2
+Authorship Attribution,8,0.2
+Sarcasm Detection,8,0.2
+Paraphrase Identification,8,0.2
+Fairness Evaluation,8,0.2
+Security Evaluation,8,0.2
+Reinforcement Learning,8,0.2
+Object Recognition,8,0.2
+Video Understanding,8,0.2
+Medical Question Answering,8,0.2
+Dialogue Management,8,0.2
+Error Correction,8,0.2
+Performance Evaluation,8,0.2
+Instance Segmentation,7,0.1
+Sequence Labeling,7,0.1
+Link Prediction,7,0.1
+Dependency Parsing,7,0.1
+Navigation,7,0.1
+Misinformation Detection,7,0.1
+Relation Classification,7,0.1
+Part of Speech Tagging,7,0.1
+Offensive Language Detection,7,0.1
+Entity Linking,7,0.1
+Story Generation,7,0.1
+Evidence Retrieval,7,0.1
+Transliteration,7,0.1
+Conversational Recommendation,7,0.1
+Complex Reasoning,7,0.1
+Game Playing,7,0.1
+Reasoning Assessment,7,0.1
+Knowledge Editing,7,0.1
+Task Execution,7,0.1
+Grounding,7,0.1
+Bias Analysis,7,0.1
+Video Generation,7,0.1
+Dialect Identification,6,0.1
+Abstractive Summarization,6,0.1
+Data-to-Text Generation,6,0.1
+Dialogue Understanding,6,0.1
+Tokenization,6,0.1
+Lemmatization,6,0.1
+Claim Verification,6,0.1
+Fake News Detection,6,0.1
+Paraphrase Generation,6,0.1
+Image-Text Retrieval,6,0.1
+Semantic Segmentation,6,0.1
+Legal Judgment Prediction,6,0.1
+Token Classification,6,0.1
+Text Recognition,6,0.1
+Key Information Extraction,6,0.1
+Physics Problem Solving,6,0.1
+Open-ended Question Answering,6,0.1
+Dialogue Summarization,6,0.1
+Zero-shot Classification,6,0.1
+Code Review,6,0.1
+Tool Usage Evaluation,6,0.1
+Knowledge Assessment,6,0.1
+Text Retrieval,6,0.1
+Theory of Mind Evaluation,6,0.1
+Object Manipulation,6,0.1
+Automated Program Repair,6,0.1
+Algorithmic Problem Solving,6,0.1
+Change Detection,6,0.1
+Task Automation,6,0.1
+Scene Understanding,5,0.1
+Ranking,5,0.1
+Multi-Label Classification,5,0.1
+Code Search,5,0.1
+Sentiment Classification,5,0.1
+Dialogue State Tracking,5,0.1
+Language Model Pretraining,5,0.1
+Paraphrase Detection,5,0.1
+Image Understanding,5,0.1
+Creative Writing,5,0.1
+Code Editing,5,0.1
+Text-to-Speech,5,0.1
+Linguistic Analysis,5,0.1
+Image Recognition,5,0.1
+Recipe Generation,5,0.1
+Long-form Question Answering,5,0.1
+Factuality Evaluation,5,0.1
+Text-to-Image Retrieval,5,0.1
+Dialogue Evaluation,5,0.1
+Code Debugging,5,0.1
+Audio Captioning,5,0.1
+Code Summarization,5,0.1
+Regression,5,0.1
+Content Moderation,5,0.1
+Image Quality Assessment,5,0.1
+Medical Diagnosis,5,0.1
+Visual Recognition,5,0.1
+Legal Question Answering,5,0.1
+Automated Theorem Proving,5,0.1
+Bias Assessment,5,0.1
+Code Repair,5,0.1
+Role-Playing Evaluation,5,0.1
+Performance Benchmarking,5,0.1
+Strategic Planning,5,0.1
+Counterfactual Reasoning,5,0.1
+Security Assessment,5,0.1
+Data Augmentation,5,0.1
+Diagnosis,5,0.1
+Multi-Agent Coordination,5,0.1
+Generation,5,0.1
+Bug Fixing,5,0.1
+Contextual Understanding,5,0.1
+Diagnostic Reasoning,5,0.1
+Knowledge Base Question Answering,4,0.1
+Recommendation,4,0.1
+Stance Classification,4,0.1
+Answer Generation,4,0.1
+Aspect-based Sentiment Analysis,4,0.1
+Code Retrieval,4,0.1
+Sentence Classification,4,0.1
+Deception Detection,4,0.1
+Object Search,4,0.1
+Semantic Role Labeling,4,0.1
+Dialogue,4,0.1
+Keyphrase Extraction,4,0.1
+Passage Retrieval,4,0.1
+Entity Extraction,4,0.1
+Multi-Document Summarization,4,0.1
+Linguistic Evaluation,4,0.1
+Speech Emotion Recognition,4,0.1
+Multimodal Classification,4,0.1
+Masked Language Modeling,4,0.1
+Image-Text Matching,4,0.1
+Robustness Evaluation,4,0.1
+Text Analysis,4,0.1
+Multi-class Classification,4,0.1
+Abstract Generation,4,0.1
+Localization,4,0.1
+Property Prediction,4,0.1
+Text-to-Video Generation,4,0.1
+Text Completion,4,0.1
+Instance Counting,4,0.1
+Action Prediction,4,0.1
+Caption Generation,4,0.1
+Knowledge Evaluation,4,0.1
+Language Understanding,4,0.1
+Coding,4,0.1
+Math Reasoning,4,0.1
+Tool Selection,4,0.1
+Data Extraction,4,0.1
+Robotic Manipulation,4,0.1
+Machine Generated Text Detection,4,0.1
+Entity Recognition,4,0.1
+Data Quality Assessment,4,0.1
+Ethical Evaluation,4,0.1
+Text Style Transfer,4,0.1
+Code Optimization,4,0.1
+Fact-Checking,4,0.1
+Prediction,4,0.1
+Multimodal Question Answering,4,0.1
+Evaluation of Language Models,4,0.1
+Fairness Assessment,4,0.1
+Report Generation,4,0.1
+Causal Discovery,4,0.1
+Formal Verification,4,0.1
+Multi-choice Question Answering,4,0.1
+Video Summarization,4,0.1
+Test Case Generation,4,0.1
+Safety Alignment,4,0.1
+Algorithmic Reasoning,4,0.1
+Data Visualization,4,0.1
+Understanding,4,0.1
+Ethical Decision Making,4,0.1
+Chart Question Answering,4,0.1
+Audio Classification,4,0.1
+Design Generation,4,0.1
+Market Analysis,4,0.1
+Code Understanding,4,0.1
+Multi-Step Reasoning,4,0.1
+Knowledge Reasoning,4,0.1
+Answer Selection,3,0.1
+Document Retrieval,3,0.1
+Speech Enhancement,3,0.1
+Spoken Question Answering,3,0.1
+Author Profiling,3,0.1
+Speech Synthesis,3,0.1
+Extractive Summarization,3,0.1
+Knowledge Extraction,3,0.1
+Humor Detection,3,0.1
+Cross-lingual Question Answering,3,0.1
+Sentence Similarity,3,0.1
+Document Layout Analysis,3,0.1
+Table Question Answering,3,0.1
+Conversational Question Answering,3,0.1
+Text Segmentation,3,0.1
+Network Analysis,3,0.1
+Structured Information Extraction,3,0.1
+Word Segmentation,3,0.1
+Aspect-Based Sentiment Analysis,3,0.1
+Moral Reasoning,3,0.1
+Open Information Extraction,3,0.1
+Narrative Analysis,3,0.1
+Definition Generation,3,0.1
+Abusive Language Detection,3,0.1
+Cross-Lingual Summarization,3,0.1
+Verdict Prediction,3,0.1
+Semantic Analysis,3,0.1
+Multimodal Machine Translation,3,0.1
+Dialogue Act Classification,3,0.1
+Exploration,3,0.1
+Program Repair,3,0.1
+Paraphrasing,3,0.1
+Human Activity Recognition,3,0.1
+Gesture Recognition,3,0.1
+Text-to-Speech Synthesis,3,0.1
+Knowledge Retrieval,3,0.1
+News Headline Classification,3,0.1
+Parsing,3,0.1
+Dialog Generation,3,0.1
+Speaker Identification,3,0.1
+Text-to-Code Generation,3,0.1
+Style Transfer,3,0.1
+Video Retrieval,3,0.1
+Personality Prediction,3,0.1
+Behavioral Evaluation,3,0.1
+Grammar Error Correction,3,0.1
+Differential Diagnosis,3,0.1
+Code Explanation,3,0.1
+Title Generation,3,0.1
+Text Generation Evaluation,3,0.1
+Arithmetic Reasoning,3,0.1
+Knowledge Graph Question Answering,3,0.1
+Negation Understanding,3,0.1
+Question Answering (Multiple-choice),3,0.1
+Spatial Understanding,3,0.1
+Stock Movement Prediction,3,0.1
+3D Object Detection,3,0.1
+Scene Recognition,3,0.1
+Explainability,3,0.1
+Diacritization,3,0.1
+Performance Prediction,3,0.1
+Preference Ranking,3,0.1
+3D Reconstruction,3,0.1
+Keyword Extraction,3,0.1
+Symbolic Reasoning,3,0.1
+Spatial Relation,3,0.1
+Exploratory Data Analysis,3,0.1
+Multi-turn Interaction,3,0.1
+Few-shot Learning,3,0.1
+Multi-document Summarization,3,0.1
+Speaker Verification,3,0.1
+Multimodal Learning,3,0.1
+Multi-Turn Dialogue,3,0.1
+Path Planning,3,0.1
+Headline Generation,3,0.1
+Causal Inference,3,0.1
+Automated Testing,3,0.1
+Stereotype Detection,3,0.1
+Cultural Evaluation,3,0.1
+Negotiation,3,0.1
+Mathematics,3,0.1
+Task Decomposition,3,0.1
+Human Action Recognition,3,0.1
+Image-Text Alignment,3,0.1
+Binary Code Summarization,3,0.1
+Behavior Prediction,3,0.1
+Cross-modal Retrieval,3,0.1
+Debugging,3,0.1
+Scientific Reasoning,3,0.1
+Aesthetic Perception,3,0.1
+Aesthetic Assessment,3,0.1
+Debiasing,3,0.1
+Logic Reasoning,3,0.1
+Instruction Tuning,3,0.1
+Test Generation,3,0.1
+Sequential Reasoning,3,0.1
+Geometry Problem Solving,3,0.1
+Multi-hop Question Answering,3,0.1
+Chart Summarization,3,0.1
+Fraud Detection,3,0.1
+Prerequisite Prediction,3,0.1
+Path Searching,3,0.1
+Idea Hamster,3,0.1
+Type Inference,3,0.1
+Vulnerability Analysis,3,0.1
+Intent Recognition,3,0.1
+OCR,3,0.1
+Audio Deepfake Detection,3,0.1
+Pair Classification,3,0.1
+Multi-modal Reasoning,3,0.1
+Scene Description,3,0.1
+Knowledge Memorization,3,0.1
+Tool Use,3,0.1
+Benchmarking,3,0.1
+Emotion Reasoning,3,0.1
+Pathfinding,3,0.1
+Entity Matching,3,0.1
+Graph Reasoning,3,0.1
+Linguistic Reasoning,3,0.1
+Behavior Analysis,3,0.1
+Safety Classification,3,0.1
+Tool Use Evaluation,3,0.1
+Code Evaluation,3,0.1
+Hypothesis Generation,3,0.1
+Sarcasm Classification,3,0.1
+Workflow Generation,3,0.1
+Robot Manipulation,3,0.1
+Object Tracking,3,0.1
+Data Annotation,3,0.1
+Counterspeech Generation,3,0.1
+Visual Perception,3,0.1
+Scheduling,3,0.1
+Knowledge Application,3,0.1
+Data Processing,3,0.1
+Legal Reasoning,3,0.1
+Content Creation,3,0.1
+Table Recognition,3,0.1
+Scene Classification,3,0.1
+Audio-Visual Question Answering,3,0.1
+Data Cleaning,3,0.1
+Model Selection,3,0.1
+Preference Alignment,3,0.1
+Facial Expression Recognition,3,0.1
+Deepfake Detection,3,0.1
+Financial Analysis,3,0.1
+Adversarial Testing,3,0.1
+Temporal Grounding,3,0.1
+Query Generation,3,0.1
+Web Navigation,3,0.1
+Temporal Action Localization,3,0.1
+Assertion Generation,3,0.1
+Robustness Testing,3,0.1
+Combinatorial Optimization,3,0.1
+Code Migration,3,0.1
+Forecasting,3,0.1
+Multi-Turn Interaction,3,0.1
+Image Detection,3,0.1
+Clinical Decision Support,3,0.1
+Path Finding,2,0.0
+Yes/No Question Answering,2,0.0
+Video Description,2,0.0
+Abnormality Detection,2,0.0
+Text Similarity,2,0.0
+Feature Extraction,2,0.0
+Native Language Identification,2,0.0
+Reading Comprehension (Extractive),2,0.0
+Gender Identification,2,0.0
+Topic Detection,2,0.0
+Recommendation Systems,2,0.0
+Fact Extraction,2,0.0
+Open-domain Question Answering,2,0.0
+Multiple-Choice Reading Comprehension,2,0.0
+Trend Analysis,2,0.0
+Predictive Modeling,2,0.0
+Machine Reading Comprehension (Extractive),2,0.0
+Answer Sentence Selection,2,0.0
+Spelling Correction,2,0.0
+Conversational Agent Training,2,0.0
+Text Mining,2,0.0
+Sentence Retrieval,2,0.0
+Cross-lingual Retrieval,2,0.0
+Geolocation,2,0.0
+Knowledge Graph Construction,2,0.0
+Multi-turn Response Generation,2,0.0
+Question Answering (Extractive),2,0.0
+Semantic Search,2,0.0
+Adversarial Attacks,2,0.0
+Visual Relationship Detection,2,0.0
+Definition Extraction,2,0.0
+Generative Question Answering,2,0.0
+Diagnosis Prediction,2,0.0
+Dialect Detection,2,0.0
+Contract Analysis,2,0.0
+Zero-Shot Classification,2,0.0
+Sequence Tagging,2,0.0
+Word Similarity,2,0.0
+Counter Narrative Generation,2,0.0
+Humor Recognition,2,0.0
+Embedding Evaluation,2,0.0
+Cloze Test,2,0.0
+Character Identification,2,0.0
+Narrative Generation,2,0.0
+Emotion Analysis,2,0.0
+Conversational Interaction,2,0.0
+Acronym Extraction,2,0.0
+Voice Conversion,2,0.0
+Morphological Analysis,2,0.0
+Syntactic Analysis,2,0.0
+Document-level Relation Extraction,2,0.0
+Graph-to-Text Generation,2,0.0
+Part-of-Speech tagging,2,0.0
+Open-book Question Answering,2,0.0
+Closed-book Question Answering,2,0.0
+Protein Structure Prediction,2,0.0
+Protein-Protein Interaction Prediction,2,0.0
+Multi-Choice Question Answering,2,0.0
+Question Answering (Document Visual Question Answering),2,0.0
+Claim Detection,2,0.0
+Replanning,2,0.0
+Embedding Training,2,0.0
+Authorship Verification,2,0.0
+Authorship Identification,2,0.0
+Text Continuation,2,0.0
+Speech Quality Assessment,2,0.0
+Clarification Question Generation,2,0.0
+Structured Prediction,2,0.0
+Machine-generated Text Detection,2,0.0
+Offensive Language Identification,2,0.0
+Premise Selection,2,0.0
+Multi-label Text Classification,2,0.0
+Language Model Pre-training,2,0.0
+Benchmark Generation,2,0.0
+Automatic Program Repair,2,0.0
+Opponent Modeling,2,0.0
+Sequential Decision-Making,2,0.0
+Prompt Engineering,2,0.0
+Character Detection,2,0.0
+Table-to-Text Generation,2,0.0
+Semantic Similarity,2,0.0
+Meta-review Generation,2,0.0
+Faithfulness Evaluation,2,0.0
+Handwritten Mathematical Expression Recognition,2,0.0
+Genre Classification,2,0.0
+Event Argument Extraction,2,0.0
+Attribute Extraction,2,0.0
+Pronoun Resolution,2,0.0
+Math Word Problem Solving,2,0.0
+Text Rewriting,2,0.0
+Bias Mitigation,2,0.0
+Fine-grained Classification,2,0.0
+Retrosynthesis,2,0.0
+Visual Commonsense Reasoning,2,0.0
+Instruction Understanding,2,0.0
+Instrument Classification,2,0.0
+Object Positioning,2,0.0
+Celebrity Recognition,2,0.0
+Landmark Recognition,2,0.0
+Model Calibration,2,0.0
+Domain Identification,2,0.0
+Text Clustering,2,0.0
+Motion Planning,2,0.0
+Temporal Understanding,2,0.0
+Video Reasoning,2,0.0
+Fine-tuning,2,0.0
+Proof Writing,2,0.0
+Instance Identity,2,0.0
+Instance Location,2,0.0
+Instance Interaction,2,0.0
+Procedure Understanding,2,0.0
+Language Generation,2,0.0
+Interactive Decision Making,2,0.0
+Dataset Augmentation,2,0.0
+Dataset Generation,2,0.0
+Cultural Understanding,2,0.0
+Shape Recognition,2,0.0
+Table Understanding,2,0.0
+Complex Instruction Following,2,0.0
+Source Attribution,2,0.0
+Information Update,2,0.0
+Python Programming,2,0.0
+Factual Consistency Evaluation,2,0.0
+Game Strategy Evaluation,2,0.0
+Legal Consultation,2,0.0
+Continual Learning Evaluation,2,0.0
+Multiple Choice,2,0.0
+Few-Shot Learning,2,0.0
+Clickbait Detection,2,0.0
+Language Modelling,2,0.0
+Safety Detection,2,0.0
+Moral Judgment,2,0.0
+Model Compression Evaluation,2,0.0
+Hierarchical Classification,2,0.0
+Fallacy Detection,2,0.0
+Embodied Planning,2,0.0
+Object Existence,2,0.0
+Action Count,2,0.0
+Egocentric Navigation,2,0.0
+Chart Understanding,2,0.0
+Strategic Decision Making,2,0.0
+Information Gathering,2,0.0
+Model Training,2,0.0
+Conversation Generation,2,0.0
+Next Utterance Prediction,2,0.0
+Visual Dialogue,2,0.0
+Tool Utilization Evaluation,2,0.0
+Reasoning Tasks,2,0.0
+Conversational Ability Assessment,2,0.0
+Feature Engineering,2,0.0
+Correlation Analysis,2,0.0
+Citation Prediction,2,0.0
+Argument Retrieval,2,0.0
+Discourse Analysis,2,0.0
+Aesthetic Empathy,2,0.0
+Risk Identification,2,0.0
+Captioning,2,0.0
+Assessment,2,0.0
+Bug Localization,2,0.0
+Optical Character Recognition (OCR),2,0.0
+Face Anti-Spoofing,2,0.0
+Attack Evaluation,2,0.0
+Grasping,2,0.0
+Molecule Generation,2,0.0
+Clinical Diagnosis,2,0.0
+Impact Estimation,2,0.0
+Cultural Analysis,2,0.0
+Structured Data Reasoning,2,0.0
+Language Comprehension,2,0.0
+Offensiveness Detection,2,0.0
+General Reasoning,2,0.0
+Clinical Reasoning,2,0.0
+Response Selection,2,0.0
+Remaining Useful Life Prediction,2,0.0
+Process Discovery,2,0.0
+Root Cause Analysis,2,0.0
+Mathematical Reasoning Evaluation,2,0.0
+Scenario Evaluation,2,0.0
+Object Retrieval,2,0.0
+Offensive Speech Detection,2,0.0
+Math,2,0.0
+Retrieval-Augmented Generation,2,0.0
+Multiple Choice Questions,2,0.0
+Document Ranking,2,0.0
+Hint Generation,2,0.0
+Defect Detection,2,0.0
+Query Answering,2,0.0
+Task Coordination,2,0.0
+Summarization Evaluation,2,0.0
+Grapheme-to-Phoneme Conversion,2,0.0
+Vulnerability Evaluation,2,0.0
+Open-ended Generation,2,0.0
+Action Grounding,2,0.0
+Audio Understanding,2,0.0
+Function Name Recovery,2,0.0
+Skill Assessment,2,0.0
+Labor Market Analysis,2,0.0
+Vulnerability Testing,2,0.0
+Truthfulness,2,0.0
+Cross-Lingual Question Answering,2,0.0
+Rating Prediction,2,0.0
+Computer Vision,2,0.0
+Data Retrieval,2,0.0
+Netlist Generation,2,0.0
+Claim Matching,2,0.0
+Tool Retrieval,2,0.0
+Linguistic Understanding,2,0.0
+Legal Research,2,0.0
+Image Geolocation,2,0.0
+Action Order,2,0.0
+Moral Reasoning Evaluation,2,0.0
+Risk Evaluation,2,0.0
+Behavioral Analysis,2,0.0
+Editing,2,0.0
+Tool Usage,2,0.0
+Image Reasoning,2,0.0
+Decision-Making,2,0.0
+Multi-Agent Interaction,2,0.0
+Compliance Assessment,2,0.0
+Privacy Evaluation,2,0.0
+Reward Modeling,2,0.0
+Preference Learning,2,0.0
+Multi-Image Understanding,2,0.0
+Object Classification,2,0.0
+Cultural Knowledge Assessment,2,0.0
+Structural Analysis,2,0.0
+Veracity Classification,2,0.0
+Document Layout Detection,2,0.0
+Medical Calculation,2,0.0
+Destination Node Retrieval,2,0.0
+Puzzle Solving,2,0.0
+Knowledge Unlearning Evaluation,2,0.0
+Deductive Reasoning,2,0.0
+Personality Assessment,2,0.0
+Rule Learning,2,0.0
+Audio Question Answering,2,0.0
+SQL Generation,2,0.0
+Comparison,2,0.0
+Chain of Reasoning,2,0.0
+Character Simulation,2,0.0
+Spatio-Temporal Reasoning,2,0.0
+Text-to-SQL Generation,2,0.0
+Timeline Generation,2,0.0
+Dataset Distillation,2,0.0
+Explainable AI,2,0.0
+Verilog Code Generation,2,0.0
+Explanation,2,0.0
+Brainstorming,2,0.0
+Sound Event Detection,2,0.0
+Motion Prediction,2,0.0
+Fault Diagnosis,2,0.0
+Fact Recall,2,0.0
+Machine Learning,2,0.0
+Relation Judgment,2,0.0
+Visual Understanding,2,0.0
+Medical Language Understanding,2,0.0
+Text Correction,2,0.0
+Nutrition Estimation,2,0.0
+Comparative Reasoning,2,0.0
+Epitope Prediction,2,0.0
+Task Evaluation,2,0.0
+Layout Generation,2,0.0
+Resource Allocation,2,0.0
+Discriminative Tasks,2,0.0
+Generative Tasks,2,0.0
+Value Alignment Evaluation,2,0.0
+Mathematics Problem Solving,2,0.0
+Moral Evaluation,2,0.0
+Metaphor Classification,2,0.0
+Function Calling,2,0.0
+Prompt Optimization,2,0.0
+Visual Perspective Taking,2,0.0
+Ontology Matching,2,0.0
+Panoptic Segmentation,2,0.0
+Alignment Evaluation,2,0.0
+Open-Ended Question Answering,2,0.0
+Intent Analysis,2,0.0
+Information Integration,2,0.0
+Inference,2,0.0
+Dialect Analysis,2,0.0
+Motion Generation,2,0.0
+Code Reasoning,2,0.0
+ToM Reasoning,2,0.0
+Autoformalization,2,0.0
+Membership Inference,2,0.0
+Image Restoration,2,0.0
+Preference Optimization,2,0.0
+Personalized Recommendation,2,0.0
+Document Question Answering,2,0.0
+Optimization,2,0.0
+Experiment Design,2,0.0
+Reranking,2,0.0
+Narrative Understanding,2,0.0
+Scene Perception,2,0.0
+Data Manipulation,2,0.0
+Distance Estimation,2,0.0
+Resource Management,2,0.0
+Circuit Design,2,0.0
+Event Prediction,2,0.0
+Threat Detection,2,0.0
+Medical Visual Question Answering,2,0.0
+Treatment Planning,2,0.0
+Physical Commonsense Reasoning,2,0.0
+Critique Generation,2,0.0
+Unit Test Generation,2,0.0
+Anomaly Classification,2,0.0
+Heuristic Evaluation,2,0.0
+Coordination,2,0.0
+Numerical Inference,2,0.0
+Software Development,2,0.0
+Image Analysis,2,0.0
+Humor Explanation,2,0.0
+Paper Writing,2,0.0
+Stock Trading,2,0.0
+Semantic Understanding,2,0.0
+Temporal Localization,2,0.0
+Existence,2,0.0
+Knowledge Retention Assessment,2,0.0
+Age Estimation,2,0.0
+Crowd Counting,2,0.0
+Travel Planning,2,0.0
+Relative Distance,2,0.0
+Error Localization,2,0.0
+Spatial Video Grounding,2,0.0
+Prompt Injection Detection,2,0.0
+Model Attribution,2,0.0
+Multi-turn Conversation Evaluation,2,0.0
+Education,2,0.0
+Memory Recall,2,0.0
+Comparative Analysis,2,0.0
+Empathetic Response Generation,2,0.0
+Spatial Grounding,2,0.0
+Scene Text Recognition,2,0.0
+Multimodal Content Generation,2,0.0
+Cultural Sensitivity Evaluation,2,0.0
+Disease Classification,2,0.0
+Aggregation,2,0.0
+Scene Graph Generation,2,0.0
+Error Type Classification,2,0.0
+Pattern Recognition,2,0.0
+Error Diagnosis,2,0.0
+Video Classification,2,0.0
+Needle-in-a-Haystack,2,0.0
+Dialogue Analysis,2,0.0
+Mobile Manipulation,2,0.0
+Video-Text Alignment,2,0.0
+Reasoning Segmentation,2,0.0
+Machine Unlearning,2,0.0
+Requirements Elicitation,2,0.0
+RTL Code Generation,2,0.0
+Image Forgery Detection,2,0.0
+Cultural Competence Evaluation,2,0.0
+Multi-Image Question Answering,2,0.0
+Video Analysis,2,0.0
+Program Execution,2,0.0
+Route Planning,2,0.0
+Portfolio Management,2,0.0
+Attribute Recognition,2,0.0
+Logic,2,0.0
+Feature Addition,2,0.0
+Color Recognition,2,0.0
+Evaluation,2,0.0
+Description,2,0.0
+Data Collection,2,0.0
+Bitext Mining,2,0.0
+Future Prediction,2,0.0
+Patent Classification,2,0.0
+Patent Retrieval,2,0.0
+Unlearning Evaluation,2,0.0
+3D Spatial Reasoning,2,0.0
+Geometric Reasoning,2,0.0
+Moment Retrieval,2,0.0
+Metadata Extraction,2,0.0
+Cultural Knowledge Evaluation,2,0.0
+Text Anonymization,2,0.0
+Social Intelligence Evaluation,2,0.0
+Affinity Prediction,2,0.0
+Schema Matching,2,0.0
+Dataset Inference,2,0.0
+Argument Summarization,2,0.0
+Compositional Generalization,2,0.0
+Energy Consumption Analysis,2,0.0
+Multimodal Retrieval,2,0.0
+Facial Motion Generation,2,0.0
+Vulnerability Assessment,2,0.0
+Hallucination Evaluation,2,0.0
+Cultural Reasoning,2,0.0
+Action Classification,2,0.0
+Highlight Detection,2,0.0
+Multi-Modal Reasoning,2,0.0
+Nutritional Estimation,2,0.0
+Conversational Analysis,2,0.0
+Psychometric Evaluation,2,0.0
+Engineering Problem Solving,2,0.0
+Knowledge Understanding,2,0.0
+Knowledge Calculation,2,0.0
+Malware Analysis,2,0.0
+Threat Intelligence Reasoning,2,0.0
+List/Set Retrieval,1,0.0
+Negation Handling,1,0.0
+Indefinite Knowledge Handling,1,0.0
+Deduction,1,0.0
+Induction,1,0.0
+Size Reasoning,1,0.0
+Argument Role Identification,1,0.0
+Response Selection (Next Utterance Selection),1,0.0
+Next Utterance Classification,1,0.0
+Multi-turn Dialogue Modeling,1,0.0
+Machine Reading / Reading Comprehension,1,0.0
+Dialogue (Chit-chat),1,0.0
+Conversational multi-turn Question Answering / Recommendation,1,0.0
+Ambiguity Resolution,1,0.0
+Sentence-Video Matching,1,0.0
+Visual Sense Disambiguation,1,0.0
+Image Sequence Description,1,0.0
+Image/Video Captioning,1,0.0
+Visual Content Captioning,1,0.0
+Constituency Parsing,1,0.0
+Dependency Extraction,1,0.0
+Text Classification (Patent Subject Classification),1,0.0
+Hashtag Recommendation,1,0.0
+Image Annotation,1,0.0
+Span-based Answer Extraction,1,0.0
+Knowledge-based Question Answering,1,0.0
+Supporting-fact retrieval,1,0.0
+Morphological Annotation,1,0.0
+Lemma Extraction,1,0.0
+Corpus Search and Retrieval,1,0.0
+Question Answering (answerability detection and answer extraction/synthesis),1,0.0
+Answer Generation (well-formed answer generation),1,0.0
+Passage Ranking (passage re-ranking),1,0.0
+Event Coding (CAMEO),1,0.0
+Geolocation of events,1,0.0
+Entity Disambiguation and Linking,1,0.0
+Machine Comprehension,1,0.0
+Multi-label Image Classification,1,0.0
+Object Detection/Localization,1,0.0
+Named Entity Recognition (clinical radiology reports),1,0.0
+Program Induction,1,0.0
+Cross-document Entity-Event Extraction,1,0.0
+Entity-Event Database Population,1,0.0
+Entity Classification (binary: person killed by police),1,0.0
+Token-level product extraction,1,0.0
+Argumentation Mining,1,0.0
+Claim and Evidence Detection,1,0.0
+User Intent Classification,1,0.0
+Online Testing of Task-oriented Dialogue,1,0.0
+Reading Comprehension (Multi-hop / Cross-document),1,0.0
+Data Extraction (auxiliary: reconstructing numerical data from figures),1,0.0
+Abnormality Localization,1,0.0
+Answer Selection (Ranking),1,0.0
+Stimulus Development,1,0.0
+Parallel Corpus Construction,1,0.0
+Document-level Sentiment Classification,1,0.0
+Sentence-level Sentiment Classification,1,0.0
+Aspect/Entity Extraction (target and opinion word annotation),1,0.0
+De-identification,1,0.0
+Image-to-Text Generation,1,0.0
+Multihop Reasoning,1,0.0
+Aspect-level Sentiment Analysis,1,0.0
+Code Annotation,1,0.0
+Question-Code Pairing,1,0.0
+Array Synchronization,1,0.0
+Bias Evaluation (diagnostic evaluation),1,0.0
+Text Classification (Paper acceptance prediction),1,0.0
+Regression (Review aspect score prediction),1,0.0
+Grammatical Error Detection and Correction,1,0.0
+Computer-aided Language Learning,1,0.0
+Spellchecking,1,0.0
+L1 interference analysis,1,0.0
+Clause Type Classification,1,0.0
+Numerical Value Prediction (regression-style evaluation on number line),1,0.0
+Word Representation Learning,1,0.0
+Relation Extraction in Word Embeddings,1,0.0
+Measuring Distributional Similarity,1,0.0
+Response Selection (Multi-turn Retrieval-based Response Matching),1,0.0
+Multi-turn Conversation Modeling,1,0.0
+Sentence Completion,1,0.0
+Commonsense Reasoning (grounded),1,0.0
+Natural Language Inference (Recognizing Textual Entailment),1,0.0
+Dialog Systems,1,0.0
+Conversational Machine Comprehension,1,0.0
+Music Style Classification,1,0.0
+Age Classification,1,0.0
+Natural Language Inference (Entailment),1,0.0
+Dialog-based Question Answering,1,0.0
+Sentence transformation (question-answer pair to declarative sentence),1,0.0
+Supporting Fact Prediction,1,0.0
+Evaluation of interpretability (human-in-the-loop),1,0.0
+Chinese Word Segmentation,1,0.0
+Social Network Analysis,1,0.0
+Prerequisite Relation Learning,1,0.0
+Diachronic Language Analysis,1,0.0
+General corpus-based statistical analysis,1,0.0
+Entity Typing,1,0.0
+Ontology Extraction,1,0.0
+Sentence Alignment,1,0.0
+Parallel Corpus Creation,1,0.0
+Arithmetic (addition/subtraction),1,0.0
+Comparison/Sorting,1,0.0
+Dataset construction for Speech Recognition,1,0.0
+Cause-Emotion-Action Relation Extraction (Emotion Causality),1,0.0
+Emotion Inference,1,0.0
+Entailment Detection,1,0.0
+Multiple-choice Sentence Completion,1,0.0
+Confidence Calibration,1,0.0
+Sequential Decision-Making (Incremental Classification / Answer Triggering),1,0.0
+Semantic Frame Disambiguation,1,0.0
+Punchline Detection,1,0.0
+Binary Classification (Fake News Detection),1,0.0
+Contradiction Detection,1,0.0
+Multiple-choice Commonsense Inference,1,0.0
+Strongly contextualised,1,0.0
+Weakly contextualised,1,0.0
+Open vocabulary,1,0.0
+Nested Named Entity Recognition,1,0.0
+Text Generation (Explanation Generation),1,0.0
+Text Classification (S-class prediction at word/type level),1,0.0
+Ambiguity Detection (predict whether a word is single-sense or multi-sense),1,0.0
+Word Sense Representation Evaluation (probing),1,0.0
+Question Answering (Multi-choice),1,0.0
+Document Multi-label Classification,1,0.0
+Scene Categorization,1,0.0
+Table Detection,1,0.0
+Transfer Learning,1,0.0
+Question Answering (retrieval of code snippets),1,0.0
+Follow-up Question Generation,1,0.0
+Dialogue Turn Classification,1,0.0
+Generative Hate Speech Intervention (Response Generation),1,0.0
+Hate Speech Detection (Text Classification),1,0.0
+Text Classification (Revision Improvement: Better vs NotBetter),1,0.0
+Argument Prediction,1,0.0
+Yes/No/Maybe Classification,1,0.0
+Full code generation,1,0.0
+API sequence generation,1,0.0
+Text Generation (Counter-argument generation),1,0.0
+Text Classification (Fallacy type classification),1,0.0
+Cross-lingual evaluation (cross-lingual transfer and generalized cross-lingual transfer),1,0.0
+Dialogue Response Retrieval,1,0.0
+Embedding (Job Title Embedding / Representation Learning),1,0.0
+Entailment (multi-sentence entailment),1,0.0
+Answerability Identification (binary classification),1,0.0
+Tower Creation,1,0.0
+Laundry Layout,1,0.0
+Dialogue Response Selection (Retrieval),1,0.0
+Context Modeling,1,0.0
+Conversational Implicature Identification,1,0.0
+Dialogue Generation / Synthesis,1,0.0
+Image Synthesis from Text,1,0.0
+Face Generation,1,0.0
+Physical commonsense reasoning,1,0.0
+Word-level Language Modeling,1,0.0
+Character-level Language Modeling,1,0.0
+Word embedding training / Transfer Learning,1,0.0
+Morphological Tagging,1,0.0
+Conversation Response Ranking,1,0.0
+Conversation Response Generation,1,0.0
+User Intent Prediction,1,0.0
+Geolocation / Geo-parsing,1,0.0
+Temporal Information Extraction,1,0.0
+Mobility Modeling,1,0.0
+Transfer Learning Evaluation (cross-dataset classification),1,0.0
+Recommender Systems,1,0.0
+Dialogue Policy Learning,1,0.0
+User Simulation,1,0.0
+Patient Phenotyping,1,0.0
+Passage Selection,1,0.0
+Minimal Answer Span,1,0.0
+Gold Passage (simplified SQuAD-style compatibility task),1,0.0
+Lexical Complexity Prediction,1,0.0
+Complex Word Identification,1,0.0
+Support for Text Simplification evaluation,1,0.0
+Question Answering (Span Extraction),1,0.0
+Parallel Sentence Extraction,1,0.0
+Adverse Drug Reaction identification,1,0.0
+Natural Language Processing of issue comments,1,0.0
+Analysis of Developer Activity (weekly and daily work patterns),1,0.0
+Language Modeling for Software Engineering,1,0.0
+Text Classification (News Classification),1,0.0
+Question Answering (MLQA),1,0.0
+Natural Language Inference (XNLI),1,0.0
+Paraphrase Identification (PAWS-X),1,0.0
+Ad Relevance Classification (Query-Ad Matching),1,0.0
+Document/Web Page Ranking,1,0.0
+Question-Answer Pair Classification,1,0.0
+News Title Generation,1,0.0
+Role Modeling (Role-conditioned Dialog Generation),1,0.0
+Role Change Detection (Speaker change detection),1,0.0
+Open-domain Dialogue Modeling,1,0.0
+Spoken Document Retrieval,1,0.0
+Text-based Personality Prediction,1,0.0
+Age Prediction (Regression),1,0.0
+Gender Classification (Text Classification),1,0.0
+Region/Geolocation Classification,1,0.0
+MBTI/Enneagram Classification,1,0.0
+Information Propagation Analysis,1,0.0
+User Influence Analysis,1,0.0
+Direct Citation Prediction (ranking),1,0.0
+Co-Citation Prediction (ranking),1,0.0
+User Activity Prediction (Co-Views ranking),1,0.0
+User Activity Prediction (Co-Reads ranking),1,0.0
+Recommendation (ranking with clickthrough data),1,0.0
+Bias Measurement (Stereotypical Bias Evaluation / Ranking of associative contexts),1,0.0
+Question Rewriting / Question Disambiguation,1,0.0
+Text Classification (data practice classification),1,0.0
+Question Answering (answer sentence selection),1,0.0
+Document Classification (privacy policy detection),1,0.0
+Readability Analysis,1,0.0
+Passage Retrieval / Sentence Ranking,1,0.0
+Dialogue Modeling,1,0.0
+Single-turn Response Generation,1,0.0
+Answer Span Extraction,1,0.0
+Subjectivity Classification,1,0.0
+Controllable Generation,1,0.0
+Key Clip Selection (Temporal Localization),1,0.0
+Common-sense Reasoning,1,0.0
+Masked Word Prediction,1,0.0
+Sentence Probability,1,0.0
+Sentence-level / Clause-level Research Aspect Classification,1,0.0
+Retrieval Question Answering,1,0.0
+Sentence-level Answer Retrieval,1,0.0
+Information Extraction (evidence span extraction / evidence identification),1,0.0
+Conversational Response Generation,1,0.0
+Evaluation/testing of KBQA systems,1,0.0
+Argument Component Classification,1,0.0
+Specificity Classification,1,0.0
+Collaboration Classification (turn-level),1,0.0
+Argumentative vs Non-Argumentative Classification,1,0.0
+Segmentation into Argument Discourse Units,1,0.0
+Task assignment,1,0.0
+User analysis,1,0.0
+Project analysis,1,0.0
+Software development analysis,1,0.0
+Word Similarity (Intrinsic Evaluation),1,0.0
+Natural Language Understanding (GLUE downstream tasks),1,0.0
+Named Entity Recognition (including nested/non-named entities),1,0.0
+Discourse Parsing (Rhetorical Structure Theory),1,0.0
+Single-word Transliteration,1,0.0
+Full-sentence Transliteration,1,0.0
+Evidence-based medicine summarization,1,0.0
+Temporal tracking of guideline changes,1,0.0
+Federated Learning,1,0.0
+Grounded Language Learning,1,0.0
+POS Tagging,1,0.0
+Clause Segmentation,1,0.0
+Sentence Segmentation,1,0.0
+Fine-grained Recognition,1,0.0
+Fake Claim Detection,1,0.0
+Open Domain Question Answering,1,0.0
+Span Extraction,1,0.0
+Post-hoc explanation generation,1,0.0
+Joint question answering and explanation generation,1,0.0
+Slot Tagging,1,0.0
+Keyphrase Generation,1,0.0
+Precondition Identification,1,0.0
+Precondition Generation,1,0.0
+Advice Identification,1,0.0
+Question Rewriting,1,0.0
+Cross-Lingual Evaluation,1,0.0
+Tweet Verification,1,0.0
+Red Flag Detection,1,0.0
+Cross-lingual Document Retrieval,1,0.0
+Text Corpus Generation,1,0.0
+Cultural Norm Analysis,1,0.0
+Argument Mining,1,0.0
+Word Embedding Evaluation,1,0.0
+Question Paraphrasing,1,0.0
+Abbreviation Disambiguation,1,0.0
+Mortality Prediction,1,0.0
+Populist Attitude Detection,1,0.0
+Syntax Tree-depth Prediction,1,0.0
+Grammatical Case Marking,1,0.0
+Subject-Verb Agreement,1,0.0
+Conversational AI,1,0.0
+Topic Modelling,1,0.0
+Fluency Correction,1,0.0
+Action State Tracking,1,0.0
+Cascading Dialogue Success,1,0.0
+Factual Consistency Assessment,1,0.0
+Incorrect Answer Generation,1,0.0
+Minimal Text Modification,1,0.0
+Sequence-to-Sequence Generation,1,0.0
+Text-Guided Image Manipulation,1,0.0
+Political Affiliation Classification,1,0.0
+Attribution Assessment,1,0.0
+Evidence Selection,1,0.0
+Natural Language Explanation Generation,1,0.0
+Scene Completion,1,0.0
+Modal Sense Classification,1,0.0
+Modality Detection and Classification,1,0.0
+Modal-Event Detection,1,0.0
+Document Summarization,1,0.0
+Semantic Change Detection,1,0.0
+Word Relatedness,1,0.0
+Program Translation,1,0.0
+Function Translation,1,0.0
+Sentence Position Prediction,1,0.0
+Plot Completion,1,0.0
+Outline-conditioned Generation,1,0.0
+Idiomaticity Detection,1,0.0
+Idiomaticity Representation,1,0.0
+Character Description Generation,1,0.0
+Proverb Recommendation,1,0.0
+Alignment Prediction,1,0.0
+Identifying Similar Narratives,1,0.0
+Multimodal Dialog,1,0.0
+Grounding Span Generation,1,0.0
+Agent Response Generation,1,0.0
+Syntactic Sensitivity Probing,1,0.0
+Text Perturbation Analysis,1,0.0
+Fact Linking,1,0.0
+Multilabel Classification,1,0.0
+Cross-lingual Learning,1,0.0
+Sentence Relatedness,1,0.0
+Controlled Text Generation,1,0.0
+Post-Editing,1,0.0
+Patch Analysis,1,0.0
+Security Program Analysis,1,0.0
+Reasoning Challenge,1,0.0
+Structure-to-Text Generation,1,0.0
+Text Annotation,1,0.0
+Semantic Highlighting,1,0.0
+Materials Synthesis Analysis,1,0.0
+Data-Driven Materials Discovery,1,0.0
+Self-Supervised Learning,1,0.0
+Synonym Prediction,1,0.0
+Biomedical Text Mining,1,0.0
+Cognate Detection,1,0.0
+False Friend Detection,1,0.0
+Morpheme Boundary Detection,1,0.0
+Grammatical Feature Tagging,1,0.0
+Question Retrieval,1,0.0
+Plagiarism Detection,1,0.0
+Argumentative Writing,1,0.0
+Diacritics Restoration,1,0.0
+Part-of-speech Tagging,1,0.0
+Emotion Attribution,1,0.0
+Enzyme or Non-enzyme Annotation,1,0.0
+Multifunctional Enzyme Prediction,1,0.0
+EC Number Prediction,1,0.0
+Binary Classification (Hate Speech Detection),1,0.0
+Style Change Detection,1,0.0
+Text Classification (Character Archetype Classification),1,0.0
+Lemmatisation,1,0.0
+Linguistic Normalisation,1,0.0
+OCR Post-correction,1,0.0
+Monolingual Summarization,1,0.0
+Masked Language Modeling (Cloze completion),1,0.0
+Entity Distinction,1,0.0
+Statement Checking,1,0.0
+Predicate Reasoning,1,0.0
+3D Medical Image Segmentation,1,0.0
+Adversarial Example Detection,1,0.0
+Classification (biological sex classification),1,0.0
+Self-Supervised Learning (temporal context prediction),1,0.0
+Representation Learning,1,0.0
+Passage Reranking,1,0.0
+Outcome Detection (token-level outcome phrase extraction),1,0.0
+Token-level Sequence Labeling,1,0.0
+Outcome Type Classification,1,0.0
+Process Model Extraction from Text,1,0.0
+Phonological Property Recognition (classification),1,0.0
+Flexion classification,1,0.0
+Major location classification,1,0.0
+Minor location classification,1,0.0
+Movement classification,1,0.0
+Selected fingers classification,1,0.0
+Sign type classification,1,0.0
+Speech Translation,1,0.0
+Out-of-domain Automatic Speech Recognition,1,0.0
+Speech Separation,1,0.0
+Legal Topic Classification,1,0.0
+Crime Severity Prediction,1,0.0
+Implicit Hate / Microaggression Detection,1,0.0
+Robustness Evaluation of Toxicity Classifiers,1,0.0
+Machine Translation (emergent to natural language),1,0.0
+Visual Abductive Reasoning,1,0.0
+Dense Video Captioning,1,0.0
+Text Classification (Cultural Background Prediction),1,0.0
+Sentence-level Relation Extraction,1,0.0
+Historical / phylogenetic analysis of texts,1,0.0
+Reading Comprehension Assessment,1,0.0
+Ordinal Regression,1,0.0
+Crisis awareness,1,0.0
+Emotion recognition,1,0.0
+Hateful and offensive language detection,1,0.0
+Humor detection,1,0.0
+Irony detection,1,0.0
+Sarcasm detection,1,0.0
+Offensive language detection,1,0.0
+Stance detection,1,0.0
+Corpus-level Triples Extraction,1,0.0
+Sentence-level Relation Detection,1,0.0
+Sequence Classification,1,0.0
+Token-wise Soft Skill Detection,1,0.0
+Part of Speech tagging,1,0.0
+Text Classification (paragraph classification),1,0.0
+Synthesis recipe extraction,1,0.0
+Morphology and size entity extraction,1,0.0
+Time-related language change analysis,1,0.0
+Political language analysis / text analysis,1,0.0
+Abbreviation Detection,1,0.0
+Eye Movement Prediction,1,0.0
+Reading Behavior Analysis,1,0.0
+Free-form Answer Generation,1,0.0
+N-ary Relation Extraction,1,0.0
+Euphemism Detection,1,0.0
+Euphemism Identification,1,0.0
+Review Rating Prediction,1,0.0
+Causal Emotion Span Extraction,1,0.0
+Causal Emotion Entailment,1,0.0
+Dialogue-level Natural Language Inference,1,0.0
+Dialogue Reasoning Span Extraction,1,0.0
+Dialogue Reasoning Multiple Choice,1,0.0
+Commonsense Relation Extraction,1,0.0
+Adversarial Response Selection,1,0.0
+Personality Detection,1,0.0
+Emotion Recognition (MELD),1,0.0
+Emotion Recognition (EmoryNLP),1,0.0
+Word Recognition,1,0.0
+Line Recognition,1,0.0
+End-to-End Page OCR,1,0.0
+Morphological annotation,1,0.0
+Glossing,1,0.0
+Dialog State Tracking,1,0.0
+Response Retrieval,1,0.0
+Constraint Satisfaction / Puzzle Solving,1,0.0
+Object Rearrangement,1,0.0
+Manipulation (Pick-and-Place),1,0.0
+Commonsense Reasoning (physical/embodied),1,0.0
+Temporal Adaptation Evaluation,1,0.0
+Fact Tracing,1,0.0
+Training Data Attribution,1,0.0
+Retrieval / Reranking of proponent training examples,1,0.0
+Deductive Reasoning (theory-statement entailment),1,0.0
+"Natural Language Inference (3-class entailment classification: True, False, Unknown)",1,0.0
+Abbreviation Sense Disambiguation (classification / multiple-choice),1,0.0
+Span Identification / Multi-span Extraction (token-level sequence labeling),1,0.0
+Coreference Resolution (span identification),1,0.0
+Named Entity Recognition (medication extraction) + Status Classification,1,0.0
+"Relation Extraction (medication attributes: dosage, route, frequency, reason, duration)",1,0.0
+Evaluation of Concept-based Explanation Methods (causal effect estimation),1,0.0
+Personality Recognition in Conversations,1,0.0
+Emotion Recognition in Conversations,1,0.0
+Personalized and Emotional Conversation Generation,1,0.0
+Language Modeling (Next Token Prediction),1,0.0
+Word Embedding (Word Vectors),1,0.0
+Hate Speech Identification (Binary Classification),1,0.0
+Hate Speech Target Identification (Multi-label Classification),1,0.0
+Hate Speech Type Categorization (Multi-label Classification),1,0.0
+Protein Function Prediction,1,0.0
+Protein Localization Prediction,1,0.0
+Protein-Ligand Interaction Prediction,1,0.0
+Multi-task Learning Evaluation,1,0.0
+Language Identification (token-level),1,0.0
+Borrowing detection / Codeswitching classification,1,0.0
+Open-ended Commonsense Reasoning,1,0.0
+Multi-span Extraction,1,0.0
+Document Classification (Will the document be updated?),1,0.0
+"Document-level Multi-class Classification (Predict binned counts of Additions, Deletions, Edits, Refactors)",1,0.0
+"Sentence-level Classification (Edit Action Prediction: Addition, Deletion, Edit, Refactor; Refactor direction; Addition above/below)",1,0.0
+Key-Value Extraction,1,0.0
+Information Retrieval (claim retrieval),1,0.0
+Verdict-conditioned Program Repair,1,0.0
+Chain Edit Suggestion,1,0.0
+Poisoned Sample Detection,1,0.0
+Plan Generation,1,0.0
+Cost Optimal Planning,1,0.0
+Plan Verification,1,0.0
+Reasoning about Plan Execution,1,0.0
+Robustness to Goal Reformulation,1,0.0
+Ability to Reuse Plans,1,0.0
+Plan Generalization,1,0.0
+Data-to-Text,1,0.0
+Simplification,1,0.0
+Slide Generation,1,0.0
+Dialogic Instruction Detection,1,0.0
+Dataset Explanation,1,0.0
+Distribution Shift Explanation,1,0.0
+Pre-training of Language Models,1,0.0
+Binary Classification (True/False forecasting),1,0.0
+Numerical Prediction,1,0.0
+Calibration (probabilistic forecasting),1,0.0
+Text Classification (Pseudonymity Prediction),1,0.0
+Toxicity Classification / Filtering Evaluation,1,0.0
+Object presence recognition,1,0.0
+Attribute recognition/classification,1,0.0
+Relation recognition/classification (spatial and action relations),1,0.0
+Language Model Personalization,1,0.0
+Hierarchy Extraction,1,0.0
+Section Extraction,1,0.0
+Human Identification,1,0.0
+Toxic Comment Classification,1,0.0
+Harmful Content Detection,1,0.0
+Discrete Reasoning,1,0.0
+Normalization (mapping entities to coded representations),1,0.0
+Negation Detection,1,0.0
+Query Generation / Semantic Parsing,1,0.0
+Story State Inference (classification),1,0.0
+Story Revision for Counterfactual States (generative story revision),1,0.0
+State Change Generation (generative state-pair generation),1,0.0
+Zero-shot Image Classification,1,0.0
+Robustness Evaluation / Out-of-distribution Evaluation (distribution shift),1,0.0
+Moral Sentiment Detection,1,0.0
+Popularity Prediction (predicting popular tweets),1,0.0
+Retweet Pattern Analysis,1,0.0
+Tweet Ranking,1,0.0
+Content Value Analysis,1,0.0
+Credibility Assessment,1,0.0
+Conspiracy Detection,1,0.0
+Emoji Prediction,1,0.0
+Relevance Ranking,1,0.0
+Satire Detection,1,0.0
+Topic Extraction,1,0.0
+User Characterization,1,0.0
+Demographic Inference,1,0.0
+Causal Sequence Classification,1,0.0
+Cause-Effect Span Detection,1,0.0
+Causal Pair Classification,1,0.0
+Bankruptcy Prediction,1,0.0
+Speech-to-Text (Transcription),1,0.0
+Pre-training / Fine-tuning Language Models,1,0.0
+Keyword Generation,1,0.0
+Text Classification (Category Classification),1,0.0
+Text Classification (Discipline Classification),1,0.0
+Word-in-Context Classification,1,0.0
+Meaning Shift Detection,1,0.0
+Supporting-fact Identification,1,0.0
+Relevance Classification,1,0.0
+Span Extraction (extractive QA),1,0.0
+Query-focused Summarization,1,0.0
+Semantic Tagging,1,0.0
+Text Summarization (short description generation),1,0.0
+Candidate Ranking (ranking generated candidate descriptions),1,0.0
+Sentiment Analysis (distribution comparison / sentiment correlation),1,0.0
+Question Answering (abstractive),1,0.0
+Generative Commonsense,1,0.0
+Extractive Summarization (Entry Extraction),1,0.0
+Multi-label Text Classification (Entry Classification),1,0.0
+Fluency Evaluation,1,0.0
+Language Modeling (Masked Language Modeling probability comparison),1,0.0
+Sign Language Production,1,0.0
+Sign Language Comprehension,1,0.0
+Domain Adaptation,1,0.0
+Point Cloud Completion,1,0.0
+Image Super-Resolution,1,0.0
+Entity Linking with True Spans,1,0.0
+End to End Entity Linking,1,0.0
+Image-Text Representation Learning,1,0.0
+Zero-Shot Image Classification,1,0.0
+Few-shot / Transfer Learning,1,0.0
+Fine-tuning Pretrained Models,1,0.0
+Question Answering (forecasting QA),1,0.0
+Multi-step Forecasting,1,0.0
+Multivariate Time Series Forecasting,1,0.0
+Bias Detection (Binary Text Classification),1,0.0
+Bias Category Detection (Multi-label Text Classification),1,0.0
+Target Generation (Text Generation),1,0.0
+Implication Generation (Text Generation),1,0.0
+Commonsense Fact Linking,1,0.0
+Text Classification (Binary Acceptability Classification),1,0.0
+Evaluation of Language Generation,1,0.0
+Ranking (Predicting Winning Punchline),1,0.0
+Generalization to Unseen Punchlines,1,0.0
+Statistical Language Modeling,1,0.0
+Text Generation Pattern Identification,1,0.0
+Structure Boundary Detection,1,0.0
+Pose Classification,1,0.0
+Sentence containing word,1,0.0
+Sentence not containing word,1,0.0
+Word containing letter,1,0.0
+Word not containing letter,1,0.0
+Most associated word,1,0.0
+Least associated word,1,0.0
+Any words from category,1,0.0
+All words from category,1,0.0
+First alphabetically,1,0.0
+More letters,1,0.0
+Less letters,1,0.0
+Bigger number,1,0.0
+Smaller number,1,0.0
+Rhyming word,1,0.0
+Homophones,1,0.0
+Word after in sentence,1,0.0
+Word before in sentence,1,0.0
+Sentence starting with word,1,0.0
+Sentence ending with word,1,0.0
+Word starting with letter,1,0.0
+Word ending with letter,1,0.0
+First word of the sentence,1,0.0
+Last word of the sentence,1,0.0
+First letter of the word,1,0.0
+Last letter of the word,1,0.0
+Bias evaluation,1,0.0
+Image-to-Audio Generation,1,0.0
+Visually Guided Audio Generation,1,0.0
+Conditional Audio Generation,1,0.0
+Intrinsic Word Similarity Evaluation,1,0.0
+Temporal Analysis,1,0.0
+Retrieval-based Response Selection,1,0.0
+Persona-based Response Generation,1,0.0
+UI Grounding,1,0.0
+Post-OCR Text Correction,1,0.0
+Optical Character Recognition evaluation,1,0.0
+Question Answering (converted to classification: QNLI),1,0.0
+Textual Similarity,1,0.0
+Linguistic Acceptability,1,0.0
+Question: Causal Event Classification,1,0.0
+Question: Cause-Effect-Signal Span Detection,1,0.0
+Paraphrase Classification,1,0.0
+Punctuation Restoration,1,0.0
+Projection,1,0.0
+Executability,1,0.0
+Goal-Recognition,1,0.0
+Narrative Grounding,1,0.0
+Token-level Sequence Labeling (BIO tagging),1,0.0
+Hierarchical Entity Extraction,1,0.0
+Single Template Learning (STL),1,0.0
+Mixed Template Learning (MTL),1,0.0
+Unseen Template Learning (UTL),1,0.0
+Binary Bill Status Classification,1,0.0
+Multi-Class Bill Status Classification,1,0.0
+Sign Language Translation,1,0.0
+"Text-to-sign video generation (mentioned, not focus)",1,0.0
+Product/Service Classification,1,0.0
+Short Text Classification,1,0.0
+Explainability (rationale extraction),1,0.0
+Sequence Labeling (flagging exclusive words),1,0.0
+Text Style Transfer / Sequence-to-Sequence (exclusive -> inclusive sentence suggestions),1,0.0
+Suggestion Ranking (ranked candidate suggestions evaluation),1,0.0
+Regulation Compliance Identification,1,0.0
+App Behavior Consistency Identification,1,0.0
+Entity-aware Response Generation,1,0.0
+Quote Extraction,1,0.0
+Verb-cue Classification,1,0.0
+Named Entity Classification,1,0.0
+Text Classification (Regret Detection),1,0.0
+Text Classification (Domain Identification),1,0.0
+Multi-label utterance-level persuasion strategy prediction (multimodal classification),1,0.0
+Binary pairwise vote prediction (game outcome deduction),1,0.0
+Cross-domain and cross-game generalization evaluation,1,0.0
+Semantic Parsing (Intent Classification and Slot Filling),1,0.0
+Sentence Rewrite,1,0.0
+Crosslingual Generation,1,0.0
+Attribute Discovery,1,0.0
+Implication Parsing,1,0.0
+Uncertainty Estimation (Calibration),1,0.0
+Embedding-based Similarity Search,1,0.0
+Interpretability/Attention Analysis,1,0.0
+Multi-modal Response Generation,1,0.0
+Text Classification (Accident Detection),1,0.0
+Text Classification (Fault Attribution),1,0.0
+Sentiment/Framing Classification (Perception),1,0.0
+Human Evaluation,1,0.0
+Semantic Similarity (visual context to caption),1,0.0
+Caption Re-ranking,1,0.0
+Data Augmentation / Data Synthesis,1,0.0
+Modeling Facial Expressions,1,0.0
+Chain-of-Thought Generation,1,0.0
+Language Modeling (sequence scoring / assigning log-likelihood or pseudo log-likelihood),1,0.0
+Classification (fine-tuning for classiﬁcation tasks),1,0.0
+Syntactic Evaluation (targeted syntactic evaluations),1,0.0
+Vicarious Offense Prediction,1,0.0
+Annotation for Subjective Labels,1,0.0
+Acronym Disambiguation,1,0.0
+Entity-level Noun Phrase Canonicalization (NPC-E),1,0.0
+Relation Phrase Canonicalization (RPC),1,0.0
+Ontology-level Noun Phrase Canonicalization (NPC-O),1,0.0
+StoryCloze,1,0.0
+Reasoning Graph Generation,1,0.0
+State Prediction,1,0.0
+Semantic Parsing (Text-to-SQL),1,0.0
+Polarity Classification (positive/negative/neutral),1,0.0
+Text Matching,1,0.0
+Event/Subject Detection,1,0.0
+Open Vocabulary Semantic Segmentation,1,0.0
+Zero-Shot Segmentation,1,0.0
+Generalized Zero-Shot Segmentation,1,0.0
+Few-Shot Segmentation,1,0.0
+Weakly Supervised Semantic Segmentation,1,0.0
+Cross-dataset Segmentation,1,0.0
+Compiler Optimization (heuristic evaluation),1,0.0
+Tag Classification,1,0.0
+Code Compilation,1,0.0
+Code-Code Retrieval,1,0.0
+Natural Language-Code Retrieval,1,0.0
+Policy Evaluation,1,0.0
+Speaker Recognition,1,0.0
+Phoneme Recognition,1,0.0
+Text-To-Speech,1,0.0
+Keyword Spotting,1,0.0
+Language Modeling (pre-training),1,0.0
+Multilingual Modeling,1,0.0
+Code Modeling,1,0.0
+Code-switched Text Generation,1,0.0
+Human-Language Model Interaction Evaluation,1,0.0
+Interaction Trace Analysis (dynamic interaction trace),1,0.0
+Writing Artifact Evaluation,1,0.0
+Semantic Parsing (Problem Formulation Generation),1,0.0
+Clinical Narrative Classification,1,0.0
+Binary Classification (cardiac failure detection),1,0.0
+Topic Segmentation,1,0.0
+Topic-level Extractive Summarization,1,0.0
+Session-level Extractive Summarization,1,0.0
+Topic Title Generation,1,0.0
+Action Item Detection,1,0.0
+Text Attribution,1,0.0
+Reviewer Assignment,1,0.0
+Expertise Estimation,1,0.0
+Similarity Computation between reviewer profiles and submissions,1,0.0
+Text Classification (Recipe Genre Classification),1,0.0
+Text Generation (Recipe Generation and New Recipe Creation),1,0.0
+Pre-training of Large Language Models,1,0.0
+Important Character Detection,1,0.0
+Character Grounding (visual grounding of textual character mentions),1,0.0
+Co-reference Resolution,1,0.0
+Importance Ranking,1,0.0
+Bounding Box Annotation / Detection,1,0.0
+Entity Normalization,1,0.0
+Temporal and Numerical Resolution,1,0.0
+Linguistic Acceptability (binary classification),1,0.0
+Inference Speed Measurement,1,0.0
+Binary Classification (Spam vs Ham),1,0.0
+Privacy Policy Compliance Assessment,1,0.0
+Sequential Decision Making,1,0.0
+Text-based Game Playing,1,0.0
+Few-shot Image Classification,1,0.0
+Base-to-New Class Generalization,1,0.0
+Cross-Dataset Generalization,1,0.0
+Single-Source Multi-Target Domain Generalization,1,0.0
+Loss Prediction / Scaling Extrapolation,1,0.0
+Model design comparison across scales,1,0.0
+Automatic Speech Recognition (speech-to-text),1,0.0
+Named Entity Recognition / hotword/entity recognition,1,0.0
+Downstream political text analysis / information retrieval for political entities,1,0.0
+Call (API Calling),1,0.0
+Retrieval+Call (API Retrieval and Calling),1,0.0
+"Plan+Retrieval+Call (Planning, API Retrieval, and Calling)",1,0.0
+Long-form Text Generation,1,0.0
+Poem Generation,1,0.0
+Email Generation,1,0.0
+Multilingual News Generation,1,0.0
+Natural Language Understanding (MMLU evaluation),1,0.0
+Tabular Prediction,1,0.0
+Template Filling,1,0.0
+2D Language Model Pretraining,1,0.0
+"Creation of derived document datasets (e.g., classification, layout analysis)",1,0.0
+Multi-Document Summarization (Abstractive),1,0.0
+Semantic Parsing (Natural Language to Structured Game Command / Utterance to Command),1,0.0
+Text Generation (State-conditioned Narration / State to Narration),1,0.0
+Text-to-SQL (Semantic Parsing),1,0.0
+Question Answering over relational databases,1,0.0
+SQL efficiency/optimization evaluation,1,0.0
+"Multimodal Emotion Regression (predict continuous intensities: Approval, Disappointment, Uncertainty)",1,0.0
+Humour Detection (binary classification of humorous vs non-humorous 2 s frames),1,0.0
+Personalised Continuous Emotion Recognition (predict continuous arousal and valence with subject-specific adaptation),1,0.0
+Compositionality evaluation (attribute-object binding),1,0.0
+Part-of-Speech Tagging (UPOS),1,0.0
+Morphological Feature Tagging (UFeats),1,0.0
+Sentiment Analysis (Document-level),1,0.0
+Sentiment Analysis (Sentence-level),1,0.0
+Targeted Sentiment Analysis,1,0.0
+Grammaticality Judgment / Linguistic Acceptability (binary classification),1,0.0
+Machine Translation (Bokmål to Nynorsk),1,0.0
+Bias and Toxicity Probing / Diagnostic Probes (gender-bias and harmfulness),1,0.0
+Verification of neural networks,1,0.0
+Adversarial robustness testing,1,0.0
+Text Paraphrasing,1,0.0
+Cross-lingual transfer evaluation,1,0.0
+Sentence Quality Estimation,1,0.0
+Binary Classification (per-label detection),1,0.0
+Geographic TExtual Similarity on Recall (GeoTES-recall),1,0.0
+Geographic TExtual Similarity on Rerank (GeoTES-rerank),1,0.0
+Geographic Elements TAgging (GeoETA),1,0.0
+Geographic ComPosition Analysis (GeoCPA),1,0.0
+Geographic Where What Cut (GeoWWC),1,0.0
+Geographic Entity AliGnment (GeoEAG),1,0.0
+Scene Text-Centric Visual Question Answering,1,0.0
+Document-Oriented Visual Question Answering,1,0.0
+Connectivity Inference,1,0.0
+Temporal Inference,1,0.0
+Story Scoring (Regression),1,0.0
+Story Segmentation,1,0.0
+Next Chapter Generation,1,0.0
+Conditional Story Generation,1,0.0
+Chapter Infill (Chapter Inﬁlling),1,0.0
+Global Infill (Global Inﬁlling),1,0.0
+Temporal Ordering,1,0.0
+Paragraph Classification,1,0.0
+Synthesis Action Retrieval,1,0.0
+Program analysis for function insertion (location prediction),1,0.0
+Code Ideation,1,0.0
+Intention Identification,1,0.0
+Document-Grounded Dialogue,1,0.0
+Knowledge Grounding,1,0.0
+Knowledge-grounded Dialogue,1,0.0
+Hallucination detection for general user query-response pairs,1,0.0
+Document Similarity,1,0.0
+Bias / Fairness Evaluation,1,0.0
+Autocomplete (Predictive Text),1,0.0
+Question Answering (in-language and cross-language),1,0.0
+Retrieval for Question Answering (in-language and cross-language),1,0.0
+Unconditional Audio Generation,1,0.0
+Answer Extraction,1,0.0
+News Headline Generation,1,0.0
+Prompt-based Evaluation,1,0.0
+Policy Optimization,1,0.0
+End-to-end Modeling,1,0.0
+Table Partition,1,0.0
+Table Size Detection,1,0.0
+Merged Cell Detection,1,0.0
+Cell Lookup,1,0.0
+Reverse Lookup,1,0.0
+Column Retrieval,1,0.0
+Row Retrieval,1,0.0
+Summarization (scene-level and hierarchical),1,0.0
+Formal Logic,1,0.0
+Acceptability Judgment,1,0.0
+Token Similarity,1,0.0
+Compound Segmentation,1,0.0
+Compound Normalization,1,0.0
+Text Classification (Tweet manipulation detection),1,0.0
+Span Extraction (Manipulating span localization),1,0.0
+Span Extraction (Pristine span localization),1,0.0
+Topic-based Summarization,1,0.0
+Multi-sentence Compression,1,0.0
+Evidence Extraction,1,0.0
+Factuality Classification,1,0.0
+Unsupported Span Prediction,1,0.0
+Fixing Factuality,1,0.0
+Metric Evaluation (Meta-evaluation),1,0.0
+Material Classification,1,0.0
+Mass Prediction (Regression),1,0.0
+Price Prediction (Regression),1,0.0
+Category Classification (Taxonomic),1,0.0
+Product Ratings Prediction (Distribution prediction),1,0.0
+Multimodal Multi-task Learning,1,0.0
+Binary Property Classification (via Smart Labeling),1,0.0
+Dialogue Response Generation,1,0.0
+Interactive Tutoring Simulation,1,0.0
+Tutor Modeling,1,0.0
+Factual Consistency Detection (binary classification: consistent vs inconsistent),1,0.0
+Explanation generation for inconsistency predictions,1,0.0
+Fine-grained inconsistency detection (per edit/error type),1,0.0
+Multilingual Consistency Evaluation,1,0.0
+Opinion Summarization,1,0.0
+Text Pair Classification,1,0.0
+KG Prediction,1,0.0
+Common-Sense Reasoning,1,0.0
+Graph Classification,1,0.0
+Graph Query Language Generation,1,0.0
+Chemistry Problem Solving,1,0.0
+Referring Expression Generation,1,0.0
+NIL Prediction,1,0.0
+Multimodal Dialogue,1,0.0
+Detailed Description,1,0.0
+Sentence Embedding (Semantic Textual Similarity),1,0.0
+Data Augmentation for Few-Shot Learning,1,0.0
+Dependency Labeling,1,0.0
+Cross-lingual Sentence Retrieval,1,0.0
+Model Editing Evaluation,1,0.0
+Specificity Evaluation,1,0.0
+Acceptable Response Classification,1,0.0
+Acceptable Response Generation,1,0.0
+Image Classification (in-diagram logic detection),1,0.0
+Extractive Explanation (text-span extraction),1,0.0
+Passage Re-ranking,1,0.0
+Zero-shot Information Retrieval evaluation,1,0.0
+Lexical decision (spot-the-word),1,0.0
+Grammatical acceptability judgment (syntactic acceptability),1,0.0
+Single-label Text Classification,1,0.0
+Fine-grained Visual Categorization,1,0.0
+Long-tailed Recognition,1,0.0
+Concept Drift Evaluation,1,0.0
+Check-Worthiness Estimation,1,0.0
+Document-level Classification,1,0.0
+Code Completion (next-line prediction),1,0.0
+End-to-End Pipeline Evaluation (retrieval + code completion),1,0.0
+Program Synthesis (Text-to-Code Generation),1,0.0
+Natural Language Interface to Databases (Text-to-SQL),1,0.0
+Question Answering over Knowledge Graphs,1,0.0
+Question Answering on Web data,1,0.0
+Task-Oriented Dialogue Semantic Parsing (Intent and Slot),1,0.0
+Code Generation (NL to Python),1,0.0
+Knowledge-based Visual Question Answering,1,0.0
+"Visual Generation (e.g., visual storytelling, visual dialog)",1,0.0
+Multilingual Vision-Language evaluation,1,0.0
+Commonsense Reasoning (Order reasoning),1,0.0
+Grammar Correctness,1,0.0
+Duplicate Sentence Detection,1,0.0
+Multi-task Knowledge,1,0.0
+Math Problem Solving,1,0.0
+Ordinal Rating (Meaningfulness Judgment),1,0.0
+Toxic Detection,1,0.0
+Model Evaluation (response ranking: win/tie/lose),1,0.0
+Hyperparameter Optimization for Instruction Tuning,1,0.0
+Text Generation (open-ended video descriptions),1,0.0
+Video Conversation,1,0.0
+Tracking,1,0.0
+Financial Sentiment Analysis,1,0.0
+Morphological tagging,1,0.0
+Morphological feature classification,1,0.0
+Probing / Diagnostic classification,1,0.0
+API Call Planning,1,0.0
+API Response Parsing,1,0.0
+Tool / API Use,1,0.0
+Keypoint Detection,1,0.0
+Facial Classification,1,0.0
+3D Visual Grounding,1,0.0
+3D Visual Question Answering,1,0.0
+Offensiveness detection,1,0.0
+Text Rewriting / Style Transfer (politeness rewriting),1,0.0
+Politeness Rating,1,0.0
+Molecule Description Generation,1,0.0
+Molecule Generation (description-guided),1,0.0
+Forward Reaction Prediction,1,0.0
+Reagent Prediction,1,0.0
+Protein Design,1,0.0
+Protein Function Prediction (Gene Ontology),1,0.0
+Catalytic Activity Prediction,1,0.0
+Domain/Motif Prediction,1,0.0
+Protein Functional Description Generation,1,0.0
+Chemical Entity Recognition,1,0.0
+Chemical-Protein Interaction Extraction,1,0.0
+Chemical-Disease Interaction Extraction,1,0.0
+True/False Question Answering,1,0.0
+Text Classification (Fake News Detection - document/article-level),1,0.0
+Text Classification (Fake Claim Detection - claim/short-article-level),1,0.0
+Text Classification (LLM-generated Fake Sentence Detection - sentence-level),1,0.0
+Text Classification (Fake Tweet Detection - social media tweets),1,0.0
+Multimodal Classification (Multimodal Fake News Detection using text and images),1,0.0
+Knowledge and Reasoning Evaluation,1,0.0
+Text Generation (Court View Generation),1,0.0
+Summarization (Leading Decision Summarization),1,0.0
+Token Classification (Citation Extraction),1,0.0
+"Text Classification (Criticality Prediction, Judgment Prediction, Law Area Prediction, Sub-Law-Area Prediction)",1,0.0
+Document-to-Document Retrieval,1,0.0
+Long-document processing,1,0.0
+Multi-class Identification,1,0.0
+Knowledge-Grounded Image Description,1,0.0
+Visual Entailment,1,0.0
+Embodied Intelligence / Planning,1,0.0
+Knowledge Probing (Knowledge Memorization / fact probing),1,0.0
+Event Relation Extraction,1,0.0
+Question Answering (including Multi-hop Question Answering),1,0.0
+Text Generation (Knowledge Creating),1,0.0
+Concept Probing,1,0.0
+Qualitative Analysis,1,0.0
+Multimedia Action Recognition,1,0.0
+Healthcare (ECG Classification),1,0.0
+Social Media Classification,1,0.0
+Bias Evaluation (representational bias probing of Masked Language Models),1,0.0
+Toxicity / Cyberbullying Detection,1,0.0
+Few-shot Model Training (SetFit / SentenceBERT),1,0.0
+Instruction-guided Image Editing,1,0.0
+Mask-provided Image Editing,1,0.0
+Mask-free Image Editing,1,0.0
+Single-turn Image Editing,1,0.0
+Multi-turn Image Editing,1,0.0
+Layout Component Detection,1,0.0
+Key Detection,1,0.0
+Music Tagging,1,0.0
+Pitch Classification,1,0.0
+Beat Tracking,1,0.0
+Melody Extraction,1,0.0
+Chord Estimation,1,0.0
+Lyrics Transcription,1,0.0
+Vocal Technique Detection,1,0.0
+Singer Identification,1,0.0
+Source Separation,1,0.0
+Regression (Scientificness Scoring),1,0.0
+Multi-label Classification (Section Classification),1,0.0
+Paraphrase Generation (Sentence Paraphrasing),1,0.0
+Toxicity evaluation (model-generated responses to toxic/bad/harmful prompt templates),1,0.0
+Bias evaluation (measuring toxicity differences across demographic groups),1,0.0
+Value-Alignment evaluation — Active Value-Alignment (AVA: option selection),1,0.0
+Value-Alignment evaluation — Passive Value-Alignment (PVA: Refuse to Answer / RtA),1,0.0
+Visual Question Answering (yes/no),1,0.0
+Object Color Recognition,1,0.0
+Movie Poster Recognition,1,0.0
+Artwork Recognition,1,0.0
+Numerical Calculation from images,1,0.0
+Text Translation (image-based Chinese-to-English),1,0.0
+Code Reasoning (from images),1,0.0
+Labeling Instruction Generation,1,0.0
+Dataset Annotation (annotation guidance),1,0.0
+Out-of-KB Mention and Entity Discovery,1,0.0
+Concept Placement,1,0.0
+ECG Signal Classification,1,0.0
+Program Annotation (OpenMP Pragma Prediction),1,0.0
+Nearest Neighbor Retrieval,1,0.0
+Publication Year / Region Prediction,1,0.0
+Binary Hate Speech Classification,1,0.0
+Multiclass Hate Speech Classification (target group identification),1,0.0
+Vulnerability Classification,1,0.0
+Static Analysis Evaluation,1,0.0
+Machine Learning Model Training for Code Vulnerability Detection,1,0.0
+Politeness Detection,1,0.0
+Text Rewriting (Reframing),1,0.0
+Segmentation (partitioning transcripts into dictation vs. command segments),1,0.0
+Text Normalization (ASR repair / normalization of command utterances),1,0.0
+Interpretation (predicting edited document state or predicting an edit program),1,0.0
+Speech Recognition (ASR results as part of the dataset),1,0.0
+Reinforcement Learning from Human Feedback,1,0.0
+Multi-Robot Manipulation,1,0.0
+Human-Robot Collaboration,1,0.0
+Agent Representation and Reasoning,1,0.0
+Information Extraction (Key information detection),1,0.0
+Novel View Synthesis,1,0.0
+3D Object Generation / Text-to-3D,1,0.0
+Representation Learning / Pretraining,1,0.0
+3D Segmentation,1,0.0
+3D Detection,1,0.0
+"2D Vision tasks (e.g., segmentation) using renders",1,0.0
+Image Scene Recognition,1,0.0
+Image-Text Understanding,1,0.0
+Video Retrieval (Text-to-Video and Video-to-Text),1,0.0
+Video Captioning (Video-to-Text),1,0.0
+Multimodal / Video-Centric Dialogue (in-context learning),1,0.0
+Zero Pronoun Recovery,1,0.0
+Document-level Machine Translation (Novel Translation),1,0.0
+Classical Chinese to Modern Chinese Translation (CCT),1,0.0
+Poetry Translation,1,0.0
+Text Expansion,1,0.0
+Text Infilling,1,0.0
+Text Generation (Instruction Following),1,0.0
+Paraphrase / Refinement / Polishing (as instruction variants),1,0.0
+Pre-training,1,0.0
+Federated Learning simulation,1,0.0
+Personalization,1,0.0
+Evaluation (group-level evaluation),1,0.0
+Human evaluation of model responses (safety/responsibility),1,0.0
+Automatic multi-choice classification (safety/responsibility),1,0.0
+Question Answering (conversational),1,0.0
+Numerical Computation,1,0.0
+Scientific Knowledge Retrieval,1,0.0
+Fine-Grained Text-based Retrieval,1,0.0
+Image-based Retrieval,1,0.0
+Short Answer Question Answering,1,0.0
+Open Response Question Answering,1,0.0
+Dialogue (Multi-turn),1,0.0
+Human Preference Evaluation,1,0.0
+Instance Attributes,1,0.0
+Binary Classification (safe vs. unsafe),1,0.0
+Fine-grained Safety Classification,1,0.0
+Text Generation (generative information-seeking / retrieval-augmented generation),1,0.0
+Dialectal NLP tasks,1,0.0
+Fake Review Detection,1,0.0
+Knowledge-based Reasoning,1,0.0
+Food Classification,1,0.0
+Image Synthesis,1,0.0
+Lexical Semantics,1,0.0
+Knowledge Update Detection,1,0.0
+RTL Design Generation,1,0.0
+Role-Play Simulation,1,0.0
+Conversational Model Fine-Tuning,1,0.0
+Multi-agent coordination,1,0.0
+Task complexity evaluation,1,0.0
+Decision-making,1,0.0
+Knowledge reasoning,1,0.0
+Vision-Language Instruction Following,1,0.0
+Data Race Detection,1,0.0
+Machine Learning Model Evaluation,1,0.0
+Product Category Multiple-Choice Question,1,0.0
+Attribute Inference,1,0.0
+Caption Completion,1,0.0
+Attribute Correction,1,0.0
+Financial Academic Knowledge Evaluation,1,0.0
+Financial Industry Knowledge Evaluation,1,0.0
+Financial Security Knowledge Evaluation,1,0.0
+Financial Agent Evaluation,1,0.0
+Lateral Thinking Puzzle,1,0.0
+Interactive Question Answering,1,0.0
+License Detection,1,0.0
+NLP Analysis of Legal Texts,1,0.0
+Automated License Classifier Training,1,0.0
+Biomedical Entity Linking,1,0.0
+Content Analysis,1,0.0
+Chit-Chat,1,0.0
+Task-Oriented Dialogue Generation,1,0.0
+Reasoning Ability,1,0.0
+Refusal Ability,1,0.0
+Single-Document Question Answering,1,0.0
+Multi-Document Question Answering,1,0.0
+Synthetic Tasks,1,0.0
+Function Completion,1,0.0
+Syntax and Error Correction,1,0.0
+Visual Storytelling,1,0.0
+Programming Comprehension,1,0.0
+Code Correction,1,0.0
+Function Interpretation,1,0.0
+Automated Interpretability,1,0.0
+Functionality Testing,1,0.0
+Text-to-Shape Generation,1,0.0
+Contextual Question Answering,1,0.0
+World Knowledge Evaluation,1,0.0
+Item Classification,1,0.0
+Utterance Generation,1,0.0
+Quotation Extraction,1,0.0
+Text Editing,1,0.0
+Audio-Text Retrieval,1,0.0
+Text Evaluation,1,0.0
+Model Card Generation,1,0.0
+Text Sorting,1,0.0
+Machine Learning for Compiler Optimization,1,0.0
+Legal Knowledge Memorization,1,0.0
+Legal Knowledge Understanding,1,0.0
+Legal Knowledge Applying,1,0.0
+Knowledge Locating Evaluation,1,0.0
+Value Understanding Assessment,1,0.0
+Natural Language to Visualization Translation,1,0.0
+Element Extraction,1,0.0
+Document Event Extraction,1,0.0
+Tool Usage Awareness,1,0.0
+Model Improvement,1,0.0
+Hyperparameter Tuning,1,0.0
+Automated ML Experimentation,1,0.0
+Agentic Coordination,1,0.0
+Coordination Question Answering,1,0.0
+Headline Classification,1,0.0
+Multi-Agent Decision Making,1,0.0
+Judicial Summarization,1,0.0
+Case Recognition,1,0.0
+Charge Prediction,1,0.0
+Prison Term Prediction,1,0.0
+Civil Trial Prediction,1,0.0
+Judicial Reasoning Generation,1,0.0
+Emotional Text-to-Speech Synthesis,1,0.0
+Multilingual Evaluation,1,0.0
+Pretraining,1,0.0
+Physical Reasoning,1,0.0
+Metrics Comparison,1,0.0
+Multimodal Sentiment Analysis,1,0.0
+Multimodal Aspect-Based Sentiment Analysis,1,0.0
+Multimodal Hateful Memes Recognition,1,0.0
+Multimodal Sarcasm Recognition,1,0.0
+Multimodal Relation Extraction,1,0.0
+Multi-choice Reading Comprehension,1,0.0
+True-or-False Questions,1,0.0
+True-or-False,1,0.0
+Blank Filling,1,0.0
+Factual Editing,1,0.0
+Open-Ended Text Generation,1,0.0
+Content-based Recommendation,1,0.0
+Multimodal Dialogue Generation,1,0.0
+Text-to-SQL Semantic Parsing,1,0.0
+Cause-Effect Extraction,1,0.0
+Fact-Conflicting Hallucination Detection,1,0.0
+Adversarial Attack Detection,1,0.0
+Medical Entity Recognition,1,0.0
+Medical Text Classification,1,0.0
+Medical Natural Language Inference,1,0.0
+Medical Dialogue Understanding,1,0.0
+Medical Content Generation,1,0.0
+Vocabulary Assessment,1,0.0
+Interpretability,1,0.0
+Open-domain Dialogue,1,0.0
+Constraint Satisfaction,1,0.0
+Recipe Classification,1,0.0
+Coherence Scoring,1,0.0
+Coherence Reasoning,1,0.0
+Theory of Mind Reasoning,1,0.0
+Recipe Adaptation,1,0.0
+Protein Fitness Prediction,1,0.0
+Subcellular Localization Prediction,1,0.0
+Protein Solubility Prediction,1,0.0
+Architectural Reasoning,1,0.0
+Architecture Clone Detection,1,0.0
+Architectural Question Answering,1,0.0
+Architecture Captioning,1,0.0
+Causal Judgment,1,0.0
+Content Constraints Evaluation,1,0.0
+Situation Constraints Evaluation,1,0.0
+Style Constraints Evaluation,1,0.0
+Format Constraints Evaluation,1,0.0
+Prompt Injection Evaluation,1,0.0
+Commonsense-aware Response Generation,1,0.0
+Dialogue Natural Language Inference,1,0.0
+Offensive Detection,1,0.0
+Personality-grounded Response Generation,1,0.0
+Knowledge-grounded Response Generation,1,0.0
+Multi-turn Dialogue,1,0.0
+Quantifier Understanding,1,0.0
+Financial Entity Recognition,1,0.0
+Financial Text Classification,1,0.0
+Financial Content Generation,1,0.0
+Quantity Extraction,1,0.0
+Generative Task,1,0.0
+Discriminative Task,1,0.0
+Code Smell Detection,1,0.0
+Claim Correction,1,0.0
+Fairness Benchmarking,1,0.0
+Social Bias Evaluation,1,0.0
+Knowledge Graph Completion,1,0.0
+Linguistic Variation Analysis,1,0.0
+Multimodal Analysis,1,0.0
+Abstraction Detection,1,0.0
+Abstraction Generation,1,0.0
+Severity Score Regression,1,0.0
+Explanation Critique,1,0.0
+Text-Code Matching,1,0.0
+Fallacy Classification,1,0.0
+Data Interpretation,1,0.0
+Conversational Search,1,0.0
+Executable Code Generation,1,0.0
+Word Embedding Alignment,1,0.0
+Conversational AI Assessment,1,0.0
+Character Correction,1,0.0
+Gene Finding,1,0.0
+Enhancer Annotation,1,0.0
+Chromatin Accessibility Prediction,1,0.0
+Histone Modification Prediction,1,0.0
+CpG Methylation Prediction,1,0.0
+Noncoding Variant Effects Prediction (Expression),1,0.0
+Noncoding Variant Effects Prediction (Disease),1,0.0
+Design Similarity Assessment,1,0.0
+Sketch Description Generation,1,0.0
+Manufacturability Assessment,1,0.0
+Textbook Problem Solving,1,0.0
+Image-to-Text Retrieval,1,0.0
+API Function Matching,1,0.0
+Multimodal Task Execution,1,0.0
+Medical Image Understanding,1,0.0
+Fine-grained Thematic Concept Extraction,1,0.0
+Video-exclusive Understanding,1,0.0
+Prior Knowledge-based Question Answering,1,0.0
+Comprehension and Decision Making,1,0.0
+Cross-Cultural Assessment,1,0.0
+Chatbot Development,1,0.0
+Meeting Summarization,1,0.0
+Action Sequence,1,0.0
+Action Antonym,1,0.0
+Fine-grained Action,1,0.0
+Unexpected Action,1,0.0
+Object Interaction,1,0.0
+Object Shuffle,1,0.0
+Moving Direction,1,0.0
+Action Localization,1,0.0
+Scene Transition,1,0.0
+Moving Count,1,0.0
+Moving Attribute,1,0.0
+State Change,1,0.0
+Fine-grained Pose,1,0.0
+Character Order,1,0.0
+Episodic Reasoning,1,0.0
+Counterfactual Inference,1,0.0
+Instance Attribute,1,0.0
+Visual Referring Expression,1,0.0
+Science Knowledge,1,0.0
+Visual Mathematics,1,0.0
+Difference Spotting,1,0.0
+Meme Comprehension,1,0.0
+Global Video Understanding,1,0.0
+In-Context Captioning,1,0.0
+Interleaved Image-Text Analysis,1,0.0
+Next Image Prediction,1,0.0
+Text-Image Creation,1,0.0
+Toxicity Evaluation,1,0.0
+Open-ended Questions,1,0.0
+Writing Ability,1,0.0
+Task-oriented Role Play,1,0.0
+Professional Knowledge,1,0.0
+Parameter Prediction,1,0.0
+Autonomous Driving Simulation,1,0.0
+Insecure Code Detection,1,0.0
+Cyberattack Compliance Evaluation,1,0.0
+Emotional Understanding,1,0.0
+Software Classification,1,0.0
+Software Trends Analysis,1,0.0
+Interactive Learning,1,0.0
+Natural Language Feedback Processing,1,0.0
+Subcrop-Caption Matching,1,0.0
+Profile Extraction,1,0.0
+Real-time Strategy Evaluation,1,0.0
+Code Change Analysis,1,0.0
+Lifelong Learning,1,0.0
+Commonsense Knowledge Filling,1,0.0
+Commonsense Knowledge Generation,1,0.0
+Commonsense Conflict Phrase Detection,1,0.0
+Slot Identification,1,0.0
+Event Causal Inference,1,0.0
+Open-vocabulary Classification,1,0.0
+Chart Recognition,1,0.0
+Value Extraction,1,0.0
+Value Comparison,1,0.0
+Global Conception,1,0.0
+Number Question Answering,1,0.0
+Behavior Simulation Evaluation,1,0.0
+Causal Graph Learning,1,0.0
+Average Treatment Effect Estimation,1,0.0
+Heterogeneous Treatment Effect Estimation,1,0.0
+Mediation Effect Analysis,1,0.0
+Off-Policy Optimization,1,0.0
+Spoken Dialogue,1,0.0
+Risk,1,0.0
+Planning with Reasoning,1,0.0
+Numerical Reasoning QA,1,0.0
+Early Warning Analysis,1,0.0
+Fin-report Fraud Detection,1,0.0
+Fin-report to Markdown,1,0.0
+Data to Insight,1,0.0
+NL2ViSQL,1,0.0
+Vulnerability Identification,1,0.0
+Vulnerability Repair,1,0.0
+Vulnerability Description,1,0.0
+Code Comment Generation,1,0.0
+Behavior Recognition,1,0.0
+Geographic Information Processing,1,0.0
+Traffic Concepts Question Answering,1,0.0
+Traffic Regulations Question Answering,1,0.0
+Traffic Signs Question Answering,1,0.0
+Traffic Accidents Analysis,1,0.0
+Traffic Public Sentiment Analysis,1,0.0
+Traffic Safety Recommendation,1,0.0
+Traffic Sign Error Detection,1,0.0
+Traffic Road Occupation Detection,1,0.0
+Traffic Emergency Plan Generation,1,0.0
+Traffic Safety Education Copy Generation,1,0.0
+Text Verification,1,0.0
+Distribution Analysis,1,0.0
+Query Understanding,1,0.0
+Query-document Relationship Understanding,1,0.0
+Query Intent Classification,1,0.0
+Query Expansion,1,0.0
+Query Reformulation,1,0.0
+Query Suggestion,1,0.0
+Query Matching,1,0.0
+Query Clarification,1,0.0
+Subtopic Generation,1,0.0
+Duplicate Question Retrieval,1,0.0
+Implicature understanding,1,0.0
+Presupposition detection,1,0.0
+Reference resolution,1,0.0
+Deixis analysis,1,0.0
+Conceptual Understanding in Science,1,0.0
+Aesthetic Interpretation,1,0.0
+Identity Learning,1,0.0
+Composite Tasks,1,0.0
+Working Memory Task,1,0.0
+Synonym Task,1,0.0
+Forward-Backward Recitation Task,1,0.0
+Statistical Output Task,1,0.0
+Multi-Anchor Task,1,0.0
+Parameter Identification,1,0.0
+Content Filling,1,0.0
+Safety Judgment,1,0.0
+Video Search,1,0.0
+Reasoning with Complex Perceptions,1,0.0
+Goal Inference,1,0.0
+Privacy Protection,1,0.0
+Safety Assurance,1,0.0
+Dataset Selection,1,0.0
+Embodied AI,1,0.0
+Game,1,0.0
+Web,1,0.0
+Tool,1,0.0
+Single-page QA,1,0.0
+Multi-page QA,1,0.0
+Document Natural Language Inference,1,0.0
+Multi-modal Information Retrieval,1,0.0
+Multi-modal Question Answering,1,0.0
+Question Understanding,1,0.0
+Multi-App Operation,1,0.0
+Behavior Change Support,1,0.0
+Bug Repair,1,0.0
+Claim Prioritization,1,0.0
+Multi-Turn Dialogue Evaluation,1,0.0
+Layout Detection,1,0.0
+Hallucination Modification,1,0.0
+Planning Tasks,1,0.0
+Tool Creation Assessment,1,0.0
+Entity Salience Extraction,1,0.0
+Mining Software Repositories,1,0.0
+Software License Analysis,1,0.0
+Task Oriented Dialogue,1,0.0
+Linguistic Typology Prediction,1,0.0
+Hierarchical Text Classification,1,0.0
+Hierarchical Multi-Label Classification,1,0.0
+Efficiency Evaluation,1,0.0
+Image Fusion,1,0.0
+Face Forgery Detection,1,0.0
+Scoring Evaluation,1,0.0
+Pair Comparison,1,0.0
+Batch Ranking,1,0.0
+Defense Evaluation,1,0.0
+Phenotype Extraction,1,0.0
+Screening for Rare Diseases,1,0.0
+Comparison Analysis of Common and Rare Diseases,1,0.0
+Differential Diagnosis among Universal Rare Diseases,1,0.0
+Stock Price Prediction,1,0.0
+Access Control Auditing,1,0.0
+Policy Synthesis,1,0.0
+Long-context Retrieval,1,0.0
+Action Execution,1,0.0
+Quantum Learning,1,0.0
+Task Utility Verification,1,0.0
+Report Summarization,1,0.0
+Name Conversion,1,0.0
+Molecule Captioning,1,0.0
+Forward Synthesis,1,0.0
+Independent Execution Reasoning,1,0.0
+Specification Reasoning,1,0.0
+Dynamic Semantics Reasoning,1,0.0
+Symptom Collection,1,0.0
+Examination Recommendation,1,0.0
+Textual Description,1,0.0
+Lyric Generation,1,0.0
+Cunning Type Classification,1,0.0
+Fallacy Explanation,1,0.0
+Binary Human-Written vs. Machine-Generated Text Classification,1,0.0
+Multi-Way Machine-Generated Text’s Generator Detection,1,0.0
+Human-Written to Machine-Generated Text Change Point Detection,1,0.0
+Norm Violation Detection,1,0.0
+Remediation Generation,1,0.0
+Justification Generation,1,0.0
+Deception Reasoning,1,0.0
+Reasoning (commonsense/logical),1,0.0
+Scientific Data Visualization,1,0.0
+Figure Generation,1,0.0
+Knowledge and Reasoning Evaluation (multiple-choice),1,0.0
+Multi-sentence Reading Comprehension,1,0.0
+Question Answering (post-response evaluation),1,0.0
+Text Classification (annotation of response attributes / questionnaire labels),1,0.0
+Resource Selection,1,0.0
+Result Merging,1,0.0
+Information Retrieval Evaluation,1,0.0
+Sub-question Answering,1,0.0
+Reasoning Chain Evaluation,1,0.0
+Structural Extraction,1,0.0
+Chart Type Recognition,1,0.0
+Chart Title Extraction,1,0.0
+Chart Description,1,0.0
+Chart Redrawing,1,0.0
+Perplexity,1,0.0
+Cloze Question Answering,1,0.0
+"Multiple-choice Question Answering (Analogy Selection from a mini story bank, T1)",1,0.0
+"Information Retrieval (Top-K Retrieval of analogous stories from a large story bank, T2)",1,0.0
+Next-token prediction (language modeling),1,0.0
+Targeted syntactic evaluation (linguistic minimal-pair tasks),1,0.0
+Causal interpretability evaluation via interventions (1D DII),1,0.0
+Causal Classification,1,0.0
+Causal Detection,1,0.0
+Numeric Labeling,1,0.0
+Textual Analogy Parsing,1,0.0
+Argument Unit Classification,1,0.0
+Argument Relation Detection,1,0.0
+Deal Completeness Classification,1,0.0
+ESG Issue Identification,1,0.0
+Multi-turn Question Answering,1,0.0
+Credit Scoring,1,0.0
+Financial Distress Identification,1,0.0
+Claim Analysis,1,0.0
+Stock Trading (Agent-based Decision-Making),1,0.0
+Multimodal Commonality Understanding,1,0.0
+Creative Generation,1,0.0
+Code Understanding/Generation,1,0.0
+Paraphrase,1,0.0
+Open-Vocabulary Classification,1,0.0
+Image-to-Text Generation (tactile description / captioning),1,0.0
+Multimodal Representation Learning,1,0.0
+Email Writing,1,0.0
+Chit chat / Dialogue,1,0.0
+Harmlessness evaluation,1,0.0
+Multimodal Named Entity Recognition,1,0.0
+Query Generation (natural language to Corpus Query Language),1,0.0
+Critique Evaluation,1,0.0
+Dexterous Grasping,1,0.0
+Human-Robot Interaction,1,0.0
+Tagging,1,0.0
+Image Description,1,0.0
+Social Context Description,1,0.0
+Shortest Path Searching,1,0.0
+Concept Advising,1,0.0
+Text Summarization Evaluation,1,0.0
+Instruction Clarification,1,0.0
+Self-Correction,1,0.0
+Content Rephrasing,1,0.0
+Format Rephrasing,1,0.0
+Proactive Interaction,1,0.0
+Anaphora Resolution,1,0.0
+Content Confusion,1,0.0
+Topic Shift,1,0.0
+Context Memory,1,0.0
+Adaptive Interaction,1,0.0
+Critique and Correction Reasoning,1,0.0
+Task Similarity Evaluation,1,0.0
+Aspect-based Sentiment Classification,1,0.0
+Ethics Assessment,1,0.0
+API Detection,1,0.0
+API Sequencing,1,0.0
+Entity Alignment,1,0.0
+Author Name Disambiguation,1,0.0
+Scholar Profiling,1,0.0
+Entity Tagging,1,0.0
+Concept Taxonomy Completion,1,0.0
+Paper Recommendation,1,0.0
+Reviewer Recommendation,1,0.0
+Academic Question Answering,1,0.0
+Paper Source Tracing,1,0.0
+Academic Influence Prediction,1,0.0
+Bargaining Task,1,0.0
+Spatial reasoning,1,0.0
+Patent Matching,1,0.0
+Team Collaboration,1,0.0
+Communication,1,0.0
+Prompt Management,1,0.0
+Vision-Language tasks,1,0.0
+Dialogue Comprehension,1,0.0
+Political Stance Detection,1,0.0
+Call Graph Analysis,1,0.0
+Entailment Recognition,1,0.0
+Causal Reasoning Identification,1,0.0
+Human Simulation,1,0.0
+Personality Modeling,1,0.0
+Probabilistic Reasoning,1,0.0
+Horizon Task,1,0.0
+Restless Bandit Task,1,0.0
+Instrumental Learning,1,0.0
+Two-Step Task,1,0.0
+Temporal Discounting,1,0.0
+Balloon Analog Risk Task,1,0.0
+Format Following,1,0.0
+Text Extraction,1,0.0
+Cognitive Evaluation,1,0.0
+Stock Earnings Forecasting,1,0.0
+News Analysis,1,0.0
+Domain Generalization,1,0.0
+Judicial Decision-Making,1,0.0
+Table Editing,1,0.0
+Long Story QA,1,0.0
+Long Conversation Memory,1,0.0
+Long Story Summarization,1,0.0
+Stacked News Labeling,1,0.0
+Stacked Typo Detection,1,0.0
+Key-Passage Retrieval,1,0.0
+Table Querying,1,0.0
+Spreadsheet Manipulation,1,0.0
+Reasoning Over Tables,1,0.0
+Sleep Stage Classification,1,0.0
+Case Identification,1,0.0
+Legal Text Classification,1,0.0
+Referring Image Segmentation,1,0.0
+Video Object Segmentation,1,0.0
+Referring Video Object Segmentation,1,0.0
+Audiovisual Segmentation,1,0.0
+Queryable 3D Mapping,1,0.0
+User Interaction Simulation,1,0.0
+Relationship Extraction,1,0.0
+Stock Prediction,1,0.0
+Automatic Gloss Generation,1,0.0
+Crosslingual Transfer,1,0.0
+Historical Knowledge Assessment,1,0.0
+Short Text Understanding,1,0.0
+Long Text Comprehension,1,0.0
+Process Improvement,1,0.0
+Video Editing,1,0.0
+Tool Utilization,1,0.0
+Salary Prediction,1,0.0
+Employer Presence Prediction,1,0.0
+Commute Duration Prediction,1,0.0
+Satisfaction Estimation,1,0.0
+Image to Code Generation,1,0.0
+Misogyny Detection,1,0.0
+Model Robustness Assessment,1,0.0
+Out-of-Scope Detection,1,0.0
+Judgment Summarization,1,0.0
+Petition Drafting,1,0.0
+Case Similarity,1,0.0
+Parts-of-Speech Tagging,1,0.0
+Multiple-choice Machine Reading Comprehension,1,0.0
+Multi-step planning,1,0.0
+Tool invocation,1,0.0
+Task automation,1,0.0
+Stylized Dialogue Generation,1,0.0
+Multi-evidence Searching,1,0.0
+Multi-evidence Reasoning,1,0.0
+Web-based Task Completion,1,0.0
+Knowledge-based Language Understanding,1,0.0
+Conversation,1,0.0
+Subjective Question Answering,1,0.0
+Objective Question Answering,1,0.0
+Text-Image Retrieval,1,0.0
+Pose Estimation,1,0.0
+Evaluation of Reward Models,1,0.0
+Knowledge Update,1,0.0
+Normative Judgement Evaluation,1,0.0
+Profession Prediction,1,0.0
+Narrative Bias Analysis,1,0.0
+Auditing Assessment,1,0.0
+Practice Examination,1,0.0
+Move Analysis,1,0.0
+Intent Argument Extraction,1,0.0
+Boolean Question Answering,1,0.0
+Answer Retrieval,1,0.0
+Sequential Sentence Classification,1,0.0
+Ontology Completion,1,0.0
+Open-Domain Question Answering,1,0.0
+Definition Modelling,1,0.0
+Attribute Classification,1,0.0
+Robotic Task Planning,1,0.0
+Functional Code Generation,1,0.0
+Code-based Test Generation,1,0.0
+Issue-based Test Generation,1,0.0
+Motion Synthesis,1,0.0
+Conversational Evaluation,1,0.0
+Point-level Captioning,1,0.0
+Region-level Captioning,1,0.0
+Inter-relationship Analysis,1,0.0
+Multi-Agent Collaboration,1,0.0
+Named Entity Linking,1,0.0
+Personality-based Dialogue Generation,1,0.0
+Claim Extraction,1,0.0
+Mathematical Function Analysis,1,0.0
+Science Question Answering,1,0.0
+Chess Game Strategy,1,0.0
+Syllable Counting,1,0.0
+Rhyme Word Generation,1,0.0
+Coding Skills Assessment,1,0.0
+User Productivity Analysis,1,0.0
+Robustness Assessment,1,0.0
+Code Debug,1,0.0
+Code Translate,1,0.0
+Code Polish,1,0.0
+Requirement Switch,1,0.0
+Plausibility Ranking,1,0.0
+Topic Following,1,0.0
+Key Entity Extraction,1,0.0
+Scope Ambiguity Resolution,1,0.0
+Human Interaction Recognition,1,0.0
+Social Context Understanding,1,0.0
+Eco-Relevance Classification,1,0.0
+Environmental Impact Analysis,1,0.0
+Defect Classification,1,0.0
+Memory Retrieval,1,0.0
+Detailed Understanding,1,0.0
+Overall Understanding,1,0.0
+Webpage Captioning,1,0.0
+Webpage Question Answering,1,0.0
+Heading OCR,1,0.0
+Element OCR,1,0.0
+Element Grounding,1,0.0
+Causal Identification,1,0.0
+Causal Skeleton Identification,1,0.0
+Correlation Identification,1,0.0
+Red Teaming Assessment,1,0.0
+Aesthetic Description,1,0.0
+Activity Cliffs Prediction,1,0.0
+Multimodal Instruction Tuning,1,0.0
+Hardware Design Generation,1,0.0
+Simultaneous Translation,1,0.0
+Multimodal Document Information Retrieval,1,0.0
+Data Organization,1,0.0
+Educational Content Creation,1,0.0
+Movie Narration Generation,1,0.0
+Abstract Visual Reasoning,1,0.0
+Citation Text Generation,1,0.0
+User Intent Recognition,1,0.0
+LLM Evaluation,1,0.0
+Grading,1,0.0
+Code generation,1,0.0
+Detection,1,0.0
+Room Detection,1,0.0
+Pose Relationship,1,0.0
+Object Relationship,1,0.0
+Multi-task Understanding,1,0.0
+Color Theme Recognition,1,0.0
+Font Extraction,1,0.0
+Negative Space Detection,1,0.0
+Color Meaning Understanding,1,0.0
+Font Style Understanding,1,0.0
+Visual Importance Detection,1,0.0
+Style Classification,1,0.0
+Visual Metaphor Interpretation,1,0.0
+Knowledge Editing Evaluation,1,0.0
+Attribute Value Extraction,1,0.0
+Multi-Image Analysis,1,0.0
+Human Feedback Alignment,1,0.0
+Next Action Prediction,1,0.0
+Claim Characterization,1,0.0
+Scenario Extraction,1,0.0
+Scenario Validation,1,0.0
+Visual Comprehension,1,0.0
+Multilingual Question Answering,1,0.0
+Counterfactual Text Generation,1,0.0
+Customer Retention Prediction,1,0.0
+Click-through-rate Prediction,1,0.0
+Product Purchase Prediction,1,0.0
+Conversion Rate Prediction,1,0.0
+User Churn Prediction,1,0.0
+Action Understanding,1,0.0
+Visual Navigation,1,0.0
+Knowledge Grounded QA,1,0.0
+Visual Relation Inference,1,0.0
+Linguistic Competence Assessment,1,0.0
+Diagnostic Conversation,1,0.0
+Flavor Prediction,1,0.0
+Cultural Perspective Prediction,1,0.0
+Treatment Recommendation,1,0.0
+Pharmacology Question Answering,1,0.0
+Empathetic Alignment Recognition,1,0.0
+Appraisal Classification,1,0.0
+Class Generation,1,0.0
+Citation Generation,1,0.0
+Dataset Subpopulation Organization,1,0.0
+Subpopulation Shift,1,0.0
+Slice Discovery,1,0.0
+Action Anticipation,1,0.0
+Timeseries Modeling,1,0.0
+Insight Mining,1,0.0
+Idiomatic Expression Detection,1,0.0
+Idiomatic Expression Extraction,1,0.0
+Idiomatic Expression Interpretation,1,0.0
+Noun Compound Compositionality,1,0.0
+Noun Compound Extraction,1,0.0
+Noun Compound Interpretation,1,0.0
+Lexical Collocation Categorization,1,0.0
+Lexical Collocation Extraction,1,0.0
+Lexical Collocation Interpretation,1,0.0
+Verbal Multiword Expression Extraction,1,0.0
+Key Entity Recognition,1,0.0
+Main Relation Extraction,1,0.0
+Important Event Extraction,1,0.0
+Malware Feature Extraction,1,0.0
+Cybersecurity Event Classification,1,0.0
+Attack Tool Identification,1,0.0
+Domain Intelligence Acquisition,1,0.0
+Time Element Acquisition,1,0.0
+Network Protocol Utilization,1,0.0
+Enc-Dec Algorithm Identification,1,0.0
+Vulnerability Information Extraction,1,0.0
+Attacker Information Extraction,1,0.0
+Attack Target Intelligence Gathering,1,0.0
+Vulnerability Exploitation Analysis,1,0.0
+Attack Means Analysis,1,0.0
+Attack Strategy Analysis,1,0.0
+Attack Intent Analysis,1,0.0
+Threat Analysis,1,0.0
+Impact Scope,1,0.0
+Trend Prediction,1,0.0
+Behavioral Pattern Analysis,1,0.0
+Protection Strategy Research,1,0.0
+Incident Response Planning,1,0.0
+Security Policy Audit,1,0.0
+Summary Generation,1,0.0
+Security Alert Generation,1,0.0
+Query-Focused Summarization,1,0.0
+Automatic Fact-Checking,1,0.0
+Writing Assistance,1,0.0
+Methodical Task Completion,1,0.0
+Quantization Benchmarking,1,0.0
+Model Performance Evaluation,1,0.0
+Maximum Degree Identification,1,0.0
+Structural Balance Assessment,1,0.0
+Component Counting,1,0.0
+Automated Theorem Generation,1,0.0
+Filter,1,0.0
+Determine Range,1,0.0
+Cluster,1,0.0
+Find Extreme,1,0.0
+Correlation,1,0.0
+Find Anomaly,1,0.0
+Order,1,0.0
+Distribution,1,0.0
+Crossword Generation,1,0.0
+UI element detection,1,0.0
+UI retrieval,1,0.0
+Benchmarking retrieval systems,1,0.0
+Testing embedding models,1,0.0
+Automatic Text Summarization,1,0.0
+Diagnostic Accuracy Evaluation,1,0.0
+Bias Impact Assessment,1,0.0
+Multimodal Data Interaction,1,0.0
+Tool Calling,1,0.0
+Circuit Generation,1,0.0
+Case Analysis,1,0.0
+Neural Architecture Search,1,0.0
+Multi-Objective Optimization,1,0.0
+Topical Clustering,1,0.0
+Claim Relationship Classification,1,0.0
+Preference Modeling,1,0.0
+Inverse Reasoning,1,0.0
+Inverse Inverse Planning,1,0.0
+Ambiguity Identification,1,0.0
+Clarifying Question Generation,1,0.0
+Text-to-Table,1,0.0
+Long Context Performance Evaluation,1,0.0
+Human evaluation,1,0.0
+Video Storytelling,1,0.0
+Content Generation,1,0.0
+Multiple-Choice Selection,1,0.0
+Qualitative Spatial Reasoning,1,0.0
+Cognitive Distortion Detection,1,0.0
+Positive Text Reframing,1,0.0
+Cognitive Task Evaluation,1,0.0
+Adverse Drug Event Detection,1,0.0
+Pronoun Disambiguation,1,0.0
+Chain-of-Thought Reasoning,1,0.0
+Classification of manipulative dialogues,1,0.0
+Detection of manipulation techniques,1,0.0
+Identification of targeted vulnerabilities,1,0.0
+Punctuation,1,0.0
+Structured Parsing,1,0.0
+Follow-Up Question Answering,1,0.0
+Error Analysis,1,0.0
+Problem Generation,1,0.0
+Radiology report generation,1,0.0
+Image classification,1,0.0
+Pathology detection,1,0.0
+Spatial Intelligence,1,0.0
+Fact-checking,1,0.0
+Legal Citation Verification,1,0.0
+Red-Teaming Evaluation,1,0.0
+Evidence2Claim,1,0.0
+Chart2Argument,1,0.0
+News2Argument,1,0.0
+Dialogue Games,1,0.0
+Harmful Speech Detection,1,0.0
+Clarification Questioning,1,0.0
+Data Discovery,1,0.0
+Input-Output Safeguards Evaluation,1,0.0
+Citation Recommendation,1,0.0
+Music Information Retrieval,1,0.0
+Music Understanding,1,0.0
+Cross-Modal Translation,1,0.0
+Human-Centered Navigation,1,0.0
+Temporal Sequencing,1,0.0
+Future Event Forecasting,1,0.0
+Evidence Detection,1,0.0
+Evidence Convincingness Ranking,1,0.0
+Argumentation Summary,1,0.0
+Summary Quality Ranking,1,0.0
+Court View Generation,1,0.0
+Abstractive Question Answering,1,0.0
+Needle Question Answering,1,0.0
+Ego Reasoning,1,0.0
+Plot Question Answering,1,0.0
+Sub-Scene Captioning,1,0.0
+Anomaly Recognition,1,0.0
+Topic Reasoning,1,0.0
+Error Recognition,1,0.0
+Overall Coverage Evaluation,1,0.0
+Targeted Line Coverage,1,0.0
+Targeted Branch Coverage,1,0.0
+Targeted Path Coverage,1,0.0
+Dish Name Recognition,1,0.0
+Coding & Debugging,1,0.0
+Information Seeking,1,0.0
+Federated Instruction Tuning,1,0.0
+Federated Preference Alignment,1,0.0
+Goal-oriented Data Exploration,1,0.0
+Object Reference,1,0.0
+Cognitive Ability Assessment,1,0.0
+Subjectivity Detection,1,0.0
+Automated Task Solving,1,0.0
+Spatial Relationship Identification,1,0.0
+Refinement,1,0.0
+Safety,1,0.0
+Theory of Mind,1,0.0
+Multilingual,1,0.0
+Trustworthiness Evaluation,1,0.0
+Medical Diagnosis Assessment,1,0.0
+Workflow Prediction,1,0.0
+Title Prediction,1,0.0
+Dataset Attribution,1,0.0
+Strategic Reasoning in Games,1,0.0
+Scenario-based Evaluation,1,0.0
+Truthfulness Evaluation,1,0.0
+Dataset Curation,1,0.0
+Vulnerability Existence Detection,1,0.0
+CWE Type Inference,1,0.0
+Key Objects and Functions Identification,1,0.0
+Root Cause Location,1,0.0
+Trigger Point Location,1,0.0
+Model Benchmarking,1,0.0
+Text-to-SQL Parsing,1,0.0
+Task execution,1,0.0
+Entity Summarization,1,0.0
+Formal software verification,1,0.0
+Emotional Intelligence Evaluation,1,0.0
+Relation Understanding,1,0.0
+Access Control Evaluation,1,0.0
+6D Pose Estimation,1,0.0
+Open-Vocabulary Pose Estimation,1,0.0
+Uncertainty Quantification,1,0.0
+Procedure Identification,1,0.0
+Lab Test Ordering,1,0.0
+Medication Prescription,1,0.0
+Intent Understanding,1,0.0
+Intent Utilize,1,0.0
+Multimodal Processing,1,0.0
+Clinical Trial Outcome Prediction,1,0.0
+Risk Content Identification,1,0.0
+Refusal to Answer,1,0.0
+Functional Studies,1,0.0
+Engineering Applications,1,0.0
+Matrix Reasoning,1,0.0
+Image-to-Text Sequence Generation,1,0.0
+Text-to-Image Sequence Generation,1,0.0
+Interleaved Image-Text Content Continuation,1,0.0
+Question-based Interleaved Image-Text Generation,1,0.0
+Foley Audio Dubbing,1,0.0
+Statistical Queries,1,0.0
+Data Combining,1,0.0
+Tree Structure Analysis,1,0.0
+Political Bias Detection,1,0.0
+Crash Severity Prediction,1,0.0
+Total Injury Prediction,1,0.0
+Accident Type Prediction,1,0.0
+Video-Language Compositional Reasoning,1,0.0
+Knowledge Unlearning,1,0.0
+Human Preference Ranking,1,0.0
+Open Named Entity Recognition,1,0.0
+Manipulation Classification,1,0.0
+Out-of-Context Classification,1,0.0
+GUI Navigation,1,0.0
+Image-Text Interaction,1,0.0
+Gender Classification,1,0.0
+Terminology Extraction,1,0.0
+Library-based Code Generation,1,0.0
+CI Builds Repair,1,0.0
+Project-Level Code Completion,1,0.0
+Commit Message Generation,1,0.0
+Module Summarization,1,0.0
+Document Transformation,1,0.0
+Open-ended Single-page Question Answering,1,0.0
+Multi-page Question Answering,1,0.0
+Performance Bug Detection,1,0.0
+Question Identification,1,0.0
+Question Relevance,1,0.0
+Answer Readability,1,0.0
+Answer Relevance,1,0.0
+Future Link Prediction,1,0.0
+Edge Classification,1,0.0
+Textural Relation Generation,1,0.0
+Macroeconomic Prediction,1,0.0
+Narrative Extraction and Summarization,1,0.0
+Subset Sum Problems,1,0.0
+Sorting Problems,1,0.0
+Under-determined Systems,1,0.0
+Multi-turn Conversation,1,0.0
+Cognitive Reasoning Evaluation,1,0.0
+Legal Scenario Analysis,1,0.0
+IRAC Reasoning Tasks,1,0.0
+Spatial Relationship Understanding,1,0.0
+Honesty Assessment,1,0.0
+Text-to-Video Retrieval,1,0.0
+Image Geolocalization,1,0.0
+Geospatial Prediction,1,0.0
+Infrastructure Inference,1,0.0
+GeoQA for City Elements,1,0.0
+Mobility Prediction,1,0.0
+Urban Exploration,1,0.0
+Outdoor Navigation,1,0.0
+Traffic Signal Control,1,0.0
+UI Navigation,1,0.0
+Task Instruction Following,1,0.0
+Quantum Circuit Generation,1,0.0
+Simulation and Execution,1,0.0
+State Preparation and Analysis,1,0.0
+Algorithm Implementation,1,0.0
+Gate Operations and Manipulation,1,0.0
+Visualization and Post-Processing,1,0.0
+Advanced Circuit Manipulation,1,0.0
+Quantum Circuit Serialization,1,0.0
+Cohort Retrieval,1,0.0
+Empathy Evaluation,1,0.0
+Emotion Support Conversation Evaluation,1,0.0
+Exact Copying,1,0.0
+Needles in a Haystack,1,0.0
+Medical QA,1,0.0
+Terminology Normalization,1,0.0
+Table QA,1,0.0
+Case QA,1,0.0
+Effectiveness Evaluation,1,0.0
+Gene-trait Association Analysis,1,0.0
+Data Preprocessing,1,0.0
+Statistical Analysis,1,0.0
+Step Order Prediction,1,0.0
+Step Order Explanation,1,0.0
+Speech Question Answering,1,0.0
+Accent Recognition,1,0.0
+Gender Recognition,1,0.0
+Speech Instruction,1,0.0
+Graph Coding,1,0.0
+Data Consistency Checking,1,0.0
+Tabular Classification,1,0.0
+User Stance Classification,1,0.0
+User Dogmatism Classification,1,0.0
+Underage Detection,1,0.0
+Generational Classification,1,0.0
+Spotlight Locating,1,0.0
+Dialogue Coreference Analysis,1,0.0
+Psychological Assessment,1,0.0
+Baseline feature prediction,1,0.0
+Evaluation of language models,1,0.0
+Benchmark Contamination Detection,1,0.0
+Benchmarking LLMs,1,0.0
+Knowledge Comprehension,1,0.0
+Accurate Computation,1,0.0
+Downstream Applications,1,0.0
+Grammaticality Judgments,1,0.0
+Long-Form Question Answering,1,0.0
+Toxicity Classification,1,0.0
+Model Editing,1,0.0
+Belief Revision,1,0.0
+Approximate Nearest Neighbor Search,1,0.0
+Safety Measurement,1,0.0
+Grounding-based skills,1,0.0
+Reasoning-based skills,1,0.0
+Text Modification,1,0.0
+Security Rules,1,0.0
+Multi-level Diagnostic Assessment,1,0.0
+API Selection,1,0.0
+Parameter Filling,1,0.0
+Requesting User Input,1,0.0
+On-Demand Keyphrase Generation,1,0.0
+Goal Relevance Assessment,1,0.0
+Graph Computation,1,0.0
+Multi-App Interaction,1,0.0
+Causal Inference Classification,1,0.0
+Event Generation,1,0.0
+Event Forecasting,1,0.0
+Spatial Planning,1,0.0
+Single Object Perception,1,0.0
+Spatial Relation Perception,1,0.0
+Environment Perception,1,0.0
+Log Parsing,1,0.0
+Log Anomaly Detection,1,0.0
+Log Fault Diagnosis,1,0.0
+Log Summarization,1,0.0
+Extraction,1,0.0
+Character Consistency,1,0.0
+Bug Resolution,1,0.0
+Full Parsing,1,0.0
+Partial Parsing,1,0.0
+Position-related Parsing,1,0.0
+Structured Visual Question Answering,1,0.0
+Position-related Visual Question Answering,1,0.0
+Graph Understanding,1,0.0
+Action Selection,1,0.0
+Value Inference,1,0.0
+Data Validation,1,0.0
+Visually Grounded Reasoning,1,0.0
+Visual Natural Language Inference,1,0.0
+Visio-Linguistic Outlier Detection,1,0.0
+Interaction Reasoning,1,0.0
+Traffic Rule Compliance Planning,1,0.0
+Clinical Diagnosis Prediction,1,0.0
+Power Dispatch,1,0.0
+Legal Named Entity Recognition,1,0.0
+Rhetorical Role Prediction,1,0.0
+Court Judgment Prediction with Explanation,1,0.0
+Bail Prediction,1,0.0
+Legal Statute Identification,1,0.0
+Prior Case Retrieval,1,0.0
+Legal Machine Translation,1,0.0
+ISL-to-English Translation,1,0.0
+English-to-ISL Pose Generation,1,0.0
+Word/Gloss Recognition,1,0.0
+Word Presence Prediction,1,0.0
+Semantic Similarity Prediction,1,0.0
+Insight Extraction,1,0.0
+Stereotype Evaluation,1,0.0
+Image Address Localization,1,0.0
+Multi-Modal Querying,1,0.0
+API Invocation,1,0.0
+Optimization Problem Solving,1,0.0
+Literature Search,1,0.0
+Protocol Planning,1,0.0
+Prescription Prediction,1,0.0
+Dosage Prediction,1,0.0
+Multi-Class Classification,1,0.0
+Subgraph Completion,1,0.0
+Similar Concepts,1,0.0
+Temporal Knowledge Graph Learning,1,0.0
+Visual Generation,1,0.0
+Medical Language Generation,1,0.0
+Medical Knowledge Question Answering,1,0.0
+Complex Medical Reasoning,1,0.0
+Healthcare Safety and Ethics,1,0.0
+Personalized Email Writing,1,0.0
+Personalized Abstract Generation,1,0.0
+Personalized Review Writing,1,0.0
+Personalized Topic Writing,1,0.0
+Query Paraphrasing,1,0.0
+OCR Reasoning,1,0.0
+Chart Analysis,1,0.0
+Checking,1,0.0
+Identification,1,0.0
+Rewriting,1,0.0
+Open Generation,1,0.0
+Benchmark Evaluation,1,0.0
+Change Captioning,1,0.0
+Postcondition Generation,1,0.0
+Software Vulnerability Detection,1,0.0
+Text-to-SQL Evaluation,1,0.0
+Multi-Image Instruction,1,0.0
+Multimodal Knowledge-Seeking,1,0.0
+Multimodal In-Context Learning,1,0.0
+Commonsense Persona Knowledge Linking,1,0.0
+Event Factuality Detection,1,0.0
+Supporting Evidence Prediction,1,0.0
+Floorplan Generation,1,0.0
+Accident Prediction,1,0.0
+Accident Localization,1,0.0
+Documentation Updates,1,0.0
+Legal Classification,1,0.0
+Knowledge Base Population,1,0.0
+Multi-image Relation Association,1,0.0
+Factual Evaluation,1,0.0
+Personality Analysis,1,0.0
+Political Bias Evaluation,1,0.0
+Sycophancy Assessment,1,0.0
+Graph-based Link Prediction,1,0.0
+Action Justification,1,0.0
+Expected Action,1,0.0
+Linguistic Habits,1,0.0
+Persona Consistency,1,0.0
+Toxicity Control,1,0.0
+Dataset Tagging,1,0.0
+Office Automation Tasks,1,0.0
+Job Exposure Assessment,1,0.0
+Multimodal Fake News Detection,1,0.0
+Layout Analysis,1,0.0
+Phishing Detection,1,0.0
+Adversarial Attack Evaluation,1,0.0
+Music Captioning,1,0.0
+Music Retrieval,1,0.0
+Music Generation,1,0.0
+Multimodal Video Understanding,1,0.0
+Multimodal Captioning,1,0.0
+Research Gap Identification,1,0.0
+Active Learning Evaluation,1,0.0
+Constraint Following,1,0.0
+Ethical Reasoning Assessment,1,0.0
+Dialog Context Understanding,1,0.0
+Clinical Visual Question Answering,1,0.0
+Multi-modal generation,1,0.0
+Visual storytelling,1,0.0
+Verification of problem alignment with standards,1,0.0
+Tagging problems with relevant standards,1,0.0
+Emotion Regulation Classification,1,0.0
+Graph Reconstruction,1,0.0
+Character’s Path Reconstruction,1,0.0
+Reversed Character’s Path Reconstruction,1,0.0
+Novel Shortest Path,1,0.0
+Temporal Hinted Shortest Path,1,0.0
+Checklist Compliance Evaluation,1,0.0
+State Dependency Handling,1,0.0
+BUG Localization,1,0.0
+BUG Identification,1,0.0
+Code Recognition,1,0.0
+Ad Text Evaluation,1,0.0
+Job Shop Scheduling,1,0.0
+Text-to-LaTeX Translation,1,0.0
+Video-based Person Re-Identification,1,0.0
+Visualization,1,0.0
+Open-domain dialog,1,0.0
+Dialog completion,1,0.0
+Identifying unnatural sentences,1,0.0
+Rewriting unnatural sentences,1,0.0
+Panoptic Sentiment Sextuple Extraction,1,0.0
+Sentiment Flipping Analysis,1,0.0
+Statistical Modeling,1,0.0
+Conceptual Variable Formulation,1,0.0
+Pedestrian Attribute Recognition,1,0.0
+Primary Diagnosis,1,0.0
+Final Diagnosis,1,0.0
+Automated Review Generation,1,0.0
+Analysis of Review Quality,1,0.0
+Trajectory Prediction,1,0.0
+Scene Description Generation,1,0.0
+Action Planning,1,0.0
+Evaluation of Multi-turn Conversations,1,0.0
+Label Noise Detection,1,0.0
+Class Imbalanced Learning,1,0.0
+Digital Twin Generation,1,0.0
+Multi-Vision Perception,1,0.0
+Multi-Vision Reasoning,1,0.0
+Mental Disorder Diagnosis,1,0.0
+Gender Bias Assessment,1,0.0
+Clinical Report Summarization,1,0.0
+Treatment Recommendations,1,0.0
+Medical Concept Explanation,1,0.0
+Data Privacy Evaluation,1,0.0
+Input Reasoning,1,0.0
+Output Reasoning,1,0.0
+Issue Resolving,1,0.0
+Simple Route Planning,1,0.0
+Geographic Literacy,1,0.0
+GIS Concepts,1,0.0
+NL2API Mapping,1,0.0
+Numerical Trajectory Recognition,1,0.0
+Toponymic Identification,1,0.0
+Clinical Note Generation,1,0.0
+Rapping Voice Generation,1,0.0
+Aerospace Embodied Scene Awareness,1,0.0
+Aerospace Embodied Spatial Reasoning,1,0.0
+Aerospace Embodied Navigational Exploration,1,0.0
+Aerospace Embodied Task Planning,1,0.0
+Aerospace Embodied Motion Decision,1,0.0
+Execution,1,0.0
+Multi-Agent Cooperation,1,0.0
+Competition Evaluation,1,0.0
+Secure Coding Evaluation,1,0.0
+User Summarization,1,0.0
+Causal Language Modeling,1,0.0
+Map-based Question Answering,1,0.0
+Source-Critical Reasoning,1,0.0
+Metaphor Word Detection,1,0.0
+Metaphor Explanation,1,0.0
+Sarcasm Word Detection,1,0.0
+Sarcasm Explanation,1,0.0
+Sarcasm Target Detection,1,0.0
+Procedural Question Answering,1,0.0
+Cognitive Assessment of Cultural Knowledge,1,0.0
+Speech Tokenization Evaluation,1,0.0
+Multiple Choice Question,1,0.0
+API Interaction,1,0.0
+Task-Oriented Dialogue,1,0.0
+Fashion Evaluation,1,0.0
+Legal Fact Prediction,1,0.0
+Simulation Task Evaluation,1,0.0
+Case Outcome Prediction,1,0.0
+Task-based Evaluation,1,0.0
+Clinical Information Extraction,1,0.0
+Geometric Captioning,1,0.0
+Geometric Question Answering,1,0.0
+Knowledge Tracing,1,0.0
+API Recommendation,1,0.0
+Computational Reproducibility,1,0.0
+Dialect Generation,1,0.0
+Cognitive Abilities Assessment,1,0.0
+Robot Navigation,1,0.0
+Scenario Generation,1,0.0
+Knowledge Query Answering,1,0.0
+Knowledge Summarization,1,0.0
+Requery,1,0.0
+Rerank,1,0.0
+End-to-End Search,1,0.0
+Robotic Manipulation Evaluation,1,0.0
+Semantic Text Similarity,1,0.0
+Key Event Recognition,1,0.0
+Mixed Event Recognition,1,0.0
+Implicit Emotional Recognition,1,0.0
+Intention Recognition,1,0.0
+Response Clarity Classification,1,0.0
+Context Understanding,1,0.0
+Expectation Identification,1,0.0
+Appropriateness Judgment,1,0.0
+Automatic Speaker Verification,1,0.0
+Audio Event Classification,1,0.0
+Depth Estimation,1,0.0
+Screen Question Answering,1,0.0
+Tappability Prediction,1,0.0
+Element Relationship Prediction,1,0.0
+UI Component Identification,1,0.0
+Open-Web Research,1,0.0
+Economic Analysis,1,0.0
+Communication Quality Assessment,1,0.0
+Spelling,1,0.0
+Orthographic Similarity,1,0.0
+Manipulation Tasks,1,0.0
+Query Retrieval,1,0.0
+Title Retrieval,1,0.0
+Part-of-Paragraph Retrieval,1,0.0
+Keyword Retrieval,1,0.0
+Summary Retrieval,1,0.0
+Review-Based Answer Generation,1,0.0
+Product-Related Question Ranking,1,0.0
+Chat,1,0.0
+Heuristic Text Generation,1,0.0
+Knowledge Concept Tagging,1,0.0
+Question Difficulty Prediction,1,0.0
+Toxicity Analysis,1,0.0
+Short Answer Grading,1,0.0
+Propaganda Technique Identification,1,0.0
+Appeal Analysis,1,0.0
+Coping Strategy Identification,1,0.0
+Rhetoric Classification,1,0.0
+Form Classification,1,0.0
+Content Classification,1,0.0
+Component Extraction,1,0.0
+Rhetoric Generation,1,0.0
+Evidence grounded Personality State Recognition,1,0.0
+Evidence grounded Personality Trait Recognition,1,0.0
+Continual Learning,1,0.0
+Memorization,1,0.0
+Logic Inference,1,0.0
+Discrimination,1,0.0
+Ethic,1,0.0
+Anomaly Segmentation,1,0.0
+Test Completion,1,0.0
+Pun Grounding,1,0.0
+Pun Disambiguation,1,0.0
+Pun Reconstruction,1,0.0
+Multilingual Information Retrieval,1,0.0
+Cross-lingual Knowledge Retrieval,1,0.0
+Video Activity Localization,1,0.0
+String Processing,1,0.0
+Type Classification,1,0.0
+Physical Examination,1,0.0
+Closure,1,0.0
+Genome classification,1,0.0
+RNA secondary structure prediction,1,0.0
+Gene expression prediction,1,0.0
+mRNA degradation prediction,1,0.0
+3D Facial Expression Generation,1,0.0
+Text-to-Music Generation,1,0.0
+Symbolic Music Generation,1,0.0
+Logical Consistency Evaluation,1,0.0
+Short-term Tracking,1,0.0
+Long-term Tracking,1,0.0
+Global Instance Tracking,1,0.0
+Plausibility Prediction,1,0.0
+Plausibility Explanation,1,0.0
+Defense Testing,1,0.0
+Evaluation of Captioning,1,0.0
+Dialogue Systems Evaluation,1,0.0
+Penetration Testing,1,0.0
+Activity Recommendation,1,0.0
+Identifying RPA Candidates,1,0.0
+Process Question Answering,1,0.0
+Mining Declarative Process Models,1,0.0
+Text-to-Motion Generation,1,0.0
+Clinical Question Answering,1,0.0
+Toxicity Assessment,1,0.0
+Code Preference Evaluation,1,0.0
+Situated Captioning,1,0.0
+Situated Question Answering,1,0.0
+Procedural Planning,1,0.0
+Counterfactual Planning,1,0.0
+Multi-lingual Summarization,1,0.0
+Cross-lingual Summarization,1,0.0
+Geometry Question Answering,1,0.0
+Mathematical Word Problems,1,0.0
+Long-context Generation,1,0.0
+Dataset Management,1,0.0
+Error Step Identification,1,0.0
+Error Categorization,1,0.0
+Cultural Understanding Assessment,1,0.0
+Bargaining,1,0.0
+Persuasion,1,0.0
+Pattern Translation,1,0.0
+Graph Modification,1,0.0
+Pattern Detection,1,0.0
+Isomorphic Mapping,1,0.0
+Frequent Subgraph Extraction,1,0.0
+Discriminative Pattern Learning,1,0.0
+Situational Understanding,1,0.0
+Categorization,1,0.0
+Spatial Navigation,1,0.0
+Operation Reasoning,1,0.0
+Cipher Reasoning,1,0.0
+Puzzle Reasoning,1,0.0
+Evaluation of Vision-Language Models,1,0.0
+Patent Generation,1,0.0
+Dispute Resolution,1,0.0
+Vision-Language Navigation,1,0.0
+Machine Learning Engineering,1,0.0
+Goal Interpretation,1,0.0
+Action Sequencing,1,0.0
+Subgoal Decomposition,1,0.0
+Transition Modeling,1,0.0
+Moral Decision-Making,1,0.0
+Human-AI Interaction Analysis,1,0.0
+Data Wrangling,1,0.0
+Cognitive Assessment,1,0.0
+Game Traversal,1,0.0
+Bar Exam Evaluation,1,0.0
+Preference Learning Evaluation,1,0.0
+Structure Recognition,1,0.0
+Radical Recognition,1,0.0
+Stroke Count Identification,1,0.0
+Stroke Decomposition,1,0.0
+Malicious Behavior Evaluation,1,0.0
+Single-step Inference Rule Classification,1,0.0
+Single-step Derivation Reasoning,1,0.0
+Proof Generation,1,0.0
+Response Maintenance,1,0.0
+Scientometric Analysis,1,0.0
+Citation Analysis,1,0.0
+Rule Induction,1,0.0
+Example Inference,1,0.0
+Detecting AI-generated content,1,0.0
+Visual Language Navigation,1,0.0
+Compositional Reasoning,1,0.0
+Authorship Profiling,1,0.0
+Equation Solving,1,0.0
+Multimodal Comprehension,1,0.0
+Multimodal Generation,1,0.0
+Signal Reconstruction,1,0.0
+Change Point Detection,1,0.0
+Outlier Detection,1,0.0
+Echo Cancellation,1,0.0
+Imputation,1,0.0
+Period Detection,1,0.0
+Resampling,1,0.0
+Spectrum Analysis,1,0.0
+Adaptive Filtering,1,0.0
+Multi-Session Reasoning,1,0.0
+Knowledge Updates,1,0.0
+Abstention,1,0.0
+Core Knowledge Assessment,1,0.0
+Cognitive Ability Evaluation,1,0.0
+Evaluation of AI Development Tasks,1,0.0
+Inductive Logic Reasoning,1,0.0
+Dynamic Evaluation,1,0.0
+Zero-Shot Learning,1,0.0
+Music Emotion Recognition,1,0.0
+Hierarchy Planning,1,0.0
+Dialogue Systems,1,0.0
+Tool Learning Evaluation,1,0.0
+Prompt Sensitivity Evaluation,1,0.0
+Image Insertion,1,0.0
+Image Comprehension,1,0.0
+Single Operation Editing,1,0.0
+Multi-Operation Editing,1,0.0
+Benchmark documentation,1,0.0
+Model evaluation framework,1,0.0
+Cognitive Distortion Classification,1,0.0
+Core Belief Classification,1,0.0
+Therapeutic Response Generation,1,0.0
+Language Distinction,1,0.0
+Volume Perception,1,0.0
+Cough Type Classification,1,0.0
+Recognition,1,0.0
+GUI Understanding,1,0.0
+Temporal Event Sequence Retrieval,1,0.0
+Financial Knowledge Consulting,1,0.0
+Asset Valuation Reporting,1,0.0
+Investment Strategy Evaluation,1,0.0
+Credit Risk Evaluation,1,0.0
+Market Information Summarization,1,0.0
+Emotion Prediction,1,0.0
+Hazards Identification,1,0.0
+Consequence Prediction,1,0.0
+LLM Role Recognition,1,0.0
+LLM Involvement Measurement,1,0.0
+Table SQL,1,0.0
+Wiki Retrieval,1,0.0
+Cognitive Reasoning,1,0.0
+Task Execution Monitoring,1,0.0
+Autonomous Driving,1,0.0
+Simulation Evaluation,1,0.0
+Graph-Level Queries,1,0.0
+Node-Level Queries,1,0.0
+Customer Support,1,0.0
+Help Desk Assistance,1,0.0
+Social Interaction Modeling,1,0.0
+Recalling,1,0.0
+Summarizing,1,0.0
+Organizing,1,0.0
+Attributing,1,0.0
+General Knowledge Evaluation,1,0.0
+Political Influence Detection,1,0.0
+News Authenticity Identification,1,0.0
+Scientific Data Usage Detection,1,0.0
+Statistical Data Usage Detection,1,0.0
+Data Sources Detection,1,0.0
+Impacted Location or Countries Detection,1,0.0
+Climate/Environmental Topics Detection,1,0.0
+News Target Detection,1,0.0
+Authority Involvement Detection,1,0.0
+Sub-graph Completion,1,0.0
+Text Refinement,1,0.0
+Writing Advice,1,0.0
+Audio-driven Video Hallucination,1,0.0
+Video-driven Audio Hallucination,1,0.0
+Audio-visual Matching,1,0.0
+Audio-visual Captioning,1,0.0
+Social Interaction Simulation,1,0.0
+Goal Completion Evaluation,1,0.0
+Implicit Reasoning Evaluation,1,0.0
+User Behavior Alignment,1,0.0
+Shopping Knowledge Reasoning,1,0.0
+Shopping Concept Understanding,1,0.0
+Multi-lingual Abilities,1,0.0
+Multi-modal Understanding,1,0.0
+Text Localization,1,0.0
+Table Cell Localization,1,0.0
+Document Forgery Detection,1,0.0
+Infographic Question Answering,1,0.0
+Sorting,1,0.0
+Automated Vulnerability Detection,1,0.0
+Prompt Engineering Analysis,1,0.0
+Sequence Generation,1,0.0
+Factual Recall,1,0.0
+Linguistic Capability and Social Understanding,1,0.0
+Equation Inference,1,0.0
+Paper Weakness,1,0.0
+Review Critique,1,0.0
+Structure Extraction,1,0.0
+Image-to-Code Translation,1,0.0
+Task Graph Generation,1,0.0
+Video Anomaly Recognition,1,0.0
+Question Relevance Assessment,1,0.0
+Answer Correctness Evaluation,1,0.0
+Visual-Aided Reasoning,1,0.0
+Conversational Passage Retrieval,1,0.0
+Citation Labeling,1,0.0
+Cultural Sensitivity Assessment,1,0.0
+Task Orientation,1,0.0
+3D Video Synthesis,1,0.0
+Assessment of educational competencies,1,0.0
+Evaluation of pedagogical knowledge,1,0.0
+Model Inference Performance Evaluation,1,0.0
+Recommendation Evaluation,1,0.0
+Real-Time Visual Understanding,1,0.0
+Omni-Source Understanding,1,0.0
+Query Autocomplete,1,0.0
+Skill Classification,1,0.0
+Music Classification,1,0.0
+Text-to-Query,1,0.0
+Entailment Classification,1,0.0
+Reasoning-process Explanation Generation,1,0.0
+Cultural Competency Evaluation,1,0.0
+Malware Generation Evaluation,1,0.0
+Code Execution Safety Evaluation,1,0.0
+Knowledge Acquisition,1,0.0
+Psychometric Assessment,1,0.0
+Cinematography Analysis,1,0.0
+Character Understanding,1,0.0
+Making Analysis,1,0.0
+Backdoor Detection,1,0.0
+Media Bias Detection,1,0.0
+Emotion Generation,1,0.0
+Emotion Comprehension,1,0.0
+Persona Evaluation,1,0.0
+Event Recommendation,1,0.0
+Front/Behind Determination,1,0.0
+Left/Right Determination,1,0.0
+Depth Range Determination,1,0.0
+Yaw Angle Determination,1,0.0
+Pixel Location Estimation,1,0.0
+Long-term Planning,1,0.0
+Error Pattern Analysis,1,0.0
+Relationship Labeling,1,0.0
+Machine Learning Optimization,1,0.0
+Grammatical Error Detection,1,0.0
+Vulnerability Management,1,0.0
+Data Security,1,0.0
+Object Orientation Understanding,1,0.0
+Caption Ordering,1,0.0
+Fault Localization,1,0.0
+Interleaved Image-Text Generation,1,0.0
+Image Manipulation Detection,1,0.0
+Analysis and Reasoning Generation,1,0.0
+Omni-modal Temporal Video Grounding,1,0.0
+Omni-modal Dense Video Captioning,1,0.0
+Omni-modal Segment Captioning,1,0.0
+Caption Correction,1,0.0
+Intent Invocation,1,0.0
+Instance Object Navigation,1,0.0
+History Taking,1,0.0
+Specialty Referral,1,0.0
+Hint Ranking,1,0.0
+Answer Correction,1,0.0
+Facial Recognition,1,0.0
+Audio Recognition,1,0.0
+Audio-Visual Integration,1,0.0
+Parameter-Efficient Fine-Tuning,1,0.0
+Code Generation for Data Visualization,1,0.0
+Temporal Action Segmentation,1,0.0
+Time and Motion Studies,1,0.0
+Data Generation,1,0.0
+Scene Transition Detection,1,0.0
+Misconception Identification,1,0.0
+Diagnostic Assessment,1,0.0
+Binary Hostility Identification,1,0.0
+Multi-class Targeted Identity Type Classification,1,0.0
+Game AI programming,1,0.0
+Procedural Content Generation,1,0.0
+Multi-task Learning,1,0.0
+Model Integration,1,0.0
+Transcription,1,0.0
+Performance Testing,1,0.0
+Input Generation,1,0.0
+Argument Quality Evaluation,1,0.0
+Automated Metric Assessment,1,0.0
+Code Writing,1,0.0
+Conceptual Understanding,1,0.0
+Environment Management,1,0.0
+Software Installation,1,0.0
+Benchmark Comparison,1,0.0
+Multimodal Evaluation,1,0.0
+Dynamic Capability Assessment,1,0.0
+Molecular Property Prediction,1,0.0
+Anomaly Reasoning,1,0.0
+Anomaly Effect Assessment,1,0.0
+Cultural Comprehension,1,0.0
+Memorization Detection,1,0.0
+Abstraction and Reasoning,1,0.0
+Customized Manga Generation,1,0.0
+Document Parsing,1,0.0
+Content Recognition,1,0.0
+Geometric Perception Understanding,1,0.0
+Rule-Guided Reasoning,1,0.0
+System Ranking,1,0.0
+Saliency Ranking,1,0.0
+User Query Response,1,0.0
+G-code Anomaly Detection,1,0.0
+Idiom Translation,1,0.0
+Gene Expression Prediction,1,0.0
+Enhancer Activity Prediction,1,0.0
+RNA Isoform Prediction,1,0.0
+Programmable RNA Switches,1,0.0
+Secondary Structure Prediction,1,0.0
+Thermostability Prediction,1,0.0
+Enzyme Commission Number Prediction,1,0.0
+Contact Map Prediction,1,0.0
+Fluorescence Prediction,1,0.0
+Beta-Lactamase Prediction,1,0.0
+Enhancer-Promoter Interaction Prediction,1,0.0
+siRNA Efficiency Prediction,1,0.0
+Antibody-Antigen Neutralizability Prediction,1,0.0
+RNA-Protein Interaction Prediction,1,0.0
+CRISPR Off-Target Prediction,1,0.0
+DNA-Protein Folding Prediction,1,0.0
+Zero-Shot Anomaly Detection,1,0.0
+Personality Trait Recognition,1,0.0
+Exploiting Weaknesses,1,0.0
+Terrain Utilization,1,0.0
+Entity Prediction,1,0.0
+Rationale Generation,1,0.0
+Character Customization Evaluation,1,0.0
+Fact Decomposition,1,0.0
+Gene Interaction Prediction,1,0.0
+Protein-Protein Interaction,1,0.0
+Pathway Co-present Prediction,1,0.0
+Single-Cell Type Annotation,1,0.0
+Object Attributes,1,0.0
+Scene Information,1,0.0
+Spatial Relationship,1,0.0
+Contrast Question Answering,1,0.0
+Geotagging,1,0.0
+Long Document Retrieval,1,0.0
+Factual Consistency Detection,1,0.0
+Creative Reasoning,1,0.0
+Citation Accuracy,1,0.0
+Conflict Robustness,1,0.0
+Stress Detection,1,0.0
+Project Management,1,0.0
+Data Science,1,0.0
+Administrative Tasks,1,0.0
+Human Resources,1,0.0
+Social Dynamics Modeling,1,0.0
+Molecule Editing,1,0.0
+Molecule Optimization,1,0.0
+Customized Molecule Generation,1,0.0
+Disaster Assessment,1,0.0
+Tree Species Classification,1,0.0
+Urban Heat Island Detection,1,0.0
+Local Climate Zones Detection,1,0.0
+Single-document Question Answering,1,0.0
+Multi-document Question Answering,1,0.0
+Long In-context Learning,1,0.0
+Long-dialogue History Understanding,1,0.0
+Code Repository Understanding,1,0.0
+Long Structured Data Understanding,1,0.0
+Text-rich Image Captioning,1,0.0
+Compass Direction Reasoning,1,0.0
+Grounded Extension Computation,1,0.0
+Complete Extension Computation,1,0.0
+Reasoning with Speech Instructions,1,0.0
+Contract Drafting,1,0.0
+Sports Video Commentary Generation,1,0.0
+Review Writing,1,0.0
+Causal Graph Reasoning,1,0.0
+Knowledge Discovery,1,0.0
+Structured Output Generation,1,0.0
+Cryptocurrency Trading,1,0.0
+ETF Investing,1,0.0
+Visual Spatial Reasoning,1,0.0
+Autocomplete suggestion generation,1,0.0
+Cross-Element Locating,1,0.0
+Test Intention Generation,1,0.0
+Test Task Execution,1,0.0
+GUI Defect Detection,1,0.0
+Sound Effect Generation,1,0.0
+Log Statement Generation,1,0.0
+Data Alignment,1,0.0
+Evaluating Hallucination in Medical Language Models,1,0.0
+Privacy Awareness,1,0.0
+Privacy Leakage,1,0.0
+Forgery Localization,1,0.0
+Forgery Interpretation,1,0.0
+Video Manipulation Detection,1,0.0
+Driver Reaction Detection,1,0.0
+Hazard Recognition,1,0.0
+Hazard Captioning,1,0.0
+Role-Playing,1,0.0
+Movement Detection,1,0.0
+Text Attribute Recognition,1,0.0
+Moral Judgement,1,0.0
+Moral Classification,1,0.0
+Moral Response,1,0.0
+Position,1,0.0
+General Description,1,0.0
+Sensor Understanding,1,0.0
+Logical Reasoning Assessment,1,0.0
+Timeline Summarisation,1,0.0
+Dataset Deduplication,1,0.0
+Aspect Classification,1,0.0
+Stereotype Measurement,1,0.0
+Facial Attribute Recognition,1,0.0
+Face Attack Detection,1,0.0
+Face Recognition,1,0.0
+Human Attribute Recognition,1,0.0
+Spatial Relation Understanding,1,0.0
+Social Relation Understanding,1,0.0
+Person Re-Identification,1,0.0
+Experimental Design,1,0.0
+Model Discovery,1,0.0
+Metaphor Mapping Identification,1,0.0
+Multi-Hop Reasoning,1,0.0
+Motion Recognition,1,0.0
+Location-related Motion,1,0.0
+Repetition Count,1,0.0
+Motion-related Objects,1,0.0
+Camera Motion,1,0.0
+Temporal Arithmetic,1,0.0
+Semantic Captioning,1,0.0
+Multiclass Classification,1,0.0
+Behavior,1,0.0
+Theory-of-Mind Reasoning,1,0.0
+Arithmetic Problem Solving,1,0.0
+Orientation Reasoning,1,0.0
+Other Lane to Ego-Vehicle,1,0.0
+Other Lane Changing,1,0.0
+Other Turning,1,0.0
+Ego Turning,1,0.0
+Ego Traverse Distance,1,0.0
+Utterance Classification,1,0.0
+Topic Identification,1,0.0
+Polarization Detection,1,0.0
+Populism Detection,1,0.0
+Ordering,1,0.0
+Data Imputation,1,0.0
+Syntax Feedback Generation,1,0.0
+Dynamic Facial Expression Captioning,1,0.0
+Spatial-Temporal Video Grounding,1,0.0
+Event Localization and Captioning,1,0.0
+Short Answer Matching,1,0.0
+Embodied Scene Understanding,1,0.0
+Open-Ended Response Evaluation,1,0.0
+Gender Prediction,1,0.0
+Race Estimation,1,0.0
+High-Resolution Face Recognition,1,0.0
+Low-Resolution Face Recognition,1,0.0
+Celebrity Identification,1,0.0
+Attributes Prediction,1,0.0
+Headpose Estimation,1,0.0
+Face Parsing,1,0.0
+Face Tools Retrieval,1,0.0
+Commonsense Question Answering,1,0.0
+Database Question Answering,1,0.0
+Clause Question Answering,1,0.0
+Algorithm Comparison,1,0.0
+Patent Figure Classification,1,0.0
+Multi-Turn Dialogue Assessment,1,0.0
+Animal Re-Identification,1,0.0
+Dependency Inference,1,0.0
+False Claims Classification,1,0.0
+Self-Critique,1,0.0
+Cross-Critique,1,0.0
+Iterative Critique,1,0.0
+Automatic Target Recognition,1,0.0
+Markdown Awareness Evaluation,1,0.0
+API Sequence Generation,1,0.0
+Graph Construction,1,0.0
+Data Transformation,1,0.0
+Task-Specific Graph Evaluation,1,0.0
+Multimodal Retrieval Augmented Generation Planning,1,0.0
+Scientific Question Answering,1,0.0
+Ad Text Generation,1,0.0
+Pros & Cons Generation,1,0.0
+Fine-grained Emotion Recognition,1,0.0
+Basic Emotion Recognition,1,0.0
+Addressee Recognition,1,0.0
+Next Speaker Prediction,1,0.0
+Robotic Decision Making,1,0.0
+Concept Detection,1,0.0
+Model Steering,1,0.0
+Guesstimation,1,0.0
+Conversation Type Classification,1,0.0
+Geo-localization,1,0.0
+Object Distance Estimation,1,0.0
+Facial Expression Classification,1,0.0
+Out-of-Distribution Detection,1,0.0
+Security Testing,1,0.0
+Molecule Exploration,1,0.0
+Scientific Problem Solving,1,0.0
+Triage,1,0.0
+Treatment,1,0.0
+Prognosis,1,0.0
+Safety Research,1,0.0
+Detailed Captioning,1,0.0
+Referring Segmentation,1,0.0
+Logging Quality Assessment,1,0.0
+Citation Classification,1,0.0
+Meeting Participation Evaluation,1,0.0
+Transcription Assessment,1,0.0
+Test Analysis,1,0.0
+Long-context Question Answering,1,0.0
+Text Restoration,1,0.0
+Adversarial Attack Defense,1,0.0
+Asynchronous Planning,1,0.0
+Multi-Agent Planning,1,0.0
+Energy Benchmarking,1,0.0
+Performance-Energy Tradeoff Analysis,1,0.0
+Metonymy Resolution,1,0.0
+Code Repository Deployment,1,0.0
+Environment Setup,1,0.0
+Data Preparation,1,0.0
+Text Visualization,1,0.0
+Legal Entity Extraction,1,0.0
+Legal Relationship Representation,1,0.0
+Speech Scoring,1,0.0
+Speech Ranking,1,0.0
+House Ordering,1,0.0
+Cognitive Reframing,1,0.0
+Out-of-Sync Recovery Evaluation,1,0.0
+Tokenization Evaluation,1,0.0
+Event Relationship Analysis,1,0.0
+Topic Generation,1,0.0
+Circuit Interpretation,1,0.0
+Event Abstraction,1,0.0
+Fine-Grained Description,1,0.0
+Cross-Modal Identification,1,0.0
+Referring,1,0.0
+Personality Simulation,1,0.0
+Lexical Simplification,1,0.0
+Syntactic Simplification,1,0.0
+Sentence Simplification,1,0.0
+Document Simplification,1,0.0
+Word Association,1,0.0
+Propaganda Detection,1,0.0
+Behavior Classification,1,0.0
+Rule Following,1,0.0
+Safety Defense,1,0.0
+Semantic Navigation,1,0.0
+Event Description,1,0.0
+Multiple-Choice Questioning,1,0.0
+Profile Construction,1,0.0
+Profile Updating,1,0.0
+Entity Tracking,1,0.0
+Ethical Compliance Evaluation,1,0.0
+Code Execution Prediction,1,0.0
+Bug Detection,1,0.0
+Safety Awareness Evaluation,1,0.0
+Functional Testing,1,0.0
+Security Exploitation Testing,1,0.0
+Quantitative Text Analysis,1,0.0
+Cross-turn Reasoning,1,0.0
+Image Management,1,0.0
+Answer Refusal,1,0.0
+Automated Essay Scoring,1,0.0
+Entity-Level Hallucination Detection,1,0.0
+Visual Cue Linking,1,0.0
+Evaluating instrumental convergence behaviors,1,0.0
+Information-Seeking Dialogue,1,0.0
+Document Creation,1,0.0
+Closed-Book Question Answering,1,0.0
+Embodied Question Answering,1,0.0
+Task Simulation,1,0.0
+Cross-modal Topic Matching,1,0.0
+Text-only Topic Matching,1,0.0
+World Modeling,1,0.0
+Economic Reasoning,1,0.0
+Cultural Image VQA,1,0.0
+Cultural Video VQA,1,0.0
+Cultural Origin QA,1,0.0
+Cultural Knowledge QA,1,0.0
+Health-based Question Answering,1,0.0
+Moral Decision Making,1,0.0
+Code Verification,1,0.0
+Diagram Generation,1,0.0
+Data Cleaning and Preprocessing,1,0.0
+Data Exploration and Statistics Understanding,1,0.0
+Data Mining and Pattern Recognition,1,0.0
+Interpretability and Report Generation,1,0.0
+Discourse Understanding,1,0.0
+Anaphora Accessibility,1,0.0
+Step Reordering,1,0.0
+Procedure-Based Multiple-Choice Questions,1,0.0
+Conversation-Based Multiple-Choice Questions,1,0.0
+Conversation-Based Question Answering,1,0.0
+Multi-turn Instruction Following,1,0.0
+House Price Prediction,1,0.0
+3-SAT Optimization,1,0.0
+Reinforcement Learning Navigation,1,0.0
+Game Theory Strategy Generation,1,0.0
+Professional Writing,1,0.0
+Visual Captioning,1,0.0
+Chart Extraction,1,0.0
+Autonomous Agent Tasks,1,0.0
+Pairwise Causal Discovery,1,0.0
+Acceptability Rating,1,0.0
+Multiple-Choice Task,1,0.0
+Evaluation of Offensive Cyber Operation Capabilities,1,0.0
+Surface-level Content Understanding,1,0.0
+Symbolic Meaning Interpretation,1,0.0
+Background Knowledge Comprehension,1,0.0
+Implicit Meaning Comprehension,1,0.0
+Problem Solving in Physics,1,0.0
+Inductive Reasoning Evaluation,1,0.0
+Economic Simulation,1,0.0
+Legal Knowledge Assessment,1,0.0
+Parody Detection,1,0.0
+Comment Sentiment Classification,1,0.0
+User Sentiment Classification,1,0.0
+Code Question Answering,1,0.0
+Biological Pathway Reasoning,1,0.0
+Factual Classification,1,0.0
+Jailbreak Evaluation,1,0.0
+Rewrite,1,0.0
+Role-playing,1,0.0
+Visual Statement Verification,1,0.0
+Open-Ended Visual Question Answering,1,0.0
+Legal Compliance Evaluation,1,0.0
+Context Understanding Probing,1,0.0
+Meta-Evaluation,1,0.0
+Multi-Modal Question Answering,1,0.0
+Multi-Modal Fact Verification,1,0.0
+Image Reranking,1,0.0
+ECG Interpretation,1,0.0
+Statistics,1,0.0
+Drafting Defense Statements,1,0.0
+Writing Trial Facts,1,0.0
+Composing Legal Reasoning,1,0.0
+Generating Judgment Results,1,0.0
+Open-ended Writing,1,0.0
+Cognitive Task Execution,1,0.0
+Object Reasoning,1,0.0
+Backdoor Attack Evaluation,1,0.0
+Adversarial Robustness Testing,1,0.0
+Numeric Named Entity Recognition,1,0.0
+Textual Named Entity Recognition,1,0.0
+Repository-level Code Generation,1,0.0
+Dynamic Planning,1,0.0
+Socratic Questioning,1,0.0
+Student Solution Correctness,1,0.0
+Student Mistake Location,1,0.0
+Student Mistake Correction,1,0.0
+Scaffolding Generation,1,0.0
+Pedagogical Instruction Following,1,0.0
+Long-Text Generation,1,0.0
+Error Debugging,1,0.0
+Function Synthesis,1,0.0
+Algorithmic Refactoring,1,0.0
+Theorem Explanation Generation,1,0.0
+Multimodal Reasoning Assessment,1,0.0
+Counterexample Generation,1,0.0
+User Eligibility Determination,1,0.0
+Conceptual Understanding Evaluation,1,0.0
+Aspect-Sentiment Triplet Extraction,1,0.0
+Collaborative Cooking,1,0.0
+Dynamic Adaptation,1,0.0
+Video Description Generation,1,0.0
+Personalized Itinerary Generation,1,0.0
+Conversational Knowledge Retrieval,1,0.0
+Medical Image Captioning,1,0.0
+Diplomatic Negotiation,1,0.0
+Competitive Programming Assessment,1,0.0
+ToM Application,1,0.0
+Analogy Completion,1,0.0
+Functional Site Prediction,1,0.0
+Catalytic Site Prediction,1,0.0
+Conserved Site Prediction,1,0.0
+Binding Site Prediction,1,0.0
+Structural Flexibility Prediction,1,0.0
+Remote Homology Detection,1,0.0
+Judgment Prediction,1,0.0
+Concept Identification,1,0.0
+Automated Case Annotation,1,0.0
+Passage Ranking,1,0.0
+Transparent Law Reasoning,1,0.0
+Factum Probandum Generation,1,0.0
+Evidence Reasoning,1,0.0
+Experience Generation,1,0.0
+Hierarchical Structure Reasoning,1,0.0
+Vocabulary Understanding,1,0.0
+Cost-efficient Path Planning,1,0.0
+Obstacle-avoidance Path Planning,1,0.0
+Wordplay Detection,1,0.0
+Wordplay Interpretation,1,0.0
+Response Evaluation,1,0.0
+Adversarial Attack Generation,1,0.0
+Evaluation of Defense Mechanisms,1,0.0
+Clinical Text Understanding,1,0.0
+Principal Diagnosis,1,0.0
+Differential Analysis,1,0.0
+Medication Recommendation,1,0.0
+Long-term Course Management,1,0.0
+Social Simulation,1,0.0
+Needle-in-a-Haystack Retrieval,1,0.0
+Ethical Knowledge Assessment,1,0.0
+Violation Detection,1,0.0
+Priority Dilemma Evaluation,1,0.0
+Equilibrium Dilemma Evaluation,1,0.0
+Sterility Breach Detection,1,0.0
+Next Action Anticipation,1,0.0
+Robot Phase Prediction,1,0.0
+Text Generation with Citations,1,0.0
+Stage Generation,1,0.0
+Scene Layout Generation,1,0.0
+News Sentiment Analysis,1,0.0
+Tax Law Evaluation,1,0.0
+Psychotherapy Classification,1,0.0
+Strategy Classification,1,0.0
+Multimodal Information Extraction,1,0.0
+Video Subtitle Extraction,1,0.0
+Erroneous Sentence Detection,1,0.0
+Erroneous Span Detection,1,0.0
+Error Rationale Generation,1,0.0
+Code Unit Perception,1,0.0
+Intra-Code Unit Understanding,1,0.0
+Inter-Code Unit Relation Understanding,1,0.0
+Long Documentation Understanding,1,0.0
+Turn-Taking,1,0.0
+Backchanneling,1,0.0
+Pause Handling,1,0.0
+User Interruption,1,0.0
+Formal Specification Inference,1,0.0
+Task Refusal,1,0.0
+Text Q&A,1,0.0
+Notification Management,1,0.0
+Recall,1,0.0
+Causal Reasoning Evaluation,1,0.0
+Video Generation Assessment,1,0.0
+Complex Logical Reasoning,1,0.0
+Multi-step Inference,1,0.0
+Preference Assessment,1,0.0
+Conjecture Generation,1,0.0
+Error Classification,1,0.0
+Constrained Text Generation,1,0.0
+Dependency Recognition,1,0.0
+Repository Construction,1,0.0
+Multi-file Editing,1,0.0
+Fundus Photograph Diagnosis,1,0.0
+Optical Coherence Tomography Diagnosis,1,0.0
+Motion Forecasting,1,0.0
+Object Detection and Tracking,1,0.0
+Video Emotion Recognition,1,0.0
+Hallucination Understanding,1,0.0
+Process Understanding,1,0.0
+Outcome Judgment,1,0.0
+Explicit Bias Assessment,1,0.0
+Implicit Bias Assessment,1,0.0
+Geospatial Question Answering,1,0.0
+Static Classification,1,0.0
+Dynamic Questioning,1,0.0
+Review Comment Generation,1,0.0
+Scientific Claim Extraction,1,0.0
+Investigation Proposal Extraction,1,0.0
+Hardware Description Language Generation,1,0.0
+Episodic Memory,1,0.0
+Multi-Instance Retrieval,1,0.0
+Feature Disentanglement,1,0.0
+Interpretability Assessment,1,0.0
+Unlearning Capability Assessment,1,0.0
+Multimodal Room Escape,1,0.0
+Amodal Segmentation,1,0.0
+Error Detection in Reasoning,1,0.0
+Open-Ended Dialog Generation,1,0.0
+Modeling Optimization Problems,1,0.0
+Modeling Satisfaction Problems,1,0.0
+Router Evaluation,1,0.0
+Detection of Dark Patterns,1,0.0
+Banner Design Generation,1,0.0
+Embodied Spatial Reasoning,1,0.0
+Language Proficiency Assessment,1,0.0
+Reasoning and Problem-Solving Assessment,1,0.0
+Step Correctness,1,0.0
+Answer Aggregation,1,0.0
+Reasoning Process Search,1,0.0
+Concept Tracking,1,0.0
+Algebraic Manipulation,1,0.0
+Fine-grained video editing,1,0.0
+Clarification,1,0.0
+Follow-Up Requests,1,0.0
+Directional Recognition,1,0.0
+Directional Object Perception,1,0.0
+Rotation-Angle,1,0.0
+Rotation-Difference,1,0.0
+Planning-Question Answering,1,0.0
+Planning-Decision,1,0.0
+Judgment Document Generation,1,0.0
+Visual Analysis,1,0.0
+Forgery Detection,1,0.0
+Artifical Localization,1,0.0
+Grasp Detection,1,0.0
+Country Identification,1,0.0
+Cultural Marker Identification,1,0.0
+Figure Comprehension,1,0.0
+Multi-figure Comprehension,1,0.0
+Figure-Table Comprehension,1,0.0
+Figure-Text Comprehension,1,0.0
+Figure-Formula Comprehension,1,0.0
+Table Comprehension,1,0.0
+Multi-table Comprehension,1,0.0
+Text Comprehension,1,0.0
+Formula Comprehension,1,0.0
+Pseudocode Comprehension,1,0.0
+Reasoning Analysis,1,0.0
+Geospatial Analysis,1,0.0
+Mapping,1,0.0
+Human-Object Interaction Synthesis,1,0.0
+Multi-Discipline Understanding and Reasoning,1,0.0
+Multi-Modal JailBreaking Challenge,1,0.0
+Multi-Size OCR Challenge,1,0.0
+Use case analysis,1,0.0
+Trend analysis,1,0.0
+Impact assessment,1,0.0
+Document Information Extraction,1,0.0
+Bug Reproduction,1,0.0
+Software Testing,1,0.0
+Vision-Language Reward Modeling,1,0.0
+Shape Classification,1,0.0
+Relationship Identification,1,0.0
+Object Grounding,1,0.0
+ASR for short financial audio clips,1,0.0
+ASR for long financial audio recordings,1,0.0
+Financial Audio Summarization,1,0.0
+Road Event Understanding,1,0.0
+Hungarian WildBench,1,0.0
+Hungarian SimpleQA,1,0.0
+Hungarian Proverb Reasoning,1,0.0
+Hungarian Matching Fill-in-the-Blank,1,0.0
+Hungarian Standard Fill-in-the-Blank,1,0.0
+Video Generation Evaluation,1,0.0
+Support Classification,1,0.0
+SPARQL Query Generation,1,0.0
+Safety Policy Compliance,1,0.0
+Code Quality Assessment,1,0.0
+Streaming Video Understanding,1,0.0
+Proactive Reasoning,1,0.0
+Cross-Lingual Generation,1,0.0
+Open-End Generation,1,0.0
+Inductive Program Synthesis,1,0.0
+Audio-Visual Captioning,1,0.0
+Audio-Visual Compositional Understanding,1,0.0
+A V-GeoIQ,1,0.0
+A V-Meme,1,0.0
+Dance and Music Matching,1,0.0
+End-Turn Detection,1,0.0
+Self-awareness Assessment,1,0.0
+Factual Memory Retrieval,1,0.0
+Relationship Tracking,1,0.0
+Ethical Classification,1,0.0
+Chemical Named Entity Recognition,1,0.0
+Name-Structure Mapping,1,0.0
+Referential Substructure Localization,1,0.0
+Substructure Relationship Grounding,1,0.0
+Substructure Frequency Analysis,1,0.0
+New Intent Discovery,1,0.0
+Influence Rating,1,0.0
+Explanatory Evaluation,1,0.0
+Video Comprehension,1,0.0
+Trajectory State Tracking,1,0.0
+Scenario Classification,1,0.0
+Fraud Type Classification,1,0.0
+Algorithm Comprehension,1,0.0
+Quality Assessment,1,0.0
+Ethics Analysis,1,0.0
+User Story Generation,1,0.0
+Malicious Function Identification,1,0.0
+Malware Purpose Summarization,1,0.0
+Language Analysis,1,0.0
+Emergency Detection,1,0.0
+Staytime Prediction,1,0.0
+Continuous Sign Language Recognition,1,0.0
+Graph Modeling,1,0.0
+Cell Type Classification,1,0.0
+Cell Status Prediction,1,0.0
+Crypto Trading,1,0.0
+Medical Reasoning Evaluation,1,0.0
+Information Synchronization,1,0.0
+Agent decision-making evaluation,1,0.0
+Legal Document Classification,1,0.0
+Synthetic Data Generation,1,0.0
+Safety Testing,1,0.0
+Symptom Extraction,1,0.0
+Symptom Linking,1,0.0
+Spatial Question Answering,1,0.0
+Visual Keypoint Identification,1,0.0
+Keypoint-based Explanation Generation,1,0.0
+Object Identification,1,0.0
+Region Referring,1,0.0
+Energy Efficiency Assessment,1,0.0
+Inference Latency Measurement,1,0.0
+Output Accuracy Evaluation,1,0.0
+Spatial Relationship Analysis,1,0.0
+Dynamic Temporal Reasoning,1,0.0
+Compositional Learning,1,0.0
+Algorithm Development,1,0.0
+Prompt Recovery,1,0.0
+Video Quality Evaluation,1,0.0
+Video-Condition Alignment Assessment,1,0.0
+Grammar Induction,1,0.0
+Text-to-SVG,1,0.0
+Image-to-SVG,1,0.0
+Character Reference SVG Generation,1,0.0
+Triple Retrieval,1,0.0
+Shortest Path,1,0.0
+Aggregation By Relation,1,0.0
+Aggregation of Neighbor Properties,1,0.0
+Highest Degree Node,1,0.0
+Customer Segmentation,1,0.0
+Predictive Maintenance,1,0.0
+Association Rule Mining,1,0.0
+Time Series Decomposition,1,0.0
+A/B Testing,1,0.0
+Emotion Interpretation,1,0.0
+Code Refactoring,1,0.0
+Evaluation of Automatic Evaluations,1,0.0
+Speech Understanding,1,0.0
+Control Generation,1,0.0
+Human-AI Interaction Evaluation,1,0.0
+Human-Object Interaction,1,0.0
+Compositionality Evaluation,1,0.0
+Vision Centric Question Answering,1,0.0
+Visual STS,1,0.0
+Color Extraction,1,0.0
+Color Proportion,1,0.0
+Color Comparison,1,0.0
+Color Counting,1,0.0
+Color Illusion,1,0.0
+Color Mimicry,1,0.0
+Color Blindness,1,0.0
+Color Robustness,1,0.0
+Insect Identification,1,0.0
+Plant Identification,1,0.0
+Disease Categorization,1,0.0
+Management Instruction,1,0.0
+Symptom Description,1,0.0
+Medical Image Analysis,1,0.0
+Reasoning-based Question Answering,1,0.0
+Entity Salience Prediction,1,0.0
+Status Ranking,1,0.0
+Value Reasoning Evaluation,1,0.0
+Sexism Detection,1,0.0
+Action-oriented tasks,1,0.0
+Combined tasks,1,0.0
+Workflow Planning,1,0.0
+Molecular Comprehension,1,0.0
+Curation Assessment,1,0.0
+Next Cell Prediction,1,0.0
+Cell Output Prediction,1,0.0
+Social Norms Evaluation,1,0.0
+Basic Factoid QA,1,0.0
+Yes/No or Negation,1,0.0
+Fact Chaining,1,0.0
+Association,1,0.0
+List / Set,1,0.0
+Indefinite Knowledge,1,0.0
+Dual-Arm Manipulation,1,0.0
+Circuit Localization,1,0.0
+Causal Variable Localization,1,0.0
+Performance Ranking,1,0.0
+Grammar Recognition,1,0.0
+Grammatical Distinction,1,0.0
+Categorical Discrimination,1,0.0
+Resistance to Linguistic Interference,1,0.0
+Disinformation Detection,1,0.0
+Spam Detection,1,0.0
+Sensitive Information Detection,1,0.0
+Evaluating probabilistic beliefs,1,0.0
+Deception Evaluation,1,0.0
+Competency Detection,1,0.0
+Social Attribute Identification,1,0.0
+Rationale and Correction Reasoning,1,0.0
+Code Obfuscation,1,0.0
+Functionality Preservation,1,0.0
+Meta-evaluation,1,0.0
+Idea Generation Evaluation,1,0.0
+Innovation Assessment,1,0.0
+Personalized Recommendations,1,0.0
+User Preference Tracking,1,0.0
+Ideological Statement Ranking,1,0.0
+Manifesto Cloze Completion,1,0.0
+Bill Comprehension,1,0.0
+Driving Scene Understanding,1,0.0
+Evaluation of LLM Outputs,1,0.0
+Teaching Effectiveness Evaluation,1,0.0
+Question-Answering,1,0.0
+Pedagogical Strategy Analysis,1,0.0
+Automatic Music Transcription,1,0.0
+Response Reranking,1,0.0
+Step-Level Beam Search,1,0.0
+Critique-Based Refinement,1,0.0
+Attribute Identification,1,0.0
+Relative Direction,1,0.0
+Camera Pose Estimation,1,0.0
+Motion Classification,1,0.0
+Video-Text Retrieval,1,0.0
+Legal Concept Memory,1,0.0
+Legal Clause Memory,1,0.0
+Legal Evolution,1,0.0
+Typical Case Memory,1,0.0
+Patent IPC Classification,1,0.0
+Patent CPC Classification,1,0.0
+IP Element Identification,1,0.0
+Process Guidance,1,0.0
+Patent Technology Forecasting,1,0.0
+Infringement Behavior Determination,1,0.0
+Compensation Calculation,1,0.0
+Patent Valuation,1,0.0
+Trade Secret Requirements,1,0.0
+Patent Document Proofreading,1,0.0
+Patent Validity Identification,1,0.0
+Patent Match,1,0.0
+Rights Attribution Analysis,1,0.0
+Patent Application Examination,1,0.0
+Dependent Claim Generation,1,0.0
+Design-Around Solution Generation,1,0.0
+Back-Translation,1,0.0
+Code Vulnerability Analysis,1,0.0
+Text-to-Visualization,1,0.0
+Speaking Style Detection,1,0.0
+Communication Behavior Analysis,1,0.0
+Qualitative Coding,1,0.0
+Human-AI Collaboration,1,0.0
+Extrinsic Hallucination Evaluation,1,0.0
+Intrinsic Hallucination Evaluation,1,0.0
+Document Analysis,1,0.0
+Autonomous Replication Evaluation,1,0.0
+Factor Mining,1,0.0
+Portfolio Optimization,1,0.0
+Trade Execution,1,0.0
+Signal Modeling,1,0.0
+Imitation Learning,1,0.0
+Legal Workflow Analysis,1,0.0
+Decision-Making in Legal Workflows,1,0.0
+Ecosystem Mapping,1,0.0
+Automated Algorithm Design,1,0.0
+Code Modification,1,0.0
+Diversity Evaluation,1,0.0
+Character Analysis,1,0.0
+Event Comprehension,1,0.0
+Cross-lingual Information Retrieval,1,0.0
+Data Deduplication,1,0.0
+Clinical Event Extraction,1,0.0
+Timestamp Estimation,1,0.0
+Value Assessment,1,0.0
+Transformation Rule Learning,1,0.0
+Radiology Report Generation,1,0.0
+Closed-ended Classification,1,0.0
+Information Deletion,1,0.0
+Environmental Science,1,0.0
+3D Human Reconstruction,1,0.0
+Generative Model Training,1,0.0
+Complex Reasoning Evaluation,1,0.0
+Temporal Perception,1,0.0
+Phenomenological Understanding,1,0.0
+Global Understanding,1,0.0
+Spatiotemporal Reasoning,1,0.0
+Skill Extraction,1,0.0
+Emotional Support Conversation,1,0.0
+Social Cognition Evaluation,1,0.0
+Fake News Attribution,1,0.0
+Disinformation Campaign Analysis,1,0.0
+Website Generation,1,0.0
+Problem-Solving,1,0.0
+Image Generation Security Evaluation,1,0.0
+Multi-Agent Systems,1,0.0
+Task Success Rate Evaluation,1,0.0
+User Interaction Study,1,0.0
+GitHub Issue Resolution,1,0.0
+Multi-User Dialogue,1,0.0
+Social Capability Evaluation,1,0.0
+Fall Detection,1,0.0
+Code Customization,1,0.0
+UI/UX Design Selection,1,0.0
+UI/UX Design Rationale Alignment,1,0.0
+Language-Guided Object Placement,1,0.0
+3D Scene Understanding,1,0.0
+Task-Oriented Dialogue Evaluation,1,0.0
+Drug Response Prediction,1,0.0
+Supervised Fine-tuning,1,0.0
+Short Answer Scoring,1,0.0
+Career Path Prediction,1,0.0
+Protocol Question Answering,1,0.0
+Step Ordering,1,0.0
+Protocol Generation,1,0.0
+Protocol Reasoning,1,0.0
+Code Comprehension,1,0.0
+Health-related Conversations Assessment,1,0.0
+Low-Level Robot Manipulation Reasoning,1,0.0
+Visual Retrieval-Augmented Generation,1,0.0
+Many-Shot In-Context Learning,1,0.0
+Long-Document Visual Question Answering,1,0.0
+Financial Valuation,1,0.0
+Triplet Recognition,1,0.0
+Learning,1,0.0
+Investment Decision Making,1,0.0
+Synthetic Image Detection,1,0.0
+Real-Time Language Generation,1,0.0
+Text Revision,1,0.0
+Decompilation Evaluation,1,0.0
+Comment Generation,1,0.0
+Comment Classification,1,0.0
+Comment Selection,1,0.0
+Comment Ranking,1,0.0
+Comment Explanation,1,0.0
+Collective Reasoning Assessment,1,0.0
+Clinical Decision-Making,1,0.0
+Robustness against harmful queries,1,0.0
+Summary,1,0.0
+Image Difference Grounding,1,0.0
+Image Consistency Grounding,1,0.0
+Multi-View Grounding,1,0.0
+Visual Concept Grounding,1,0.0
+Visual Patch Grounding,1,0.0
+Cross-modal Grounding,1,0.0
+Referring Grounding,1,0.0
+Skill Transfer Evaluation,1,0.0
+Visual Intelligence Assessment,1,0.0
+Argument Component Detection,1,0.0
+Relation Prediction,1,0.0
+Automated Essay Grading,1,0.0
+Memorization Risk Evaluation,1,0.0
+Open-domain Dialogue Generation,1,0.0
+Medical (Visual) Question Answering,1,0.0
+Lay Summary Generation,1,0.0
+EHR Predictive Modeling,1,0.0
+Clinical Workflow Automation,1,0.0
+Claim Generation,1,0.0
+Patent Summarization,1,0.0
+Mobile OS Navigation,1,0.0
+Task Execution from Instructional Videos,1,0.0
+Text-to-Code Retrieval,1,0.0
+Code-to-Code Retrieval,1,0.0
+Problem-to-Duplicate Retrieval,1,0.0
+Simplified-to-Full Retrieval,1,0.0
+Deep Reasoning,1,0.0
+Audio Processing,1,0.0
+Gene Information Retrieval,1,0.0
+Gene Function Prediction,1,0.0
+Variety Breeding Process Query,1,0.0
+Data Handling,1,0.0
+Action Unit Detection,1,0.0
+Output Consistency,1,0.0
+Causal Inference Evaluation,1,0.0
+Anomaly Localization,1,0.0
+Impact Forecasting,1,0.0
+Next-Text Generation,1,0.0
+Slang Detection,1,0.0
+Cross-lingual Slang Explanation,1,0.0
+Slang Translation,1,0.0
+Sentence Continuation,1,0.0
+Privacy Leakage Detection,1,0.0
+Image-Query Reasoning,1,0.0
+PT Classification,1,0.0
+Scam Completion,1,0.0
+Scam Augmentation,1,0.0
+Script Verification,1,0.0
+Product Discrimination,1,0.0
+Script-Product Verification,1,0.0
+Emergency Response,1,0.0
+Interactive Agent Evaluation,1,0.0
+Physics Reasoning,1,0.0
+Verification of responses,1,0.0
+Performance evaluation of reward systems,1,0.0
+Real-World Task Completion,1,0.0
+Visual Unit Testing,1,0.0
+Glitch Detection,1,0.0
+Bug Report Generation,1,0.0
+Visual Regression Testing,1,0.0
+Material Distribution Prediction,1,0.0
+Structural Stability Assessment,1,0.0
+Semantic Equivalence Detection,1,0.0
+Maze Judgment,1,0.0
+Maze Navigation,1,0.0
+Media Frame Detection,1,0.0
+Human-LLM Interaction,1,0.0
+Visualization Generation,1,0.0
+Source-to-Source Translation,1,0.0
+Assembly-to-Assembly Translation,1,0.0
+Feature Development,1,0.0
+Grammar Generation,1,0.0
+Positional Relations,1,0.0
+Project Evaluation,1,0.0
+Poster Generation,1,0.0
+Open-ended Dialogue,1,0.0
+Logic Puzzle Solving,1,0.0
+Surface Scanning,1,0.0
+Defect Inspection,1,0.0
+Functional Target Scanning,1,0.0
+Context-Meme Interplay Classification,1,0.0
+Comment Stance and Affective Consistent Classification,1,0.0
+Post Connection Generation,1,0.0
+Post Intent Generation,1,0.0
+Abstract Reasoning,1,0.0
+Conceptual Reasoning,1,0.0
+Conversational Role Attribution,1,0.0
+Conversation Disentanglement,1,0.0
+Jailbreak Attack Assessment,1,0.0
+Safety Evaluation of ALMs,1,0.0
+Spatiotemporal Understanding,1,0.0
+Reflection with Feedback,1,0.0
+Token manipulation,1,0.0
+Character understanding,1,0.0
+Word understanding,1,0.0
+Segment Captioning,1,0.0
+Limitation Extraction,1,0.0
+Limitation Generation,1,0.0
+Causal SPP,1,0.0
+Comparative SPP,1,0.0
+Quantitative SPP,1,0.0
+Hypothetical Variation,1,0.0
+Command Synthesis,1,0.0
+Infographic Chart Understanding,1,0.0
+Infographic Chart Code Generation,1,0.0
+Example-based Infographic Chart Generation,1,0.0
+Textual Reasoning,1,0.0
+Agentic Reasoning,1,0.0
+Cyberbullying Detection,1,0.0
+Multitask Language Understanding,1,0.0
+Inconsistency Detection,1,0.0
+Key Retrieval,1,0.0
+Single-doc QA,1,0.0
+Multi-doc QA,1,0.0
+Information Comprehension,1,0.0
+Information Summarization,1,0.0
+Endpoint Discovery,1,0.0
+Financial Prediction,1,0.0
+Numerical Calculation,1,0.0
+Scene Graph Understanding,1,0.0
+Action,1,0.0
+Validation,1,0.0
+XBRL Tagging,1,0.0
+Financial Reporting,1,0.0
+Context Identification,1,0.0
+Research Idea Generation,1,0.0
+Research Proposal Generation,1,0.0
+Experimentation,1,0.0
+Single Document Question Answering,1,0.0
+Multi Document Question Answering,1,0.0
+Multiple-Choice Question Evaluation,1,0.0
+CTF-style Forensic Challenges,1,0.0
+NIST String Search Evaluation,1,0.0
+Executable Spatial Plan Generation,1,0.0
+Creativity,1,0.0
+Spatial Commonsense,1,0.0
+Ranking-based Question Answering,1,0.0
+Safety Calibration,1,0.0
+Multi-Object Tracking,1,0.0
+Binary Polarization Detection,1,0.0
+Polarization Type Classification,1,0.0
+Manifestation Identification,1,0.0
+Concept Linking,1,0.0
+Natural Language to Logic Transformation,1,0.0
+Mobile Manipulation Task Generation,1,0.0
+Embodied Decision-Making Benchmarking,1,0.0
+Scientific Figure Captioning,1,0.0
+Open-Ended Reasoning,1,0.0
+Multi-Agent System Evaluation,1,0.0
+Adversarial Prompt Testing,1,0.0
+Stereotype Analysis,1,0.0
+Scenario Mining,1,0.0
+Referential Multi-Object Tracking,1,0.0
+Linguistic Understanding Assessment,1,0.0
+Molecular Property Optimization,1,0.0
+Chemical Reaction Prediction,1,0.0
+Molecular Understanding,1,0.0
+Molecular Editing,1,0.0
+Spatial Localization,1,0.0
+Perspective-Taking,1,0.0
+Code Infill,1,0.0
+Safety Alignment Evaluation,1,0.0
+Multimodal Response Generation,1,0.0
+Generalization Testing,1,0.0
+Information Consistency,1,0.0
+Empathy Consistency,1,0.0
+Reasoning Efficiency Evaluation,1,0.0
+Chain-of-Thought Quality Evaluation,1,0.0
+Dataset Discovery,1,0.0
+Regional Term Choice,1,0.0
+Regional Name Choice,1,0.0
+Direct Probing,1,0.0
+Name Cloze,1,0.0
+Prefix Probing,1,0.0
+Alignment Assessment,1,0.0
+Chart Classification,1,0.0
+Chart Assistance,1,0.0
+Suggestions,1,0.0
+Chart Conversion,1,0.0
+Chart OCR Recognition,1,0.0
+Information Positioning,1,0.0
+Discriminating between Unanswerable Questions and Answerable Questions,1,0.0
+Evaluating LLMs’ ability to utilize internal factual knowledge in handling UAQ,1,0.0
+Evaluating LLMs’ ability to utilize external factual knowledge in handling UAQ,1,0.0
+Video Caption Evaluation,1,0.0
+Software Optimization,1,0.0
+Code Performance Improvement,1,0.0
+Coherence Validation,1,0.0
+Error Awareness,1,0.0
+Error Type Detection,1,0.0
+Social Reasoning Games,1,0.0
+Daily Life Interactions,1,0.0
+Digital Community Platforms,1,0.0
+Context Retrieval,1,0.0
+Information Reasoning,1,0.0
+Task Switching,1,0.0
+Symbolic Integration,1,0.0
+Differential Equations,1,0.0
+Data-Flow Reasoning,1,0.0
+Procedural Understanding,1,0.0
+Route Optimization,1,0.0
+Sentiment Polarity,1,0.0
+Sentiment Intensity,1,0.0
+Emotion Intensity,1,0.0
+Social Engineering Behavior Analysis,1,0.0
+AR-LLM Interaction Modeling,1,0.0
+Competency Question Generation,1,0.0
+Text Quality Evaluation,1,0.0
+Story Visualization Evaluation,1,0.0
+Structure Retrieval,1,0.0
+Molecule Generation from Text,1,0.0
+Behavior Generation,1,0.0
+Speaker Diarization,1,0.0
+In-Context Learning Improvement,1,0.0
+Error Prediction,1,0.0
+Code-Mixing Analysis,1,0.0
+Sociolinguistic Studies,1,0.0
+Relationship Classification,1,0.0
+Cognitive Appraisal Evaluation,1,0.0
+Long-Horizon Task Planning,1,0.0
+Secure Code Generation,1,0.0
+Code Quality Improvement,1,0.0
+Safety Risk Evaluation,1,0.0
+Sarcasm Generation,1,0.0
+Geographic Reasoning,1,0.0
+Creativity Modeling,1,0.0
+Identifying Version-Incompatible Functions,1,0.0
+Answering Function Changes,1,0.0
+Outcome-oriented Goal Achievement,1,0.0
+Process-oriented Interpersonal Ability Evaluation,1,0.0
+Nonverbal Cue Generation,1,0.0
+Terrorism Detection,1,0.0
+Optical Generation,1,0.0
+Optical Understanding,1,0.0
+Embodied Navigation,1,0.0
+Knowledge Question Answering,1,0.0
+Prescription Recommendation,1,0.0
+Personalized Assistant Development,1,0.0
+Quality Assessment of AI Responses,1,0.0
+Mood Status Recognition,1,0.0
+Suicidal Ideation Detection,1,0.0
+Suicide Plan Identification,1,0.0
+Flowchart Attribution,1,0.0
+Knowledge Recovery Evaluation,1,0.0
+Video Anomaly Retrieval,1,0.0
+Cross-Modal Retrieval,1,0.0
+Text Detoxification,1,0.0
+Cultural Visual Understanding,1,0.0
+Cultural Image Transcreation,1,0.0
+Sticker Retrieval,1,0.0
+Compliance Monitoring,1,0.0
+Image Aesthetic Assessment,1,0.0
+Facial Age Estimation,1,0.0
+Medical Disease Grading,1,0.0
+Historical Date Estimation,1,0.0
+Grammar Rule Application,1,0.0
+Idiom Classification,1,0.0
+Visual Discrimination,1,0.0
+Joint Shape-Color Discrimination,1,0.0
+Letter Discrimination,1,0.0
+Visual Form Constancy,1,0.0
+Visual Figure-Ground,1,0.0
+Visual Closure,1,0.0
+Visual Spatial,1,0.0
+Enzyme-Catalyzed Protein Cleavage Site Prediction,1,0.0
+Targeted Protein Degradation by Proteolysis-Targeting Chimeras,1,0.0
+Protein-Ligand Interactions,1,0.0
+Protein Function Annotation Prediction,1,0.0
+Mutation Effect Prediction for Protein Optimization,1,0.0
+Speech Disambiguation,1,0.0
+Evaluation of LLMs on implementing novel ML research,1,0.0
+Persuasion Evaluation,1,0.0
+Network Configuration Troubleshooting,1,0.0
+Network Policy Deployment,1,0.0
+Text-Video Retrieval,1,0.0
+Game Interaction,1,0.0
+Agent Evaluation,1,0.0
+Human-Pet Interaction,1,0.0
+Task Management,1,0.0
+Emotional Response Generation,1,0.0
+Predictive Maintenance Planning,1,0.0
+Work Order Management,1,0.0
+High-Frequency Trading,1,0.0
+Behavior Assessment,1,0.0
+Misalignment Evaluation,1,0.0
+Code Equivalence Checking,1,0.0
+Temporal Event Ordering,1,0.0
+Medical Knowledge Evaluation,1,0.0
+Medical Reasoning,1,0.0
+Medical Safety and Ethics,1,0.0
+Medical Text Generation,1,0.0
+Antibody Sequence Design,1,0.0
+Multi-image Understanding,1,0.0
+Adversarial Prompt Generation,1,0.0
+Abstractive Summarisation,1,0.0
+Feasibility Assessment,1,0.0
+Visual Simulation,1,0.0
+Disfluency Detection,1,0.0
+Code-Switching Question Answering,1,0.0
+Text Needle-in-Haystack,1,0.0
+Text Temporal Grounding,1,0.0
+Text Dynamics Captioning,1,0.0
+Text Understanding,1,0.0
+Cross-Modal Knowledge Transfer,1,0.0
+3D Question Answering,1,0.0
+Social Scene Understanding,1,0.0
+Social State Reasoning,1,0.0
+Social Dynamics Prediction,1,0.0
+Closed Question Answering,1,0.0
+Open Question Answering,1,0.0
+Signal Prediction,1,0.0
+Static Visual Recognition,1,0.0
+Point-and-Click Localization,1,0.0
+Interactive Manipulation,1,0.0
+Textual Logic Q&A,1,0.0
+Theorem Formalization,1,0.0
+Constraint Modelling,1,0.0
+Unlearning Inference,1,0.0
+Design Edit,1,0.0
+Design Repair,1,0.0
+Find Number,1,0.0
+Find Dataset,1,0.0
+Find Original Source,1,0.0
+Validate Claim,1,0.0
+Derive Number,1,0.0
+Gather Evidence,1,0.0
+Populate Reference Class,1,0.0
+Compile Dataset,1,0.0
+Network Management Optimization,1,0.0
+Argument Completion,1,0.0
+Case Retrieval,1,0.0
+Memory Extraction,1,0.0
+Goal Planning,1,0.0
+Counseling Generation,1,0.0
+Test Refactoring Evaluation,1,0.0
+Metaphor Detection,1,0.0
+Complex Commonsense Reasoning,1,0.0
+Intervention Reasoning,1,0.0
+Transition Reasoning,1,0.0
+Multi-hop reasoning,1,0.0
+Image-Grounded Dialogue,1,0.0
+Fine-Grained Visual Reasoning,1,0.0
+Indicator Computation,1,0.0
+Indoor Scene Layout Generation,1,0.0
+Interactive Editing,1,0.0
+Jailbreaking Detection,1,0.0
+User Interaction Evaluation,1,0.0
+WebUI-to-Code,1,0.0
+WebUI Perception,1,0.0
+HTML Programming,1,0.0
+WebUI-HTML Understanding,1,0.0
+Data Reconstruction,1,0.0
+Frame Problem,1,0.0
+Symbol Grounding Problem,1,0.0
+Tabular Reasoning,1,0.0
+Mathematical Proof Verification,1,0.0
+Educational Feedback Generation,1,0.0
+Multi-task Processing,1,0.0
+Conflict Type Prediction,1,0.0
+Generating Appropriate Responses,1,0.0
+Expert Evaluation,1,0.0
+Temporal Video Localization,1,0.0
+Spatio-Temporal Video Grounding,1,0.0
+Spatial Relationship Reference,1,0.0
+Temporal Video Reference,1,0.0
+Compositional Task Evaluation,1,0.0
+Abstention Evaluation,1,0.0
+Algorithm Optimization,1,0.0
+Color Detection,1,0.0
+Fine-Grained Recognition,1,0.0
+Absolute Depth,1,0.0
+Relative Depth,1,0.0
+Orientation,1,0.0
+Texture,1,0.0
+Multi-Interaction Tasks,1,0.0
+Evolving Story Tasks,1,0.0
+Location of Origin Relevance,1,0.0
+Date and Time of Origin Relevance,1,0.0
+Personalization Assessment,1,0.0
+Task-oriented Dialogue Evaluation,1,0.0
+Malicious Code Generation,1,0.0
+Narrative Planning,1,0.0
+Multi-Agent Learning,1,0.0
+Property Inference,1,0.0
+Code Transpilation,1,0.0
+Streaming Question Answering,1,0.0
+Jailbreak Guardrail Evaluation,1,0.0
+Issue Resolution,1,0.0
+Embedded System Programming,1,0.0
+Cross-Platform Migration,1,0.0
+Combined Optimization,1,0.0
+Image Observation,1,0.0
+Medical Computation,1,0.0
+Existence Detection,1,0.0
+Static Temporal Diagnosis,1,0.0
+Longitudinal Temporal Diagnosis,1,0.0
+Research Task Evaluation,1,0.0
+Manipulation Detection,1,0.0
+Task-Oriented Dialog System Evaluation,1,0.0
+Knowledge Validation,1,0.0
+Rumor Detection,1,0.0
+Event Verification,1,0.0
+Benchmarking Unlearning Methods,1,0.0
+Teamwork Evaluation,1,0.0
+Statistical Reasoning,1,0.0
+Structural Reasoning,1,0.0
+Financial Explanation,1,0.0
+Financial Knowledge,1,0.0
+Knowledge Retention,1,0.0
+Syntax Evaluation,1,0.0
+Sentence Acceptability Judgment,1,0.0
+Adversarial Prompt Evaluation,1,0.0
+DRG Grouper Emulation,1,0.0
+Identity Resolution,1,0.0
+Error Detection and Correction,1,0.0
+First-Order Belief Assessment,1,0.0
+Second-Order Belief Assessment,1,0.0
+Document-Reasoning,1,0.0
+Adversarial Attack Testing,1,0.0
+Model Security Evaluation,1,0.0
+Deliberate User Misuse,1,0.0
+Prompt Injection,1,0.0
+Model Misbehavior,1,0.0
+Machine Unlearning Evaluation,1,0.0
+Micro-Gesture Recognition,1,0.0
+Formula Generation,1,0.0
+Intent Prediction,1,0.0
+Action Suggestion,1,0.0
+Model Interpretation,1,0.0
+Input Bouncing,1,0.0
+Output Bouncing,1,0.0
+Pairwise Ranking,1,0.0
+Time Series Anomaly Detection,1,0.0
+Bimanual Manipulation,1,0.0
+Evaluative Connotation,1,0.0
+Appropriateness,1,0.0
+Open Cloze,1,0.0
+Position Comparison,1,0.0
+Size Comparison,1,0.0
+Existence Estimation,1,0.0
+Rotation Estimation,1,0.0
+Absolute Distance,1,0.0
+Room Size,1,0.0
+Object Size,1,0.0
+Appearance Order,1,0.0
+Exploratory Generalization,1,0.0
+Transformative Generalization,1,0.0
+Film Evaluation,1,0.0
+Moral Sentiment Prediction,1,0.0
+Conversational Decision-Making,1,0.0
+Code Deobfuscation,1,0.0
+Ethical Behavior Assessment,1,0.0
+Literary Analysis,1,0.0
+Web Search,1,0.0
+Hate Speech Classification,1,0.0
+Cognitive Habit Evaluation,1,0.0
+Cultural Query Response,1,0.0
+Speech Generation,1,0.0
+Defeasible Video Entailment Classification,1,0.0
+Defeasible Video Entailment Generation,1,0.0
+Gesture Generation,1,0.0
+Time Series Generation,1,0.0
+Multi-step reasoning,1,0.0
+Spatial planning,1,0.0
+Narrative Role Classification,1,0.0
+Ecosystem Analysis,1,0.0
+Security Auditing,1,0.0
+Tool Integration,1,0.0
+Multi-step Reasoning,1,0.0
+Resource Consumption Measurement,1,0.0
+Environmental Impact Assessment,1,0.0
+Multi-modal Retrieval,1,0.0
+Super Resolution,1,0.0
+Surgical Instrument Detection,1,0.0
+3D Tissue Reconstruction,1,0.0
+Monocular Depth Estimation,1,0.0
+Creative Writing Verification,1,0.0
+Evaluation of Multi-Agent Systems,1,0.0
+Bias Classification,1,0.0
+Preference Computation,1,0.0
+Scenario Selection,1,0.0
+Bias Scoring,1,0.0
+Clinical Decision-Making Simulation,1,0.0
+Limitation Identification,1,0.0
+Peer Review Generation,1,0.0
+Email Security Evaluation,1,0.0
+Semantic Labeling,1,0.0
+Code Synthesis,1,0.0
+Transductive Dynamic Graph Generation,1,0.0
+Inductive Dynamic Graph Generation,1,0.0
+Paragraph Writing,1,0.0
+Summarisation,1,0.0
+Memory Evaluation,1,0.0
+Comprehension Evaluation,1,0.0
+Empathetic Interaction,1,0.0
+Personality Development,1,0.0
+Schema-based Extraction,1,0.0
+Complaint Drafting,1,0.0
+Defence Drafting,1,0.0
+Court Proceedings,1,0.0
+User Interface Interaction,1,0.0
+Fine-grained Image Classification,1,0.0
+Food Counting,1,0.0
+Spectral Analysis,1,0.0
+Next-word Prediction,1,0.0
+Intention Inference,1,0.0
+Social Relationship Inference,1,0.0
+Visual Code Generation,1,0.0
+User Interaction Assessment,1,0.0
+Accurate Retrieval,1,0.0
+Test-Time Learning,1,0.0
+Long-Range Understanding,1,0.0
+Selective Forgetting,1,0.0
+Data Dependency,1,0.0
+Control Dependency,1,0.0
+Information Flow,1,0.0
+Test-Driven Development,1,0.0
+Misuse Detection,1,0.0
+Conversational AI assistance in music mixing,1,0.0
+Instructional dialogue modeling,1,0.0
+Nutritional analysis,1,0.0
+Image-based dietary assessment,1,0.0
+Composed Image Retrieval,1,0.0
+Geometry Assessment,1,0.0
+Region Categorization,1,0.0
+Ablation Planning,1,0.0
+Text Normalization,1,0.0
+Ticker Extraction,1,0.0
+Conviction Score Estimation,1,0.0
+Leader Election,1,0.0
+Consensus,1,0.0
+Maximal Matching,1,0.0
+Coloring,1,0.0
+Vertex Cover,1,0.0
+Visual Workflow Evaluation,1,0.0
+Judging Tasks,1,0.0
+Training Data Selection,1,0.0
+Toxicity and Bias Filtering,1,0.0
+Factual Attribution,1,0.0
+Text-to-CAD Generation,1,0.0
+Programming Assistance,1,0.0
+Privacy Auditing,1,0.0
+Data Removal Assessment,1,0.0
+Drawing Revision,1,0.0
+Map Reading,1,0.0
+Dataset Ownership Verification,1,0.0
+Financial Numerical Computation,1,0.0
+Ablation Study Design,1,0.0
+Haptic-Caption Retrieval,1,0.0
+Humour Explanation,1,0.0
+Comparative perception,1,0.0
+Saccadic search,1,0.0
+Smooth visual search,1,0.0
+Multi-Page Question Answering,1,0.0
+Single-Page Question Answering,1,0.0
+Abstract Writing,1,0.0
+Caption Writing,1,0.0
+Paper Titling,1,0.0
+Cross-Lingual Transfer,1,0.0
+Multilingual Similarity Evaluation,1,0.0
+Signal Analysis,1,0.0
+Medical Report Generation,1,0.0
+Text Detection,1,0.0
+Hypothesis formation,1,0.0
+Experimental design,1,0.0
+Data analysis,1,0.0
+Pattern Finding,1,0.0
+Novel Concept Learning,1,0.0
+Image-Text Relationship Understanding,1,0.0
+Music Recommendation,1,0.0
+Writing Feedback,1,0.0
+Multi-Robot Coordination,1,0.0
+Research Question Answering,1,0.0
+Specification Generation,1,0.0
+Personalized Video Highlighting,1,0.0
+Graph Problem Reasoning,1,0.0
+Algorithmic Problem-Solving,1,0.0
+Noise Robustness,1,0.0
+Input/Output Prediction,1,0.0
+Coverage Prediction,1,0.0
+State Tracking,1,0.0
+Path Prediction,1,0.0
+Dialect Comprehension,1,0.0
+Audio Event Detection,1,0.0
+Chit-chat,1,0.0
+Divergent Thinking Evaluation,1,0.0
+Convergent Thinking Evaluation,1,0.0
+Direct Question Answering,1,0.0
+Resource Exhaustion Testing,1,0.0
+Controllable DNA Sequence Generation,1,0.0
+DNA-Protein Binding Sequence Generation,1,0.0
+Geospatial Knowledge Assessment,1,0.0
+Hallucination Mitigation,1,0.0
+Malicious Prompt Detection,1,0.0
+Visual Information Retrieval,1,0.0
+Data Visualization Generation,1,0.0
+Intent-Based Purchasing Likelihood Estimation,1,0.0
+Purchasing Likelihood Inference via Valued Attributes Regularization,1,0.0
+Intention Justification via Comparison,1,0.0
+Intention Evolution Modeling,1,0.0
+Image to LaTeX Conversion,1,0.0
+Task Suggestion,1,0.0
+Chart Editing,1,0.0
+Text-to-Table Extraction,1,0.0
+Code Validation,1,0.0
+Humor Comprehension,1,0.0
+Anomaly Understanding,1,0.0
+Anomaly Grounding,1,0.0
+Knowledge Conflict Detection,1,0.0
+Function Recovery,1,0.0
+Patent Abstract Generation,1,0.0
+Entailment,1,0.0
+Diagnostic Concordance,1,0.0
+Treatment Plan Evaluation,1,0.0
+Customer Service Automation,1,0.0
+Multi-Level Filtering,1,0.0
+Combination,1,0.0
+Reference Reasoning,1,0.0
+Element-wise Error Classification,1,0.0
+Multimodal Planning,1,0.0
+Text-based Game Navigation,1,0.0
+Complex Graphic Reasoning,1,0.0
+Gender Identity Inference,1,0.0
+Complex Financial Modeling,1,0.0
+Template Generation,1,0.0
+Clinical Consultation,1,0.0
+Forensic Analysis,1,0.0
+Time-Sensitive Question Answering,1,0.0
+Ignoring dubious sources,1,0.0
+Resolving contradictions,1,0.0
+Active filtering,1,0.0
+Pipeline Composition,1,0.0
+Maintenance Decision-Making,1,0.0
+Condition Monitoring,1,0.0
+Character Counting,1,0.0
+Position Finding,1,0.0
+Clause-Level Risk Identification,1,0.0
+Cybersecurity Playbook Transformation,1,0.0
+Cognitive Impairment Assessment,1,0.0
+Game Playing Evaluation,1,0.0
+Comparative Analysis of Decision Making,1,0.0
+Multivariate Symbolic Regression,1,0.0
+Boolean Network Inference,1,0.0
+Occlusion Identification,1,0.0
+Binary Relationship Identification,1,0.0
+Gestalt Description,1,0.0
+Gestalt Reasoning,1,0.0
+Occlusion Rate Estimation,1,0.0
+Tool Use Training,1,0.0
+Clinical Reasoning Evaluation,1,0.0
+Benchmark Assessment,1,0.0
+Personalized Preference Alignment,1,0.0
+Evaluative Assessment,1,0.0
+Document Visual Question Answering,1,0.0
+Medical Ethics Assessment,1,0.0
+Binary QA,1,0.0
+Time Grounding,1,0.0
+Comprehensive Reasoning,1,0.0
+Cultural Understanding Evaluation,1,0.0
+Compliance Evaluation,1,0.0
+Token Awareness,1,0.0
+Structural Understanding,1,0.0
+Dynamic Capability Acquisition,1,0.0
+Tool Usage Reasoning,1,0.0
+Top-K Recommendation,1,0.0
+Cross-Domain Recommendation,1,0.0
+Next Item Recommendation,1,0.0
+User Attribute Prediction,1,0.0
+Interest Recognition,1,0.0
+Target User Identification,1,0.0
+Translation Studies,1,0.0
+Readability Assessment,1,0.0
+Bilingual Lexicon Extraction,1,0.0
+Fine-Grained Dialogue Fact Verification,1,0.0
+Feedback Generation,1,0.0
+Emotion Tracking,1,0.0
+Emotionally Appropriate Response Generation,1,0.0
+Instructional Guidance Evaluation,1,0.0
+Severe Weather Event Prediction,1,0.0
+Text Translation,1,0.0
+Cross-Modal Consistency Assessment,1,0.0
+Schema Lineage Extraction,1,0.0
+Data Transformation Analysis,1,0.0
+Multilingual Spoken Question Answering,1,0.0
+Cross-lingual Spoken Question Answering,1,0.0
+Cross-Modal Causal Reasoning,1,0.0
+Timbre/Pitch Reasoning,1,0.0
+Tempo/AV Synchronization Analysis,1,0.0
+Unanswerability,1,0.0
+Implicit Distractions,1,0.0
+Performer Skill Profiling,1,0.0
+Spatio-temporal Reasoning,1,0.0
+Tactical Analysis,1,0.0
+Tool usage evaluation,1,0.0
+Multi-step tool calling,1,0.0
+Function calling capabilities,1,0.0
+Masked Sentence Prediction,1,0.0
+Image to SVG Generation,1,0.0
+Text to SVG Generation,1,0.0
+SVG Understanding,1,0.0
+Unfair Contractual Terms Identification,1,0.0
+Contract Provision Topic Classification,1,0.0
+Agent-Specific Deontic Modality Detection,1,0.0
+Mathematics Question Answering,1,0.0
+Art Visual Question Answering,1,0.0
+Economics Question Answering,1,0.0
+Science Visual Question Answering,1,0.0
+General Question Answering,1,0.0
+Injury Severity Prediction,1,0.0
+Causal Analysis,1,0.0
+Community Search,1,0.0
+Library Migration Recommendation,1,0.0
+Meal Identification,1,0.0
+Ingredient Recognition,1,0.0
+Token Compression,1,0.0
+Model Compression,1,0.0
+Companionship Evaluation,1,0.0
+Task-Oriented Dialogue Modeling,1,0.0
+Cross-Modal Interaction Evaluation,1,0.0
+Surgical Action Recognition,1,0.0
+Surgical Skill Assessment,1,0.0
+Procedure Recognition,1,0.0
+Word Guess,1,0.0
+Movie Recommendation,1,0.0
+Circuit Decoding,1,0.0
+Word Chaining,1,0.0
+Twenty Questions,1,0.0
+Object-centric Spatial QA,1,0.0
+Ego-centric Spatial QA,1,0.0
+Ego-centric Spatiotemporal QA,1,0.0
+Recipe Recommendation,1,0.0
+Multi-modal Perception,1,0.0
+Response Strategy,1,0.0
+User Response Analysis,1,0.0
+Closed-ended Question Answering,1,0.0
+Comprehensive Disease Diagnosis,1,0.0
+Excel Formula Repair,1,0.0
+Dialog Evaluation,1,0.0
+Toxic Language Detection,1,0.0
+Semantic Textual Similarity (STS),1,0.0
+Instruction Retrieval,1,0.0
+Region-level Context-aware Image Description,1,0.0
+Region-level Context-aware Visual Question Answering,1,0.0
+Multimodal Contextual Citation Generation,1,0.0
+Self-Execution Prediction,1,0.0
+Associative Awareness,1,0.0
+Restriction Recognition,1,0.0
+Difficulty Assessment,1,0.0
+Cultural Value Assessment,1,0.0
+Open-Domain QA,1,0.0
+Cultural QA,1,0.0
+Episodic Information Reasoning,1,0.0
+Hand-Object Interaction,1,0.0
+Visual Object Identification,1,0.0
+Object State Change Detection,1,0.0
+Audio Event Recognition,1,0.0
+Comparison Shopping,1,0.0
+Product Search,1,0.0
+Shopping Cart Management,1,0.0
+Checkout Procedures,1,0.0
+Understanding User Intent,1,0.0
+Task-Specific Optimizations,1,0.0
+Multimodal Content Creation,1,0.0
+Text-based Retrieval,1,0.0
+Aspect-Based Summarization,1,0.0
+Review Generation,1,0.0
+Outcome Formulation,1,0.0
+Preference Evaluation,1,0.0
+Channel Modeling,1,0.0
+Beamforming,1,0.0
+Location Navigation,1,0.0
+Repository Management,1,0.0
+3D Design,1,0.0
+Browser Automation,1,0.0
+Web Searching,1,0.0
+Feasibility Analysis,1,0.0
+Moral Development Assessment,1,0.0
+Personality Profiling,1,0.0
+Operations Research,1,0.0
+Combinatorial Puzzles,1,0.0
+Image2Text,1,0.0
+Text2Image,1,0.0
+Situation Understanding,1,0.0
+Decision Reasoning,1,0.0
+Media Bias Analysis,1,0.0
+Statement Judging,1,0.0
+Financial Calculation,1,0.0
+Dynamic Decision-Making,1,0.0
+Behavioral Modeling,1,0.0
+ASIC Design Automation,1,0.0
+RTL Generation,1,0.0
+Verification,1,0.0
+Synthesis,1,0.0
+Hardening,1,0.0
+Multimodal Intent Detection,1,0.0
+Clinical Simulation,1,0.0
+Interpretation,1,0.0
+Website Visual Question Answering,1,0.0
+Mockup2Code Generation,1,0.0
+Web Code Editing,1,0.0
+Tree Search Evaluation,1,0.0
+Future Action Prediction,1,0.0
+Objective Extraction,1,0.0
+Code-Switching,1,0.0
+Evaluation of Dialect Fidelity,1,0.0
+Science Discovery Validation,1,0.0
+Social Bias Detection,1,0.0
+Game Balance Evaluation,1,0.0
+Personalized Task Execution,1,0.0
+Code Security Evaluation,1,0.0
+Context Awareness,1,0.0
+Social Interaction Analysis,1,0.0
+Algorithm Execution,1,0.0
+Long Reasoning,1,0.0
+Cross-Video Object Association,1,0.0
+Cross-Video Event Association,1,0.0
+Cross-Video Complex Reasoning,1,0.0
+Code Clone Detection,1,0.0
+Functional Consistency Identification,1,0.0
+Key Point Extraction,1,0.0
+Reasoning in Cataract Surgery,1,0.0
+Tool Coordination,1,0.0
+Semantic Relationship Identification,1,0.0
+Emotional Dynamics Analysis,1,0.0
+Object Re-Identification,1,0.0
+Authorship Validation,1,0.0
+Statutory Classification,1,0.0
+Case Law Retrieval,1,0.0
+Geometric Shape Analysis,1,0.0
+Complex and Cluttered Environment Reasoning,1,0.0
+Explicit Refusal Assessment,1,0.0
+Implicit Leakage Detection,1,0.0
+Evaluation of AI outputs,1,0.0
+Interpretability Evaluation,1,0.0
+Sentence-Level Classification,1,0.0
+Graph-based analysis,1,0.0
+Material synthesis optimization,1,0.0
+Behavior Evaluation,1,0.0
+General Computer Control,1,0.0
+Robotic Arm Control,1,0.0
+Network Device Configuration,1,0.0
+Chemical Synthesis Control,1,0.0
+Industrial Welding Control,1,0.0
+Annotation of Mental States,1,0.0
+Discrepancy Detection,1,0.0
+Audio Reconstruction,1,0.0
+Codebook ID Stability Evaluation,1,0.0
+Perplexity Measurement,1,0.0
+Downstream Task Evaluation,1,0.0
+Multi-objective balancing,1,0.0
+Sustainability assessment,1,0.0
+Psychological Counseling,1,0.0
+Process Mining,1,0.0
+Legislative Analysis,1,0.0
+Role-Playing Dialogue Evaluation,1,0.0
+Fact-Checking Conclusion,1,0.0
+Fact-Checking Explanation,1,0.0
+LLM-Assisted Fact-Checking,1,0.0
+AI Text Detection,1,0.0
+Intent Rewriting,1,0.0
+Agent Planning,1,0.0
+Test-Time Scaling,1,0.0
+Code Review Classification,1,0.0
+Threat Assessment,1,0.0
+Meta-cognitive Editing,1,0.0
+Commonsense Generation,1,0.0
+Engagement Modeling,1,0.0
+Dark Humor Detection,1,0.0
+Target Identification,1,0.0
+Intensity Prediction,1,0.0
+Conjecture Entailment Verification,1,0.0
+Minimal Premise Selection,1,0.0
+Proof Graph Reconstruction,1,0.0
+Logo Detection,1,0.0
+Human Presence and Demographic Analysis,1,0.0
+Human Activity and Appearance Analysis,1,0.0
+Scene Detection,1,0.0
+Camera Perspective and Media Quality Assessment,1,0.0
+Dominant Color Extraction,1,0.0
+Comprehensive Description,1,0.0
+NSFW Detection,1,0.0
+Patient Education,1,0.0
+Evaluation of Discharge Communication,1,0.0
+Stress Prediction,1,0.0
+Readiness Prediction,1,0.0
+Fatigue Monitoring,1,0.0
+Sleep Quality Estimation,1,0.0
+Depression Detection,1,0.0
+Anxiety Estimation,1,0.0
+Physical Activity Classification,1,0.0
+Calorie Estimation,1,0.0
+Emotion QA,1,0.0
+Emotion Conversation,1,0.0
+Emotion Summary,1,0.0
+Emotion Expression,1,0.0
+Risk Detection,1,0.0
+Risk Classification,1,0.0
+Interactive Evaluation,1,0.0
+Creativity Assessment,1,0.0
+Management Plan,1,0.0
+Sequential Case Analysis,1,0.0
+Longitudinal Follow-up,1,0.0
+Multiple-Choice Questions,1,0.0
+Clinical Approach,1,0.0
+Voice Style Adaptation,1,0.0
+Numerical Problem Solving,1,0.0
+Artifact Detection,1,0.0
+Classification of eligibility criteria,1,0.0
+Identification of interest reasons,1,0.0
+Tactic Attribution,1,0.0
+Personality Recognition,1,0.0
+Dialog Act Prediction,1,0.0
+Gender Detection,1,0.0
+Username Generation,1,0.0
+Ethical Reasoning,1,0.0
+Requirements Extraction,1,0.0
+Text Embedding,1,0.0
+Acoustic Scene Classification,1,0.0
+Audio Tagging,1,0.0
+Harmful Generation Evaluation,1,0.0
+Associative Question Answering,1,0.0
+Ad-Injected Response Generation,1,0.0
+Code Documentation Generation,1,0.0
+Reconnaissance,1,0.0
+Credential Attacks,1,0.0
+Exploitation of Known Vulnerabilities,1,0.0
+Post-Exploitation,1,0.0
+Web Exploitation & Injection,1,0.0
+Active Directory Attacks,1,0.0
+Function Prioritization,1,0.0
+Evidence Attribution,1,0.0
+Behavioral Synthesis,1,0.0
+Sample Discrimination,1,0.0
+Insight-based reasoning,1,0.0
+Specification Alignment,1,0.0
+Adversarial Text Generation,1,0.0
+Comprehension,1,0.0
+Event Segmentation,1,0.0
+Trigger Identification,1,0.0
+Argument Extraction,1,0.0
+Engineering Design,1,0.0
+Simulation-based Evaluation,1,0.0
+Performance Validation,1,0.0
+Empathy Measurement,1,0.0
+Chain-of-Thought Reasoning Analysis,1,0.0
+Medical Calculation Evaluation,1,0.0
+Social Interaction,1,0.0
+Multi-agent decision-making,1,0.0
+Strategic behavior evaluation,1,0.0
+Fact Validation,1,0.0
+Prompt Matching,1,0.0
+Binary Causal Classification,1,0.0
+Explicit vs. Implicit Causality Detection,1,0.0
+Cause–Effect Span Extraction,1,0.0
+Causal Gist Generation,1,0.0
+Identity Fusion Prediction,1,0.0
+Violence Risk Prediction,1,0.0
+Discourse Relation Classification,1,0.0
+Structured Knowledge Reasoning,1,0.0
+Lesion Detection,1,0.0
+Knowledge Grounded Question Answering,1,0.0
+Input Adequacy Measurement,1,0.0
+Failure Prediction,1,0.0
+Input Classification,1,0.0
+Temporal Task Progress Prediction,1,0.0
+Data Curation,1,0.0
+Multi-Turn Tool Use,1,0.0
+Lyric Recognition,1,0.0
+Structure Analysis,1,0.0
+Multi-image Retrieval,1,0.0
+Multi-image Ranking,1,0.0
+Multi-image Extraction,1,0.0
+Multi-image Reasoning,1,0.0
+Referring Audio-Visual Segmentation,1,0.0
+Controllable Text Generation,1,0.0
+Dialogue Quality Evaluation,1,0.0
+Truthfulness Detection,1,0.0
+Deceptive Reasoning Detection,1,0.0
+Image Localization,1,0.0
+Function Calling Evaluation,1,0.0
+Aesthetic Visual Understanding,1,0.0
+Image Aesthetic Evaluation,1,0.0
+User Profiling,1,0.0
+Accessibility Evaluation,1,0.0
+Node Prediction,1,0.0
+Edge Prediction,1,0.0
+Multimodal Understanding,1,0.0
+Taxonomy Generation,1,0.0
+Verification of smart contracts,1,0.0
+Audit assistance,1,0.0
+Safety alignment,1,0.0
+Contextual decision making,1,0.0
+Audio Recommendation,1,0.0
+Multi-Hop Question Answering,1,0.0
+Accident Reasoning,1,0.0
+Traffic Event Analysis,1,0.0
+Traffic Safety Analysis,1,0.0
+Assertion Message Generation,1,0.0
+Test Code Evaluation,1,0.0
+Polarity Detection,1,0.0
+Speech Transcription,1,0.0
+Vocal Sound Classification,1,0.0
+Complaint Generation,1,0.0
+Game Development,1,0.0
+Evaluating sycophantic tendencies in medical language models,1,0.0
+Personalized Learning,1,0.0
+Adaptive Assessment,1,0.0
+Graduate-level Question Answering,1,0.0
+Configuration of Simulation Workflows,1,0.0
+Performance Forecasting,1,0.0
+Personalization Evaluation,1,0.0
+Legal Knowledge Recall,1,0.0
+Case-Based Reasoning,1,0.0
+Interval Detection,1,0.0
+Video Dataset Construction,1,0.0
+Policy Problem Generation,1,0.0
+Research Findings Generation,1,0.0
+Scientific Research Study Methods Generation,1,0.0
+Policy Implications Generation,1,0.0
+Long-horizon reasoning,1,0.0
+Image Dehate,1,0.0
+Procedural Step Segmentation,1,0.0
+Conversation-State Classification,1,0.0
+AIGT Classification,1,0.0
+AI Provider Identification,1,0.0
+Model Identification,1,0.0
+Speech Dialogue Modeling,1,0.0
+Gender Bias Detection,1,0.0
+Profession Classification,1,0.0
+Salary Estimation,1,0.0
+Listening,1,0.0
+Speaking,1,0.0
+Viewing,1,0.0
+Quality Evaluation,1,0.0
+Comparative Evaluation,1,0.0
+Quantity Comparison,1,0.0
+Geometric Property Comparison,1,0.0
+Spatial Relation Reasoning,1,0.0
+Material Optimization,1,0.0
+Corpus-Level Inconsistency Detection,1,0.0
+Cross-System SQL Translation,1,0.0
+Audio Role-Playing,1,0.0
+Preference Data Cleaning,1,0.0
+Yes/No Classification,1,0.0
+Safety Hazard Identification,1,0.0
+Failure Diagnosis,1,0.0
+Contract-Level Code Generation,1,0.0
+Text Game Generation,1,0.0
+CRUD operations across various workflows in MCP environments,1,0.0
+Robotic Stacking,1,0.0
+Logical Deduction,1,0.0
+Device Control,1,0.0
+Environmental Variable Querying,1,0.0
+Implicit Intent Inference,1,0.0
+Temporal Coordination,1,0.0
+Harmfulness Assessment,1,0.0
+Image-to-Video Generation,1,0.0
+Speech Style Editing,1,0.0
+Webpage Reconstruction,1,0.0
+Image-Pair Selection,1,0.0
+Spot Diagnosis,1,0.0
+Self-Replication Measurement,1,0.0
+Linguistic Acceptability Judgments,1,0.0
+Caption Matching,1,0.0
+Open-ended QA,1,0.0
+Contextual Sensitivity Evaluation,1,0.0
+Structured Data Extraction,1,0.0
+Text-driven Saliency Detection,1,0.0
+Managerial Decision Making,1,0.0
+Task Performance Evaluation,1,0.0
+Simple Reasoning,1,0.0
+Advanced Reasoning,1,0.0
+Alert/Triage,1,0.0
+Glucose Math,1,0.0
+Cultural Conflict Understanding,1,0.0
+Cultural Content Generation,1,0.0
+Bias Mitigation Evaluation,1,0.0
+Syllabification,1,0.0
+Legal Argument Completion,1,0.0
+Article Identification,1,0.0
+Synthesis process extraction,1,0.0
+Material property prediction,1,0.0
+Safety Analysis,1,0.0
+Contest-Style Problem Solving,1,0.0
+Contextual Memory Evaluation,1,0.0
+Multi-Platform Agent Reasoning,1,0.0
+Action-Place Association,1,0.0
+Spatial Relations,1,0.0
+Data Linking,1,0.0
+Bibliometric Analysis,1,0.0

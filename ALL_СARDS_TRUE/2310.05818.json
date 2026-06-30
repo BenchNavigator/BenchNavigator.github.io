@@ -1,0 +1,93 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "SuperCLUE-Safety (SC-Safety)",
+    "abbreviation": "SC-Safety",
+    "overview": "SC-Safety is a multi-round adversarial benchmark designed to assess the safety of Chinese large language models. It features 4912 open-ended questions covering over 20 safety sub-dimensions, aiming to reflect real-world interactive scenarios and enhance safety measures against instruction attacks and irresponsible AI.",
+    "data_type": "question-answering pairs",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "Chinese"
+    ],
+    "similar_benchmarks": [
+      "CLUE",
+      "SuperCLUE"
+    ],
+    "resources": [
+      "https://www.CLUEbenchmarks.com"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To systematically evaluate and improve the safety characteristics of large language models used in Chinese through comprehensive safety assessments.",
+    "audience": [
+      "ML Researchers",
+      "Model Developers",
+      "AI Practitioners"
+    ],
+    "tasks": [
+      "Safety Assessment",
+      "Model Evaluation"
+    ],
+    "limitations": "N/A",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Adversarially constructed datasets derived from interactions between humans and models, focusing on real-world safety applications.",
+    "size": "4,912 pairs",
+    "format": "N/A",
+    "annotation": "Manually curated and synthetically generated using adversarial questioning techniques."
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "Automated metrics"
+    ],
+    "metrics": [
+      "Accuracy",
+      "F1 Score"
+    ],
+    "calculation": "Evaluated based on responses from models to open-ended questions, focusing on safety and responsibility measures.",
+    "interpretation": "Scores indicate levels of safety and adherence to moral and legal guidelines; higher scores denote better compliance and safety.",
+    "baseline_results": "Comparison of 13 major Chinese LLMs evaluated against SC-Safety metrics, including closed-source and open-source models.",
+    "validation": "The benchmark was validated through consistency checks against automated and human evaluations focusing on potential safety risks."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Safety",
+      "Accuracy",
+      "Robustness"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Fairness",
+          "subcategory": [
+            "Data bias"
+          ]
+        },
+        {
+          "category": "Robustness",
+          "subcategory": [
+            "Evasion attack"
+          ]
+        },
+        {
+          "category": "Privacy",
+          "subcategory": [
+            "Personal information in data"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": []
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

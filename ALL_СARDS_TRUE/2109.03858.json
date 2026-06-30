@@ -1,0 +1,82 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "BUG (Bias Under Gender)",
+    "abbreviation": "BUG",
+    "overview": "We present BUG, a first publicly available large-scale corpus for gender bias evaluation which consists of diverse, real-world sentences. This dataset enables evaluation of gender bias in various coreference resolution and machine translation models.",
+    "data_type": "text",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "WinoGender",
+      "WinoBias",
+      "GAP"
+    ],
+    "resources": [
+      "https://github.com/SLAB-NLP/BUG"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To evaluate gender bias in machine translation and coreference resolution models using a large-scale dataset of real-world sentences.",
+    "audience": [
+      "ML Researchers",
+      "Industry Practitioners",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Coreference Resolution",
+      "Machine Translation"
+    ],
+    "limitations": "N/A",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Three diverse domains including Wikipedia, Covid19 research, and PubMed abstracts",
+    "size": "108,000 sentences",
+    "format": "N/A",
+    "annotation": "Manually verified by human annotators"
+  },
+  "methodology": {
+    "methods": [
+      "Evaluation of models using BUG",
+      "Error analysis"
+    ],
+    "metrics": [
+      "Accuracy",
+      "Population bias (ΔG)",
+      "Historical bias (ΔS)"
+    ],
+    "calculation": "Metrics are calculated based on F1 scores for correct gender predictions in machine translation and coreference resolution.",
+    "interpretation": "Higher ΔG or ΔS values indicate a greater performance bias towards masculine pronouns or stereotypical assignments.",
+    "baseline_results": null,
+    "validation": "N/A"
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Bias",
+      "Fairness"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Fairness",
+          "subcategory": [
+            "Data bias"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": "N/A"
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

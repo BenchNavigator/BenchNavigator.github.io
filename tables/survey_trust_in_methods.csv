@@ -1,0 +1,6 @@
+evaluation_method,mean_trust_1to5
+Human eval w/ inter-annotator agreement,3.8
+Head-to-head human (Arena-style),3.5
+Adversarial / stress testing,3.3
+"Automated metrics (BLEU, ROUGE)",3.1
+LLM-as-judge evaluation,2.9

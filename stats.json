@@ -1,0 +1,668 @@
+{
+ "generated_from": "benchmark_cards_cleaned.jsonl + optional arxiv_data + survey",
+ "benchmarks": {
+  "source": "benchmark_cards_cleaned.jsonl",
+  "key_fields": [
+   "overview",
+   "languages",
+   "size",
+   "modality"
+  ],
+  "total": 4680,
+  "modality": [
+   [
+    "text",
+    3111,
+    66.5
+   ],
+   [
+    "image",
+    1011,
+    21.6
+   ],
+   [
+    "code",
+    316,
+    6.8
+   ],
+   [
+    "audio",
+    164,
+    3.5
+   ],
+   [
+    "tabular",
+    42,
+    0.9
+   ],
+   [
+    "video",
+    36,
+    0.8
+   ]
+  ],
+  "language": [
+   [
+    "English",
+    3509,
+    75.0
+   ],
+   [
+    "Not documented",
+    282,
+    6.0
+   ],
+   [
+    "Chinese",
+    259,
+    5.5
+   ],
+   [
+    "Arabic",
+    73,
+    1.6
+   ],
+   [
+    "Python",
+    70,
+    1.5
+   ],
+   [
+    "Korean",
+    31,
+    0.7
+   ],
+   [
+    "Japanese",
+    31,
+    0.7
+   ],
+   [
+    "Persian",
+    23,
+    0.5
+   ],
+   [
+    "Bengali",
+    22,
+    0.5
+   ],
+   [
+    "German",
+    22,
+    0.5
+   ],
+   [
+    "Hindi",
+    21,
+    0.4
+   ],
+   [
+    "French",
+    20,
+    0.4
+   ],
+   [
+    "Spanish",
+    19,
+    0.4
+   ],
+   [
+    "Java",
+    18,
+    0.4
+   ],
+   [
+    "Portuguese",
+    15,
+    0.3
+   ]
+  ],
+  "license": [
+   [
+    "Not documented",
+    4680,
+    100.0
+   ]
+  ],
+  "size": [
+   [
+    "<1K",
+    899,
+    19.2
+   ],
+   [
+    "1K–10K",
+    1307,
+    27.9
+   ],
+   [
+    "10K–100K",
+    1017,
+    21.7
+   ],
+   [
+    "100K–1M",
+    522,
+    11.2
+   ],
+   [
+    ">1M",
+    616,
+    13.2
+   ],
+   [
+    "Not documented",
+    319,
+    6.8
+   ]
+  ],
+  "tasks": [
+   [
+    "Question Answering",
+    801,
+    17.1
+   ],
+   [
+    "Text Classification",
+    352,
+    7.5
+   ],
+   [
+    "Visual Question Answering",
+    174,
+    3.7
+   ],
+   [
+    "Named Entity Recognition",
+    154,
+    3.3
+   ],
+   [
+    "Code Generation",
+    147,
+    3.1
+   ],
+   [
+    "Sentiment Analysis",
+    114,
+    2.4
+   ],
+   [
+    "Text Generation",
+    96,
+    2.1
+   ],
+   [
+    "Machine Translation",
+    92,
+    2.0
+   ],
+   [
+    "Natural Language Inference",
+    81,
+    1.7
+   ],
+   [
+    "Image Captioning",
+    76,
+    1.6
+   ],
+   [
+    "Mathematical Reasoning",
+    68,
+    1.5
+   ],
+   [
+    "Summarization",
+    58,
+    1.2
+   ],
+   [
+    "Information Retrieval",
+    46,
+    1.0
+   ],
+   [
+    "Dialogue Generation",
+    46,
+    1.0
+   ],
+   [
+    "Image Classification",
+    46,
+    1.0
+   ],
+   [
+    "Text Summarization",
+    45,
+    1.0
+   ],
+   [
+    "Instruction Following",
+    45,
+    1.0
+   ],
+   [
+    "Reading Comprehension",
+    44,
+    0.9
+   ],
+   [
+    "Relation Extraction",
+    41,
+    0.9
+   ],
+   [
+    "Information Extraction",
+    40,
+    0.9
+   ]
+  ],
+  "missing_fields": [
+   [
+    "languages",
+    282,
+    6.0
+   ],
+   [
+    "size",
+    281,
+    6.0
+   ]
+  ],
+  "completeness": [
+   [
+    "0",
+    0
+   ],
+   [
+    "1",
+    0
+   ],
+   [
+    "2",
+    10
+   ],
+   [
+    "3",
+    543
+   ],
+   [
+    "4",
+    4127
+   ]
+  ],
+  "oss": [
+   [
+    "Source link available",
+    4680,
+    100.0
+   ]
+  ],
+  "instruction_tuning": [
+   [
+    "AI-risk annotated",
+    4542,
+    97.1
+   ],
+   [
+    "No AI-risk category",
+    138,
+    2.9
+   ]
+  ],
+  "libraries": [
+   [
+    "Automated metrics",
+    2460,
+    52.6
+   ],
+   [
+    "Human evaluation",
+    2130,
+    45.5
+   ],
+   [
+    "Model-based evaluation",
+    219,
+    4.7
+   ],
+   [
+    "Zero-shot evaluation",
+    48,
+    1.0
+   ],
+   [
+    "Automated metrics evaluation",
+    39,
+    0.8
+   ],
+   [
+    "LLM-based evaluation",
+    39,
+    0.8
+   ],
+   [
+    "Statistical analysis",
+    31,
+    0.7
+   ],
+   [
+    "Automated evaluation",
+    30,
+    0.6
+   ],
+   [
+    "Reinforcement Learning",
+    27,
+    0.6
+   ],
+   [
+    "Fine-tuning",
+    25,
+    0.5
+   ],
+   [
+    "Manual evaluation",
+    25,
+    0.5
+   ],
+   [
+    "Human Evaluation",
+    22,
+    0.5
+   ]
+  ],
+  "availability": [
+   [
+    "has_paper",
+    4680,
+    100.0
+   ],
+   [
+    "has_github",
+    2849,
+    60.9
+   ],
+   [
+    "has_huggingface",
+    655,
+    14.0
+   ],
+   [
+    "has_homepage",
+    1321,
+    28.2
+   ]
+  ],
+  "distinct_languages": 121,
+  "distinct_licenses": 0,
+  "distinct_tasks": 5348
+ },
+ "growth": {
+  "series": [],
+  "total": 0
+ },
+ "artifacts": {
+  "total": 0,
+  "status": [],
+  "hosts": []
+ },
+ "survey": {
+  "n": 23,
+  "scientific": [
+   [
+    "Construct validity",
+    17,
+    73.9
+   ],
+   [
+    "Reliability",
+    16,
+    69.6
+   ],
+   [
+    "Annotation quality",
+    13,
+    56.5
+   ],
+   [
+    "Data contamination checks",
+    10,
+    43.5
+   ],
+   [
+    "Difficulty calibration",
+    8,
+    34.8
+   ],
+   [
+    "Statistical rigor",
+    7,
+    30.4
+   ]
+  ],
+  "coverage": [
+   [
+    "Domain relevance",
+    20,
+    87.0
+   ],
+   [
+    "Human evaluation data",
+    17,
+    73.9
+   ],
+   [
+    "Language coverage",
+    11,
+    47.8
+   ],
+   [
+    "Robustness testing",
+    8,
+    34.8
+   ],
+   [
+    "Safety evaluation",
+    6,
+    26.1
+   ]
+  ],
+  "practical": [
+   [
+    "Ease of setup",
+    14,
+    60.9
+   ],
+   [
+    "Ready-to-use implementations",
+    13,
+    56.5
+   ],
+   [
+    "Reproducibility features",
+    13,
+    56.5
+   ],
+   [
+    "Performance estimates",
+    9,
+    39.1
+   ],
+   [
+    "Container/API support",
+    6,
+    26.1
+   ]
+  ],
+  "external": [
+   [
+    "Academic citations",
+    17,
+    73.9
+   ],
+   [
+    "Community adoption",
+    16,
+    69.6
+   ],
+   [
+    "Standardized metrics",
+    13,
+    56.5
+   ],
+   [
+    "Documentation quality",
+    13,
+    56.5
+   ],
+   [
+    "Active maintenance",
+    12,
+    52.2
+   ],
+   [
+    "Third-party validation",
+    5,
+    21.7
+   ]
+  ],
+  "sources": [
+   [
+    "Academic papers (arXiv, conferences)",
+    21,
+    91.3
+   ],
+   [
+    "Hugging Face",
+    18,
+    78.3
+   ],
+   [
+    "GitHub repositories",
+    16,
+    69.6
+   ],
+   [
+    "Recommendations from colleagues",
+    10,
+    43.5
+   ],
+   [
+    "Social media / forums",
+    5,
+    21.7
+   ],
+   [
+    "Community leaderboards",
+    3,
+    13.0
+   ],
+   [
+    "Vendor documentation",
+    1,
+    4.3
+   ]
+  ],
+  "constraints": [
+   [
+    "Benchmark validation & quality",
+    4.2
+   ],
+   [
+    "Technical compatibility",
+    3.9
+   ],
+   [
+    "Ease of integration",
+    3.8
+   ],
+   [
+    "Time-to-run",
+    3.6
+   ],
+   [
+    "Monetary / compute budget",
+    3.5
+   ],
+   [
+    "Data privacy & compliance",
+    3.4
+   ],
+   [
+    "Licensing & terms of use",
+    3.2
+   ],
+   [
+    "Organizational policies",
+    3.0
+   ]
+  ],
+  "trust": [
+   [
+    "Human eval w/ inter-annotator agreement",
+    3.8
+   ],
+   [
+    "Head-to-head human (Arena-style)",
+    3.5
+   ],
+   [
+    "Adversarial / stress testing",
+    3.3
+   ],
+   [
+    "Automated metrics (BLEU, ROUGE)",
+    3.1
+   ],
+   [
+    "LLM-as-judge evaluation",
+    2.9
+   ]
+  ],
+  "features": [
+   [
+    "Evidence score (docs, seeds, human eval)",
+    4.1
+   ],
+   [
+    "Explainers: why a benchmark was recommended",
+    3.9
+   ],
+   [
+    "One-click export (JSON/Markdown)",
+    3.8
+   ],
+   [
+    "Domain-specific tailoring",
+    3.8
+   ],
+   [
+    "Contamination risk & provenance indicators",
+    3.7
+   ],
+   [
+    "Maintenance score (updates, activity)",
+    3.6
+   ],
+   [
+    "Ranked recommendations",
+    3.4
+   ],
+   [
+    "Compute cost / time estimator",
+    3.3
+   ],
+   [
+    "Visualizations of results",
+    3.2
+   ],
+   [
+    "Support for custom metrics",
+    3.1
+   ]
+  ]
+ }
+}

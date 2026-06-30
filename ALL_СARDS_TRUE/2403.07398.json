@@ -1,0 +1,71 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "COM2 (COM plex COM monsense)",
+    "abbreviation": "COM2",
+    "overview": "COM2 is a complex commonsense reasoning dataset created by sampling multi-hop logical queries from an existing commonsense knowledge graph (CSKG) and verbalizing them into multiple-choice and text generation questions.",
+    "data_type": "question-answering pairs",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [],
+    "resources": [
+      "https://github.com/tqfang/complex-commonsense-reasoning"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To provide a benchmark for evaluating complex commonsense reasoning abilities of language models.",
+    "audience": [
+      "ML Researchers",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Question Answering"
+    ],
+    "limitations": "Issues with data quality and sparsity affecting query construction.",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Sampled logical queries from the ATOMIC commonsense knowledge graph",
+    "size": "790,000 examples",
+    "format": "JSON",
+    "annotation": "Manually validated by crowdworkers on Amazon Mechanical Turk"
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "Automated metrics"
+    ],
+    "metrics": [
+      "Accuracy"
+    ],
+    "calculation": "Metrics are computed based on performance on the COM2 evaluation set.",
+    "interpretation": "Higher accuracy indicates better reasoning capabilities.",
+    "baseline_results": "DeBERTa-v3 fine-tuned on COM2 achieved a significant improvement in reasoning tasks.",
+    "validation": "Evaluated through human annotation and comparison with existing models."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Bias",
+      "Safety",
+      "Privacy",
+      "Robustness",
+      "Fairness",
+      "Accuracy"
+    ],
+    "atlas_risks": {
+      "risks": []
+    },
+    "demographic_analysis": "Potential demographic biases based on the source dataset (ATOMIC).",
+    "harm": []
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

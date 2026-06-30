@@ -1,0 +1,105 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "StereoSet",
+    "abbreviation": "N/A",
+    "overview": "StereoSet, a large-scale natural dataset in English to measure stereotypical biases in four domains: gender, profession, race, and religion. The paper introduces the Context Association Test (CAT) to measure sentence-level (intrasentence) and discourse-level (intersentence) stereotypical bias in pretrained language models and presents the Idealized CAT (ICAT) metric to combine language modeling ability and bias measurement.",
+    "data_type": "text (associative context triplets / Context Association Tests)",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "Word Embedding Association Test (WEAT)",
+      "Sentence Encoder Association Test (SEAT)"
+    ],
+    "resources": [
+      "https://stereoset.mit.edu",
+      "https://arxiv.org/abs/2004.09456"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To measure stereotypical biases of pretrained language models and provide a large-scale evaluation dataset (StereoSet), an evaluation methodology (Context Association Test: intrasentence and intersentence), and a combined metric (Idealized CAT score) to quantify bias while accounting for language modeling ability.",
+    "audience": [
+      "ML Researchers",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Language Modeling",
+      "Bias Measurement (Stereotypical Bias Evaluation / Ranking of associative contexts)"
+    ],
+    "limitations": "StereoSet is crowdsourced on Mechanical Turk using worker pool from the US, which may not reflect the stereotypes of the wider US population (worker pool predominantly (80%) below the age of 50). Some objectively false statements remain in the data despite instructions and validation. The authors note that assuming an idealistic language model should show no preference between stereotype and anti-stereotype may be problematic in some cases.",
+    "out_of_scope_uses": [
+      "Fine-tuning or training models on StereoSet (the paper states: 'We do not have a training set since this defeats the purpose of StereoSet, which is to measure the biases of pretrained language models (and not the models fine-tuned on StereoSet).')"
+    ]
+  },
+  "data": {
+    "source": "Crowdsourced via Amazon Mechanical Turk (restricted to workers in the United States). Target terms curated from Wikidata relation triples (relations P106, P172, P140) and gender terms from Nosek et al. (2002).",
+    "size": "16,995 examples (CAT triplets); 321 target terms; 4 domains (gender, profession, race, religion).",
+    "format": "N/A",
+    "annotation": "Initial associative contexts and context sentences were written by MTurk annotators. Each instance was validated by five validators; CATs were retained when at least three validators agreed (this filtering retained 83% of CATs). Annotator requirements: 95% HIT acceptance rate and located in the United States."
+  },
+  "methodology": {
+    "methods": [
+      "Context Association Test (CAT): intrasentence and intersentence association tests",
+      "Automated ranking using model probabilities or Next Sentence Prediction (NSP) classifier",
+      "Crowdsourced data collection and human validation (MTurk)",
+      "Training NSP heads on Wikipedia sentence pairs for models without NSP"
+    ],
+    "metrics": [
+      "Language Modeling Score (LMS)",
+      "Stereotype Score (SS)",
+      "Idealized CAT Score (ICAT)",
+      "Accuracy (used for NSP classifier validation)"
+    ],
+    "calculation": "LMS: percentage of instances where the model prefers the meaningful (stereotype or anti-stereotype) association over the unrelated (meaningless) association; overall LMS is the average LMS across target terms. SS: percentage of instances where the model prefers the stereotypical association over the anti-stereotypical association; overall SS is the average SS across target terms. ICAT: icat = lms * (min(ss, 100 - ss) / 50).",
+    "interpretation": "Ideal model: LMS = 100, SS = 50, ICAT = 100. Fully biased model (always preferring stereotypes or anti-stereotypes): ICAT = 0. Random model (random choices): LMS = 50, SS = 50, ICAT = 50. ICAT represents language modeling ability scaled by lack of bias (preference balance between stereotypes and anti-stereotypes).",
+    "baseline_results": "Development set baselines (as reported): IDEAL LM: LMS=100, SS=50.0, ICAT=100; RANDOM LM: LMS=50.0, SS=50.0, ICAT=50.0; SENTIMENT LM: LMS=65.5, SS=60.2, ICAT=52.1.",
+    "validation": "Dataset validation: each collected CAT was validated by five additional MTurk workers and retained only if at least three validators agreed (resulting in 83% retention). Data split: 25% of target terms (and their instances) used for development and 75% used for a hidden test set; development and test target terms are disjoint. NSP classifier validation: NSP heads trained on 9.5M Wikipedia sentence pairs and evaluated on held-out sets, achieving reported accuracies (e.g., roberta-base NSP: 94.6%; roberta-large: 97.1%; xlnet-base: 93.4%; xlnet-large: 94.1%; GPT2 variants: 92.5%–96.1%)."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Bias",
+      "Fairness"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Fairness",
+          "subcategory": [
+            "Data bias",
+            "Output bias"
+          ]
+        },
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Unrepresentative data"
+          ]
+        },
+        {
+          "category": "Value Alignment",
+          "subcategory": [
+            "Toxic output"
+          ]
+        },
+        {
+          "category": "Societal Impact",
+          "subcategory": [
+            "Impact on affected communities"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "Annotator pool restricted to United States MTurk workers; authors note MTurk worker pool is predominantly (80%) below age 50. Number of annotators: 475 completed intrasentence task, 803 completed intersentence task.",
+    "harm": "Detect stereotypical biases in pretrained language models that can hurt target groups (the paper states: 'Such beliefs (biases) are known to hurt target groups')."
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

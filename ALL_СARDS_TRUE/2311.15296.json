@@ -1,0 +1,87 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "UHG Eval (Unconstrained Hallucination Generation Evaluation)",
+    "abbreviation": "UHG Eval",
+    "overview": "The benchmark assesses hallucinations produced by Chinese large language models (LLMs) through an unconstrained generation methodology, allowing for the evaluation of freely generated hallucinations in line with real-world applications.",
+    "data_type": "hallucination text",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "Chinese"
+    ],
+    "similar_benchmarks": [
+      "TruthfulQA",
+      "HaluEval",
+      "HaDes"
+    ],
+    "resources": [
+      "https://iaar-shanghai.github.io/UHGEval/"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To evaluate the reliability and hallucination capabilities of Chinese large language models by providing a comprehensive and unconstrained benchmark.",
+    "audience": [
+      "ML Researchers",
+      "Industry Practitioners",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Hallucination Detection"
+    ],
+    "limitations": "The dataset may contain labeling errors due to the human annotation process.",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Historical news articles from leading Chinese news websites collected for constructing the dataset.",
+    "size": "5,141 hallucinated continuations",
+    "format": "JSON",
+    "annotation": "Initial automatic labeling followed by human rechecking to ensure accuracy."
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "Automated metrics",
+      "Discriminative evaluation",
+      "Selective evaluation",
+      "Generative evaluation"
+    ],
+    "metrics": [
+      "Accuracy",
+      "BLEU Score",
+      "ROUGE-L",
+      "kwPrec",
+      "BERTScore"
+    ],
+    "calculation": "Metrics are calculated using lexical and semantic evaluations based on text similarity to reference information.",
+    "interpretation": "Higher scores in accuracy metrics indicate better model performance in detecting hallucinations.",
+    "baseline_results": "Comparative evaluation results across multiple LLMs provided in the experimental section.",
+    "validation": "Results validated against human annotations and through various evaluative methods."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Bias",
+      "Privacy",
+      "Accuracy"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Poor model accuracy"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "The dataset includes a diverse set of news categories aimed at enhancing generalizability.",
+    "harm": "The benchmark aims to prevent misinformation propagation through improved model outputs."
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "Data collected from publicly available news sources with respectful handling of sensitive information.",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

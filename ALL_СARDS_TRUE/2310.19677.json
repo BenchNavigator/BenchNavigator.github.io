@@ -1,0 +1,87 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "MoCa (Measuring Human-Language Model Alignment on Causal and Moral Judgment Tasks)",
+    "abbreviation": "MoCa",
+    "overview": "We collected a dataset of causal and moral judgment tasks from 24 cognitive science papers and developed a system to annotate each story with the factors they investigated. Using this dataset, we test whether large language models (LLMs) make causal and moral judgments about text-based scenarios that align with those of human participants.",
+    "data_type": "text",
+    "domains": [
+      "Natural Language Processing",
+      "Psychology"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "Moral Machine Dataset"
+    ],
+    "resources": [
+      "https://github.com/cicl-stanford/moca"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To evaluate the alignment of large language models with human judgments regarding causal and moral scenarios, utilizing insights from cognitive science.",
+    "audience": [
+      "ML Researchers",
+      "Psychologists",
+      "Ethicists",
+      "AI Developers"
+    ],
+    "tasks": [
+      "Causal Judgment",
+      "Moral Judgment"
+    ],
+    "limitations": "The dataset focuses on specific aspects of alignment and may not generalize to broader contexts of moral reasoning.",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Collected and annotated stories from 24 cognitive science papers.",
+    "size": "5,150 human responses",
+    "format": "text",
+    "annotation": "Annotated by experts with the factors investigated in each story."
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "Statistical analysis"
+    ],
+    "metrics": [
+      "Accuracy",
+      "Average Marginal Component Effect (AMCE)"
+    ],
+    "calculation": "AMCE is computed to reveal implicit tendencies for each factor from human and LLM judgments.",
+    "interpretation": "Higher alignment indicates better agreement between model outputs and human judgments.",
+    "baseline_results": null,
+    "validation": "Cross-validation with human responses."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Bias",
+      "Accuracy"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Fairness",
+          "subcategory": [
+            "Data bias"
+          ]
+        },
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Poor model accuracy"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "The dataset includes demographic variation in human responses but does not analyze demographic bias directly.",
+    "harm": []
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "CC BY 4.0",
+    "consent_procedures": "Participants gave consent through a notification form at the beginning of each study.",
+    "compliance_with_regulations": "IRB approval obtained for the data collection process."
+  }
+}

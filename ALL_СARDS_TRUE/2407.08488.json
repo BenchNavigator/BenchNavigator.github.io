@@ -1,0 +1,74 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "HaluBench",
+    "abbreviation": "N/A",
+    "overview": "HaluBench is a comprehensive hallucination evaluation benchmark, consisting of 15k samples sourced from various real-world domains. It evaluates the hallucination detection capabilities of language models.",
+    "data_type": "question-answering pairs",
+    "domains": [
+      "Natural Language Processing",
+      "Finance",
+      "Healthcare"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "HaluEval",
+      "RAGTruth"
+    ],
+    "resources": [
+      "https://huggingface.co/datasets/PatronusAI/HaluBench",
+      "https://github.com/patronus-ai/Lynx-hallucination-detection"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To provide a reference-free automated evaluation methodology for hallucination detection in retrieval-augmented generation systems.",
+    "audience": [
+      "ML Researchers",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Hallucination Detection",
+      "Question Answering"
+    ],
+    "limitations": "N/A",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Various existing Question Answering datasets including CovidQA, PubmedQA, DROP, and FinanceBench.",
+    "size": "15,000 samples",
+    "format": "N/A",
+    "annotation": "Manual annotation for hallucination detection based on contextual consistency."
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "LLM-as-Judge evaluation"
+    ],
+    "metrics": [
+      "Accuracy"
+    ],
+    "calculation": "Accuracy is calculated based on the proportion of correct detections of hallucinations.",
+    "interpretation": "Higher accuracy indicates better performance in detecting hallucinations.",
+    "baseline_results": "LYNX achieved 87.4% accuracy on HaluBench.",
+    "validation": "Validation was performed with human annotations confirming high-quality data and label agreement."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Accuracy",
+      "Fairness"
+    ],
+    "atlas_risks": {
+      "risks": []
+    },
+    "demographic_analysis": "N/A",
+    "harm": []
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

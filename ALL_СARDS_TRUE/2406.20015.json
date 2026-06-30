@@ -1,0 +1,88 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "ToolBH (Tool-augmented Large Language Models Hallucination Diagnostic Benchmark)",
+    "abbreviation": "ToolBH",
+    "overview": "ToolBH is a multi-level hallucination diagnostic benchmark designed to assess tool-augmented large language models' (LLMs) hallucination issues, focusing on both the depth and breadth of hallucination phenomena across various tool usage scenarios.",
+    "data_type": "user-query and toolset pairs",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "TruthfulQA",
+      "AgentBench",
+      "ToolBench"
+    ],
+    "resources": [
+      "https://github.com/ToolBeHonest/ToolBeHonest"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To diagnose hallucination phenomena in tool-augmented LLMs and provide resources for exploring their real-world performance.",
+    "audience": [
+      "ML Researchers",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Hallucination Detection",
+      "Tool Usage Evaluation",
+      "Multi-level Diagnostic Assessment"
+    ],
+    "limitations": "N/A",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "Manually annotated user queries and toolsets designed to challenge LLMs under tool-using scenarios.",
+    "size": "700 evaluation samples",
+    "format": "N/A",
+    "annotation": "Multiple rounds of manual annotation conducted by the authors."
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "Automated metrics"
+    ],
+    "metrics": [
+      "Exact Match (EM)",
+      "Progress Rate (PR)",
+      "Matching Score (MS)"
+    ],
+    "calculation": "Metrics are calculated based on the specific performance of models across three diagnostic levels focusing on solvability and tool utilization.",
+    "interpretation": "Higher scores indicate better performance in accurately identifying solvable tasks and correctly planning tool usage.",
+    "baseline_results": "State-of-the-art models achieved scores of 45.3 for Gemini-1.5-Pro and 37.0 for GPT-4o in the ToolBH benchmark.",
+    "validation": "Evaluation against multiple tool-augmented tasks across various model architectures."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Accuracy",
+      "Fairness"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Poor model accuracy"
+          ]
+        },
+        {
+          "category": "Fairness",
+          "subcategory": [
+            "Data bias"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": []
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "MIT License",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "THRONE (Text-from-image Hallucination Recognition with Object-probes for open-ended Evaluation)",
+    "abbreviation": "THRONE",
+    "overview": "THRONE establishes an accurate and accessible benchmark to quantitatively evaluate object hallucinations in free-form responses, leveraging language models to judge the existence of Type I hallucinations.",
+    "data_type": "text",
+    "domains": [
+      "Natural Language Processing",
+      "Computer Vision"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [
+      "POPE",
+      "CHAIR"
+    ],
+    "resources": [
+      "https://github.com/amazon-science/THRONE"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To provide a framework for evaluating Type I hallucinations in large vision-language models by employing multiple language models and a voting mechanism.",
+    "audience": [
+      "ML Researchers",
+      "Industry Practitioners",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Image Captioning",
+      "Object Detection"
+    ],
+    "limitations": "N/A",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "COCO dataset (Common Objects in Context)",
+    "size": "5,000 images",
+    "format": "JSON",
+    "annotation": "Annotations are derived from COCO with object categories established for evaluation."
+  },
+  "methodology": {
+    "methods": [
+      "Automated metrics",
+      "Ensemble voting"
+    ],
+    "metrics": [
+      "F0.5 Score",
+      "Precision",
+      "Recall"
+    ],
+    "calculation": "Metrics are calculated based on the performance of large vision-language models in detecting object hallucinations. F0.5 Score favors precision over recall.",
+    "interpretation": "Higher F0.5 scores indicate better performance in minimizing hallucinations in model responses.",
+    "baseline_results": null,
+    "validation": "THRONE uses a unanimous voting mechanism across multiple language models to ensure robust evaluation."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Safety",
+      "Accuracy"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Poor model accuracy"
+          ]
+        },
+        {
+          "category": "Societal Impact",
+          "subcategory": [
+            "Impact on cultural diversity"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": [
+      "Potential for misinterpretation of generated responses leading to misinformation."
+    ]
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}

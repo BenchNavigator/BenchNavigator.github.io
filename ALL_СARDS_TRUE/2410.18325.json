@@ -1,0 +1,86 @@
+{
+  "benchmark_details": {
+    "is_benchmark": true,
+    "name": "AVHBench (Audio-Visual Hallucination Benchmark)",
+    "abbreviation": "AVHBench",
+    "overview": "AVHBench is a comprehensive benchmark specifically designed to evaluate the perception and comprehension capabilities of audio-visual LLMs, focusing on their susceptibility to cross-modal hallucinations.",
+    "data_type": "question-answering pairs and audio-visual captions",
+    "domains": [
+      "Natural Language Processing"
+    ],
+    "languages": [
+      "English"
+    ],
+    "similar_benchmarks": [],
+    "resources": [
+      "https://github.com/kaist-ami/AVHBench"
+    ]
+  },
+  "purpose_and_intended_users": {
+    "goal": "To assess the perception and comprehension capabilities of audio-visual LLMs, specifically that pertaining to hallucinations caused by cross-interactions between audio and visual signals.",
+    "audience": [
+      "ML Researchers",
+      "Model Developers"
+    ],
+    "tasks": [
+      "Audio-driven Video Hallucination",
+      "Video-driven Audio Hallucination",
+      "Audio-visual Matching",
+      "Audio-visual Captioning"
+    ],
+    "limitations": "Although the benchmark aims to assess cross-modal hallucinations, it may not encompass all possible scenarios due to the complexity of multimodal signals.",
+    "out_of_scope_uses": []
+  },
+  "data": {
+    "source": "The dataset comprises real and synthetic source videos collected from existing datasets, namely VALOR and AudioCaps.",
+    "size": "10,327 videos with 87,624 QnA pairs and 1,106 audio-visual captions",
+    "format": "N/A",
+    "annotation": "A semi-automatic annotation pipeline with human validation is employed."
+  },
+  "methodology": {
+    "methods": [
+      "Human evaluation",
+      "Automated metrics"
+    ],
+    "metrics": [
+      "Accuracy",
+      "F1 Score",
+      "METEOR",
+      "CIDEr"
+    ],
+    "calculation": "Metrics are calculated based on both judgment and description tasks using standard definitions.",
+    "interpretation": "High accuracy and F1 scores indicate better model performance in discerning between genuine and hallucinated signals.",
+    "baseline_results": "Models evaluated on AVHBench are X-InstructBLIP, ImageBind-LLM, Video-LLaMA, ChatBridge, PandaGPT, and OneLLM.",
+    "validation": "The benchmark's reliability is ensured through a comprehensive human verification process in the dataset construction."
+  },
+  "targeted_risks": {
+    "risk_categories": [
+      "Accuracy",
+      "Robustness"
+    ],
+    "atlas_risks": {
+      "risks": [
+        {
+          "category": "Accuracy",
+          "subcategory": [
+            "Poor model accuracy"
+          ]
+        },
+        {
+          "category": "Robustness",
+          "subcategory": [
+            "Prompt injection attack"
+          ]
+        }
+      ]
+    },
+    "demographic_analysis": "N/A",
+    "harm": "The benchmark aims to detect and mitigate hallucinations in audio-visual LLMs."
+  },
+  "ethical_and_legal_considerations": {
+    "privacy_and_anonymity": "N/A",
+    "data_licensing": "N/A",
+    "consent_procedures": "N/A",
+    "compliance_with_regulations": "N/A"
+  }
+}
