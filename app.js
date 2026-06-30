@@ -2,7 +2,7 @@
 // Keeps your table / filters exactly as-is.
 
 // Removed: import { benchmarkData } from './data.js';
-import { filterAndSortData, FACETS } from './logic.js';
+import { filterAndSortData, FACETS } from './logic.js?v=2';
 import {
   refreshFacets,
   getFilterValues,
@@ -24,7 +24,7 @@ import {
   openComparison,
   initHeaderSort,
   setActiveSort
-} from './ui.js';
+} from './ui.js?v=2';
 
 /* =========================
    JSONL LOADING + ADAPTER
@@ -112,7 +112,7 @@ async function loadDataEither() {
     }
   }
   console.warn('BenchmarkCards load failed — falling back to bundled sample data');
-  const { benchmarkData } = await import('./data.js');
+  const { benchmarkData } = await import('./data.js?v=2');
   return benchmarkData;
 }
 
@@ -189,6 +189,20 @@ async function loadDataEither() {
     } catch (err) {
       console.error(err);
       hideLoadingState(0);
+      // Reliability: show a clear, distinct message instead of the generic
+      // "no benchmarks match your filters" empty state when data fails to load.
+      const empty = $('emptyState');
+      const content = empty && empty.querySelector('.empty-state-content');
+      if (content) {
+        content.innerHTML =
+          '<i class="fa-solid fa-triangle-exclamation empty-icon"></i>' +
+          '<h3>Couldn’t load the benchmark data</h3>' +
+          '<p>This is usually a temporary network issue. Please refresh the page; ' +
+          'if it keeps happening, check your connection.</p>' +
+          '<p><button id="reloadBtn" class="btn">Reload</button></p>';
+        // CSP-safe: attach handler in JS instead of an inline onclick.
+        on($('reloadBtn'), 'click', () => location.reload());
+      }
     }
 
     // Search + scope
@@ -233,7 +247,7 @@ async function loadDataEither() {
     // Tag chips -> filters
     wireTagClicks((type, value) => {
       if (!type){ showLoadingState(); return recompute(); }
-      const map = { domain: 'domainFilter', risk: 'riskFilter', audience: 'audienceFilter', task: 'taskFilter', metric: 'metricFilter', method: 'methodFilter', status: 'statusFilter' };
+      const map = { domain: 'domainFilter', risk: 'riskFilter', audience: 'audienceFilter', task: 'taskFilter', metric: 'metricFilter', method: 'methodFilter' };
       const selId = map[type];
       if (selId && $(selId)) { $(selId).value = value || ''; }
       showLoadingState();

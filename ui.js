@@ -1,5 +1,5 @@
 // ----- UI helpers -----
-import { recordsMatchingExcept, FACETS, parseSort } from './logic.js';
+import { recordsMatchingExcept, FACETS, parseSort } from './logic.js?v=2';
 
 function $(id){ return document.getElementById(id); }
 
@@ -418,7 +418,6 @@ function renderCard(b){
       <section><h4>AI Risk Atlas Categories</h4>${renderRiskBullets(b)}</section>
       <section><h4>Intended Audience</h4>${bulletList(b.audience)}</section>
     </div>
-    ${qualityBlock(b)}
     ${links ? `<div class="card-links">${links}</div>` : ''}
   </div>`;
 }

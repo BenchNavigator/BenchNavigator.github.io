@@ -217,11 +217,53 @@ body {
 .results-table tbody tr:nth-child(odd) { background: rgba(0,0,0,0.015); }
 [data-theme="dark"] .results-table tbody tr:nth-child(odd) { background: rgba(255,255,255,0.03); }
 
-/* Small screens */
+/* ============================================================= */
+/* Mobile / responsive — iPhone + Android                         */
+/* ============================================================= */
 @media (max-width: 800px) {
+  html { -webkit-text-size-adjust: 100%; }      /* no surprise font scaling on iOS */
+  .container { padding: 14px; }
+
+  /* Header: let the title, nav and toggle wrap instead of overflowing */
+  .header .masthead { flex-wrap: wrap; align-items: center; gap: 10px; }
+  .site-title { font-size: 24px; }
+  .site-nav { margin-left: 0; gap: 14px; flex-wrap: wrap; }
+  .site-tagline { margin-left: 0; }
+
+  /* Filters and toolbar stack to a single column */
+  .filters-grid { grid-template-columns: 1fr; }
+  .advanced-grid .search-scope { grid-column: auto; }
+  .sort-and-actions { flex-direction: column; align-items: stretch; }
+  .sort-select { min-width: 0; width: 100%; }
+  .actions { flex-wrap: wrap; }
+
+  /* Inputs at 16px so iOS Safari doesn't auto-zoom on focus */
+  .search-input, .sort-select, .filter-group select { font-size: 16px; }
+
+  /* Comfortable tap targets (Apple/Google guideline ~44px) */
+  .btn, .chip-btn { min-height: 42px; padding-top: 10px; padding-bottom: 10px; }
+  .cmp-check, .col-compare input { width: 20px; height: 20px; }
+
+  /* Wide results table scrolls sideways instead of squishing */
   .overview-text { -webkit-line-clamp: 6; }
-  .results-table { display: block; overflow-x: auto; white-space: nowrap; }
+  .results-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; table-layout: auto; }
   .results-table thead th { position: sticky; top: 0; }
+
+  /* Benchmark detail card: one column */
+  .bench-card .card-grid { grid-template-columns: 1fr; }
+
+  /* Comparison modal fills the screen and scrolls */
+  .modal-card { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; }
+  .modal-body { -webkit-overflow-scrolling: touch; }
+  .cmp-table th.attr { width: 110px; }
+}
+
+/* Extra-small phones */
+@media (max-width: 420px) {
+  .container { padding: 10px; }
+  .site-title { font-size: 20px; }
+  .stat-card .num { font-size: 24px; }
+  .btn, .chip-btn { font-size: 13px; }
 }
 
 /* ============================================================= */

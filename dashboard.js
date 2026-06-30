@@ -1,6 +1,6 @@
 // dashboard.js — loads stats.json and renders the Insights dashboard.
 // Charts come from charts.js (global BNCharts); theme reuses ui.js helpers.
-import { initTheme, toggleTheme } from "./ui.js";
+import { initTheme, toggleTheme } from "./ui.js?v=2";
 
 const $ = (id) => document.getElementById(id);
 

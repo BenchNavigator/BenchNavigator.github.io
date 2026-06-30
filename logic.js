@@ -31,7 +31,6 @@ export const FACETS = [
   { key: 'audience',   sel: 'audienceFilter',   field: 'audience',         multi: true,  label: 'Audience' },
   { key: 'metric',     sel: 'metricFilter',     field: 'metrics',          multi: true,  label: 'Metric' },
   { key: 'method',     sel: 'methodFilter',     field: 'methods',          multi: true,  label: 'Method' },
-  { key: 'status',     sel: 'statusFilter',     field: 'reviewStatus',     multi: false, label: 'Quality Status' },
 ];
 
 function matchesFacet(b, facet, value){

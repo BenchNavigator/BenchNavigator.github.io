@@ -87,9 +87,8 @@ horizontal scroll. Full details live in the expandable card.
 
 - **Documentation card** — click a benchmark name (or the ▸ caret) to expand a card
   (Figure 5): Overview, Goal, Data Source, Annotation, AI Risk Atlas categories,
-  Intended Audience, a metadata strip, source/provenance links, and a data-quality
-  block. Fields the source doesn't document are shown as *"Not documented in source"*
-  rather than guessed.
+  Intended Audience, and source/provenance links. Fields the source doesn't document
+  are shown as *"Not documented in source"* rather than guessed.
 - **Compare** — tick the checkbox on any rows, then **Compare Selected (N)** opens a
   comparison modal (Figure 6): attributes down the left, each benchmark as a column.
 - **Export** — one-click CSV / JSON / Markdown of the current filtered set.
