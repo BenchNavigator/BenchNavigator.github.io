@@ -37,10 +37,14 @@ the site.
   tokens, or API keys anywhere in the repository, and the app makes no authenticated
   calls. The repo was scanned for common key patterns (OpenAI, Hugging Face, AWS,
   Google, GitHub tokens) — none present.
-- **No backend, no tracking.** Everything runs client-side in the browser. The page only
-  fetches its own static data files (`*.jsonl`, `stats.json`, `data_quality.json`,
-  `tables/`) plus the Font Awesome stylesheet from a public CDN. No analytics, cookies,
-  or user data are collected.
+- **No backend.** Everything runs client-side in the browser. The page fetches its own
+  static data files (`*.jsonl`, `stats.json`, `data_quality.json`, `tables/`), the Font
+  Awesome stylesheet from a public CDN, and Google Analytics.
+- **Analytics.** The site uses **Google Analytics 4 (GA4)** to count visits, configured
+  in anonymized mode (`anonymize_ip`, Google Signals and ad-personalization disabled).
+  GA4 sets cookies and sends visit data to Google. Visitors who enable Do-Not-Track or a
+  content blocker are simply not counted. To disable analytics, remove the two GA
+  `<script>` tags from `index.html` / `dashboard.html` and delete `analytics.js`.
 - **Public data only.** All published metadata derives from public sources
   (Hugging Face + arXiv). Do not commit private datasets, credentials, or `.env` files —
   the `.gitignore` already excludes source corpora, build artifacts, and editor/tooling

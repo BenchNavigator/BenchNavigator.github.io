@@ -1,8 +1,10 @@
 # Security Policy
 
 BenchNavigator is a **static, client-side site** hosted on GitHub Pages. It has no
-backend, no database, no user accounts, no cookies, and collects no personal data. It
-serves only public benchmark metadata derived from Hugging Face and arXiv.
+backend, no database, and no user accounts. It serves only public benchmark metadata
+derived from Hugging Face and arXiv. It uses **Google Analytics 4** (anonymized:
+`anonymize_ip`, Google Signals and ad-personalization disabled) to count visits — GA4
+sets cookies and sends visit data to Google; no other personal data is collected.
 
 ## Reporting a vulnerability
 
@@ -17,8 +19,10 @@ acknowledge reports within a few days.
 
 ## Hardening in place
 
-- **Content-Security-Policy** on every page — `script-src 'self'`, no inline scripts,
-  no `eval`. Scripts and data load only from the site's own origin.
+- **Content-Security-Policy** on every page — no inline scripts, no `eval`. Scripts load
+  only from the site's own origin plus Google's analytics host
+  (`www.googletagmanager.com`); data loads only from the site's origin and Google
+  Analytics endpoints.
 - **Subresource Integrity (SRI)** on the one third-party asset (Font Awesome from
   cdnjs) so a tampered CDN file is rejected by the browser.
 - **`Referrer-Policy: no-referrer`** to avoid leaking the URL to third parties.
