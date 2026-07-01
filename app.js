@@ -52,15 +52,144 @@ async function loadJSONL(path) {
 // carries no signal and clutters every card / the Domain filter. Drop it.
 const DOMAIN_DENYLIST = new Set(['natural language processing', 'nlp']);
 
+// Deduplicate case/formatting variants across free-text facet values.
+// Step 1: explicit alias map for known merges that pure case-fix can't handle.
+const ALIASES = new Map([
+  // Metrics
+  ['exact match', 'Exact Match'], ['exact-match', 'Exact Match'],
+  ['exact match (em)', 'Exact Match (EM)'], ['exact-match accuracy', 'Exact Match Accuracy'],
+  ['exact match accuracy', 'Exact Match Accuracy'], ['exact-match accuracy', 'Exact Match Accuracy'],
+  ['f1 score', 'F1 Score'], ['f1-score', 'F1 Score'],
+  ['macro-f1', 'Macro F1'], ['macro f1', 'Macro F1'],
+  ['macro f1 score', 'Macro F1 Score'], ['macro f1-score', 'Macro F1 Score'], ['macro-f1 score', 'Macro F1 Score'],
+  ['micro-f1', 'Micro F1'], ['micro f1', 'Micro F1'],
+  ['micro f1 score', 'Micro F1 Score'], ['micro f1-score', 'Micro F1 Score'], ['micro-f1 score', 'Micro F1 Score'],
+  ['weighted-f1', 'Weighted F1'], ['weighted f1', 'Weighted F1'],
+  ['weighted-f1 score', 'Weighted F1 Score'], ['weighted f1-score', 'Weighted F1 Score'], ['weighted f1 score', 'Weighted F1 Score'],
+  ['bertscore', 'BERTScore'], ['bertscore', 'BERTScore'], ['bertScore', 'BERTScore'], ['bertscore', 'BERTScore'],
+  ['bert-score', 'BERTScore'], ['bert score', 'BERTScore'],
+  ['bertscore-f1', 'BERTScore F1'], ['bertscore f1', 'BERTScore F1'], ['bertScore-f1', 'BERTScore F1'],
+  ['rouge', 'ROUGE'], ['rouge', 'ROUGE'],
+  ['rouge-1', 'ROUGE-1'], ['rouge-2', 'ROUGE-2'], ['rouge-l', 'ROUGE-L'],
+  ['rouge-lsum', 'ROUGE-Lsum'],
+  ['rouge score', 'ROUGE Score'],
+  ['rouge-1 f1', 'ROUGE-1 F1'], ['rouge-1 (f1)', 'ROUGE-1 F1'],
+  ['rouge-2 f1', 'ROUGE-2 F1'], ['rouge-2 (f1)', 'ROUGE-2 F1'],
+  ['rouge-l f1', 'ROUGE-L F1'], ['rouge-l (f1)', 'ROUGE-L F1'],
+  ['bleu score', 'BLEU Score'], ['bleu-1', 'BLEU-1'],
+  ['meteor', 'METEOR'], ['meteor score', 'METEOR Score'],
+  ['cider', 'CIDEr'],
+  ['ndcg', 'NDCG'], ['ndcg@10', 'NDCG@10'], ['ndcg@k', 'NDCG@K'],
+  ['map', 'MAP'], ['map (mean average precision)', 'Mean Average Precision (MAP)'],
+  ['mean average precision (map)', 'Mean Average Precision (MAP)'],
+  ['mean average precision (map)', 'Mean Average Precision (MAP)'],
+  ['pass@1', 'Pass@1'], ['pass@5', 'Pass@5'], ['pass@10', 'Pass@10'], ['pass@k', 'Pass@k'],
+  ['pass rate', 'Pass Rate'], ['pass rate', 'Pass Rate'],
+  ['win rate', 'Win Rate'], ['win-rate', 'Win Rate'],
+  ['auc roc', 'AUC-ROC'], ['roc auc', 'ROC-AUC'], ['roc-auc', 'ROC-AUC'],
+  ['cosine similarity', 'Cosine Similarity'],
+  ['spearman correlation', 'Spearman Correlation'],
+  ['pearson correlation', 'Pearson Correlation'],
+  ['pearson correlation coefficient', 'Pearson Correlation Coefficient'],
+  ['chrf', 'ChrF'], ['chrf++', 'ChrF++'],
+  ['comet', 'COMET'],
+  ['sacrableu', 'SacreBLEU'], ['sacrebleu', 'SacreBLEU'],
+  ['g-eval', 'G-Eval'],
+  ['spider', 'SPIDEr'],
+  ['flops', 'FLOPs'],
+  ['intersection over union (iou)', 'Intersection over Union (IoU)'],
+  ['mean intersection over union (miou)', 'Mean IoU (mIoU)'],
+  ['root mean square error (rmse)', 'RMSE'],
+  ['root-mean-square error (rmse)', 'RMSE'],
+  ['word error rate (wer)', 'WER'], ['word-error-rate (wer)', 'WER'],
+  ['mean absolute error', 'MAE'], ['mean absolute error (mae)', 'MAE'],
+  ['mean squared error', 'MSE'], ['mean squared error (mse)', 'MSE'],
+  ['mean reciprocal rank (mrr)', 'MRR'],
+  ['matthews correlation coefficient (mcc)', 'MCC'],
+  ['normalized discounted cumulative gain (ndcg)', 'NDCG'],
+  ['elo rating', 'Elo Rating'], ['elo ratings', 'Elo Ratings'],
+  ['kl-divergence', 'KL Divergence'], ['kl divergence', 'KL Divergence'],
+  ['success rate', 'Success Rate'], ['success rate (sr)', 'Success Rate'],
+  ['attack success rate', 'Attack Success Rate'], ['attack success rate (asr)', 'Attack Success Rate'],
+  ['top-1 accuracy', 'Top-1 Accuracy'], ['top-5 accuracy', 'Top-5 Accuracy'],
+  // Methods
+  ['automated metrics', 'Automated metrics'], ['automated evaluation', 'Automated evaluation'],
+  ['human evaluation', 'Human evaluation'], ['human annotation', 'Human annotation'],
+  ['model-based evaluation', 'Model-based evaluation'],
+  ['few-shot', 'Few-shot'], ['few-shot learning', 'Few-shot learning'],
+  ['few-shot prompting', 'Few-shot prompting'],
+  ['zero-shot', 'Zero-shot'], ['zero-shot learning', 'Zero-shot learning'],
+  ['zero-shot prompting', 'Zero-shot prompting'],
+  ['zero-shot evaluation', 'Zero-shot evaluation'],
+  ['in-context learning', 'In-context learning'],
+  ['chain-of-thought', 'Chain-of-Thought'], ['chain of thought (cot)', 'Chain-of-Thought (CoT)'],
+  ['fine-tuning', 'Fine-tuning'],
+  ['supervised fine-tuning', 'Supervised fine-tuning'], ['supervised fine-tuning (sft)', 'Supervised fine-tuning (SFT)'],
+  ['instruction tuning', 'Instruction tuning'],
+  ['prompt engineering', 'Prompt engineering'],
+  ['retrieval augmented generation', 'Retrieval-Augmented Generation'], ['retrieval-augmented generation', 'Retrieval-Augmented Generation'],
+  ['llm-as-judge', 'LLM-as-judge'], ['llm as judge', 'LLM-as-judge'], ['llm-as-a-judge', 'LLM-as-judge'],
+  ['llm-as-judge evaluation', 'LLM-as-judge evaluation'], ['llm-as-a-judge evaluation', 'LLM-as-judge evaluation'],
+  ['red teaming', 'Red teaming'],
+  ['ablation study', 'Ablation study'], ['ablation studies', 'Ablation studies'],
+  ['knowledge distillation', 'Knowledge distillation'],
+  ['transfer learning', 'Transfer learning'],
+  ['reinforcement learning', 'Reinforcement learning'],
+  ['contrastive learning', 'Contrastive learning'],
+  // Audiences
+  ['ml researchers', 'ML Researchers'], ['ai researchers', 'AI Researchers'],
+  ['nlp researchers', 'NLP Researchers'], ['nlp practitioners', 'NLP Practitioners'],
+  ['ai developers', 'AI Developers'], ['ai practitioners', 'AI Practitioners'],
+  ['model developers', 'Model Developers'], ['llm developers', 'LLM Developers'],
+  ['data scientists', 'Data Scientists'],
+  ['machine learning researchers', 'ML Researchers'],
+  ['machine learning practitioners', 'ML Practitioners'],
+  ['industry practitioners', 'Industry Practitioners'],
+  ['healthcare professionals', 'Healthcare Professionals'],
+  ['research community', 'Research Community'],
+  ['general public', 'General Public'],
+  ['policy makers', 'Policy Makers'],
+  // Domains
+  ['e-commerce', 'E-commerce'], ['cyber security', 'Cybersecurity'], ['cyber-security', 'Cybersecurity'],
+  ['high performance computing', 'High-Performance Computing'],
+]);
+
+// Normalize a facet value: check alias map, else pick canonical casing.
+// We build a runtime cache so the first-seen casing wins for each lowercase key.
+const _canon = new Map();
+function normVal(s) {
+  if (!s || typeof s !== 'string') return s;
+  const trimmed = s.trim();
+  const lower = trimmed.toLowerCase();
+  if (ALIASES.has(lower)) return ALIASES.get(lower);
+  // First-seen casing wins; capitalize first letter if entirely lowercase.
+  if (!_canon.has(lower)) {
+    _canon.set(lower, trimmed === lower ? trimmed.charAt(0).toUpperCase() + trimmed.slice(1) : trimmed);
+  }
+  return _canon.get(lower);
+}
+
+function normArray(arr) {
+  if (!Array.isArray(arr)) return arr;
+  const seen = new Set();
+  return arr.map(normVal).filter(v => {
+    if (!v) return false;
+    const key = v.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 function adaptCard(r) {
-  const domains = (Array.isArray(r.domains) ? r.domains : [])
-    .filter(d => d && !DOMAIN_DENYLIST.has(String(d).trim().toLowerCase()));
-  const tasks = Array.isArray(r.tasks) ? r.tasks : [];
+  const domains = normArray((Array.isArray(r.domains) ? r.domains : [])
+    .filter(d => d && !DOMAIN_DENYLIST.has(String(d).trim().toLowerCase())));
+  const tasks = normArray(Array.isArray(r.tasks) ? r.tasks : []);
   const atlasRisks = Array.isArray(r.atlas_risks) ? r.atlas_risks : [];
-  const risks = Array.isArray(r.risk_categories) && r.risk_categories.length
+  const risks = normArray(Array.isArray(r.risk_categories) && r.risk_categories.length
     ? r.risk_categories
-    : atlasRisks.map(x => x && x.category).filter(Boolean);
-  const audience = Array.isArray(r.audience) ? r.audience : [];
+    : atlasRisks.map(x => x && x.category).filter(Boolean));
+  const audience = normArray(Array.isArray(r.audience) ? r.audience : []);
   const languages = Array.isArray(r.languages) ? r.languages : [];
   // documentation completeness: same 4 card fields used by the dashboard.
   // slim index ships a `has_overview` boolean instead of the full text
@@ -98,15 +227,18 @@ function adaptCard(r) {
     citations: null,
     // facets added for the Figure 3 filter set
     sizeCategory: r.size_category || '',
-    dataType: r.data_type_category || '',
-    annotationMethod: r.annotation_method || '',
+    dataType: normVal(r.data_type_category || '') || '',
+    annotationMethod: normVal(r.annotation_method || '') || '',
     // rich card extras consumed by renderCard + comparison
+    abbreviation: r.abbreviation || '',
+    dataTypeRaw: r.data_type_raw || '',
     goal: r.goal || '', dataSource: r.data_source || '', annotation: r.annotation || '',
-    methods: Array.isArray(r.methods) ? r.methods : [],
-    metrics: Array.isArray(r.metrics) ? r.metrics : [],
+    methods: normArray(Array.isArray(r.methods) ? r.methods : []),
+    metrics: normArray(Array.isArray(r.metrics) ? r.metrics : []),
     limitations: r.limitations || '', sizeText: r.size_text || '', format: r.format || '',
     atlasRisks,
     similar: Array.isArray(r.similar_benchmarks) ? r.similar_benchmarks : [],
+    resources: Array.isArray(r.resources) ? r.resources : [],
     reviewStatus: r._quality && r._quality.review_status ? r._quality.review_status.replace(/_/g, ' ') : 'N/A',
   };
 }
@@ -250,6 +382,21 @@ async function loadDetails(records) {
         e.currentTarget.setAttribute('aria-pressed', String(on_));
         e.currentTarget.textContent = on_ ? 'Hide Extra Columns' : 'Show Extra Columns';
       });
+
+      // Select-all checkbox
+      on($('selectAll'), 'change', (e) => {
+        const checks = document.querySelectorAll('#tableBody .cmp-check');
+        checks.forEach(c => { if (c.checked !== e.target.checked) c.click(); });
+      });
+
+      // Back-to-top button
+      const btt = $('backToTop');
+      if (btt) {
+        window.addEventListener('scroll', () => {
+          btt.hidden = window.scrollY < 400;
+        }, { passive: true });
+        on(btt, 'click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      }
     } catch (err) {
       console.error(err);
       hideLoadingState(0);

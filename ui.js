@@ -342,6 +342,7 @@ export function exportResults(data, format){
    Documentation card (paper Figure 5) + comparison view (paper Figure 6)
    ======================================================================== */
 function notDoc(){ return `<span class="muted-na">Not documented in source</span>`; }
+function isNA(v){ return !v || v === 'N/A' || v === 'n/a' || v === 'Not Applicable' || v === 'NA'; }
 function linkChip(url, label){
   return url ? `<a class="src-chip" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${label}</a>` : '';
 }
@@ -409,16 +410,56 @@ function renderCard(b){
     srcChipIcon(b.homepage, 'Homepage', '<i class="fa-solid fa-globe"></i>'),
   ].filter(Boolean).join('');
 
+  const extraResources = (b.resources || [])
+    .filter(u => u && u !== b.paper && u !== b.github && u !== b.huggingface && u !== b.homepage)
+    .map(u => { try { return srcChipIcon(u, new URL(u).hostname.replace('www.',''), '<i class="fa-solid fa-link"></i>'); } catch(_){ return ''; } })
+    .filter(Boolean);
+  const allLinks = [links, ...extraResources].filter(Boolean).join('');
+
+  const langDisplay = (b.languages && b.languages.length)
+    ? b.languages.map(l => `<span class="tag">${esc(l)}</span>`).join('')
+    : (!isNA(b.language) ? `<span class="tag">${esc(b.language)}</span>` : notDoc());
+
+  const sizeDisplay = b.sizeText && !isNA(b.sizeText)
+    ? esc(b.sizeText)
+    : (b.sizeCategory && !isNA(b.sizeCategory) ? esc(prettySize(b.sizeCategory)) : notDoc());
+
+  const abbr = b.abbreviation && !isNA(b.abbreviation) && b.abbreviation !== b.name
+    ? `<span class="card-abbr">(${esc(b.abbreviation)})</span>` : '';
+
   return `<div class="bench-card">
-    <div class="card-grid">
-      <section><h4>Overview</h4><p>${b.overview ? esc(b.overview) : notDoc()}</p></section>
-      <section><h4>Goal</h4><p>${b.goal ? esc(b.goal) : notDoc()}</p></section>
-      <section><h4>Data Source</h4><p>${b.dataSource ? esc(b.dataSource) : notDoc()}</p></section>
-      <section><h4>Annotation</h4><p>${b.annotation ? esc(b.annotation) : notDoc()}</p></section>
-      <section><h4>AI Risk Atlas Categories</h4>${renderRiskBullets(b)}</section>
-      <section><h4>Intended Audience</h4>${bulletList(b.audience)}</section>
+    <div class="card-topbar">
+      <div class="card-topbar-left">
+        ${abbr ? `<span class="card-abbr-chip">${abbr}</span>` : ''}
+        <span class="cell-box">${prettyModality(b.modality)}</span>
+        ${b.sizeCategory && !isNA(b.sizeCategory) ? `<span class="cell-box">${esc(prettySize(b.sizeCategory))}</span>` : ''}
+        ${b.dataType && !isNA(b.dataType) ? `<span class="cell-box">${esc(b.dataType)}</span>` : ''}
+        ${b.annotationMethod && !isNA(b.annotationMethod) ? `<span class="cell-box">${esc(b.annotationMethod)}</span>` : ''}
+      </div>
+      ${allLinks ? `<div class="card-topbar-right">${allLinks}</div>` : ''}
     </div>
-    ${links ? `<div class="card-links">${links}</div>` : ''}
+
+    ${b.dataTypeRaw && !isNA(b.dataTypeRaw) ? `<div class="card-datatype-raw"><span class="k">Data type:</span> ${esc(b.dataTypeRaw)}</div>` : ''}
+
+    <div class="card-grid">
+      <section><h4>Overview</h4><p>${!isNA(b.overview) ? esc(b.overview) : notDoc()}</p></section>
+      <section><h4>Goal</h4><p>${!isNA(b.goal) ? esc(b.goal) : notDoc()}</p></section>
+      <section><h4>Data Source</h4><p>${!isNA(b.dataSource) ? esc(b.dataSource) : notDoc()}</p></section>
+      <section><h4>Annotation</h4><p>${!isNA(b.annotation) ? esc(b.annotation) : notDoc()}</p></section>
+      <section><h4>Size</h4><p>${sizeDisplay}</p></section>
+      <section><h4>Format</h4><p>${!isNA(b.format) ? esc(b.format) : notDoc()}</p></section>
+      <section><h4>Languages</h4><div class="tag-container">${langDisplay}</div></section>
+      <section><h4>Intended Audience</h4>${bulletList(b.audience)}</section>
+      <section><h4>Domains</h4>${(b.domains && b.domains.length) ? `<div class="tag-container">${b.domains.map(d => `<span class="tag" data-tag="domain" data-value="${esc(d)}">${esc(d)}</span>`).join('')}</div>` : notDoc()}</section>
+      <section><h4>Tasks</h4>${(b.tasks && b.tasks.length) ? `<div class="tag-container">${b.tasks.map(t => `<span class="tag" data-tag="task" data-value="${esc(t)}">${esc(t)}</span>`).join('')}</div>` : notDoc()}</section>
+      <section><h4>Evaluation Methods</h4>${bulletList(b.methods)}</section>
+      <section><h4>Metrics</h4>${(b.metrics && b.metrics.length) ? `<div class="tag-container">${b.metrics.map(m => `<span class="tag metric-tag">${esc(m)}</span>`).join('')}</div>` : notDoc()}</section>
+      <section><h4>AI Risk Atlas Categories</h4>${renderRiskBullets(b)}</section>
+      <section><h4>Limitations</h4><p>${!isNA(b.limitations) ? esc(b.limitations) : notDoc()}</p></section>
+    </div>
+    ${(b.similar && b.similar.length) ? `<div class="card-similar"><h4>Similar Benchmarks</h4><div class="tag-container">${b.similar.map(s => `<span class="tag">${esc(s)}</span>`).join('')}</div></div>` : ''}
+    ${qualityBlock(b)}
+    <div class="card-ai-notice"><i class="fa-solid fa-robot"></i> This card was auto-generated by AI. If you are the benchmark author, <a href="https://github.com/BenchNavigator/BenchNavigator.github.io/issues/new?title=Card+correction:+${encodeURIComponent(b.name || '')}&body=${encodeURIComponent('I am the author of ' + (b.name || 'this benchmark') + '. Please update the following fields:\n\n- Overview: \n- Goal: \n- Data Source: \n- Limitations: \n- Size: \n- Other corrections: \n')}" target="_blank" rel="noopener noreferrer">please submit corrections</a>.</div>
   </div>`;
 }
 
@@ -481,21 +522,42 @@ export function clearSelection(){
 }
 
 // Comparison modal (paper Figure 6): attributes down the left, benchmarks as columns.
-const CMP_ATTRS = [
-  ['Domain', b => (b.domains && b.domains.length) ? esc(b.domains.join(', ')) : '—'],
-  ['Primary task', b => esc(b.data_type || 'N/A')],
-  ['Modality', b => prettyModality(b.modality)],
-  ['Size', b => esc(b.sizeText || (b.size && b.size !== '' ? b.size : 'N/A'))],
-  ['Languages', b => esc((b.languages && b.languages.length) ? b.languages.join(', ') : (b.language || 'N/A'))],
-  ['Tasks', b => (b.tasks && b.tasks.length) ? b.tasks.slice(0, 8).map(t => `<span class="tag">${esc(t)}</span>`).join('') : '—'],
-  ['AI Risk Atlas', b => (b.atlasRisks && b.atlasRisks.length) ? b.atlasRisks.map(r => esc(r.category)).join(', ')
-                        : ((b.risks && b.risks.length) ? b.risks.map(esc).join(', ') : '—')],
-  ['Intended audience', b => (b.audience && b.audience.length) ? b.audience.map(esc).join(', ') : '—'],
-  ['Goal', b => b.goal ? esc(b.goal) : '—'],
-  ['Data source', b => b.dataSource ? esc(b.dataSource) : '—'],
-  ['Annotation', b => b.annotation ? esc(b.annotation) : '—'],
-  ['Overview', b => b.overview ? esc(b.overview) : '—'],
-  ['Links', b => [linkChip(b.paper, 'Paper'), linkChip(b.github, 'GitHub'), linkChip(b.huggingface, 'HF'), linkChip(b.homepage, 'Home')].filter(Boolean).join(' ') || '—'],
+function cmpVal(v){ return isNA(v) ? '—' : esc(v); }
+function cmpLong(v){ return isNA(v) ? '—' : `<span class="cmp-longtext">${esc(v)}</span>`; }
+
+const CMP_SECTIONS = [
+  { header: 'Basic Info', attrs: [
+    ['Abbreviation', b => !isNA(b.abbreviation) ? `<strong>${esc(b.abbreviation)}</strong>` : '—'],
+    ['Domain', b => (b.domains && b.domains.length) ? b.domains.map(d => `<span class="tag">${esc(d)}</span>`).join('') : '—'],
+    ['Primary task', b => !isNA(b.data_type) ? `<span class="cell-box">${esc(b.data_type)}</span>` : '—'],
+    ['Data type', b => !isNA(b.dataTypeRaw) ? `<span class="cmp-longtext">${esc(b.dataTypeRaw)}</span>` : '—'],
+    ['Modality', b => `<span class="cell-box">${prettyModality(b.modality)}</span>`],
+    ['Size', b => !isNA(b.sizeText) ? cmpLong(b.sizeText) : (!isNA(b.sizeCategory) ? cmpVal(prettySize(b.sizeCategory)) : '—')],
+    ['Languages', b => (b.languages && b.languages.length) ? b.languages.map(l => `<span class="tag">${esc(l)}</span>`).join('') : (!isNA(b.language) ? esc(b.language) : '—')],
+    ['Format', b => !isNA(b.format) ? esc(b.format) : '—'],
+  ]},
+  { header: 'Purpose & Scope', attrs: [
+    ['Overview', b => cmpLong(b.overview)],
+    ['Goal', b => cmpLong(b.goal)],
+    ['Intended audience', b => (b.audience && b.audience.length) ? b.audience.map(a => `<span class="tag">${esc(a)}</span>`).join('') : '—'],
+    ['Limitations', b => cmpLong(b.limitations)],
+  ]},
+  { header: 'Data & Annotation', attrs: [
+    ['Data source', b => cmpLong(b.dataSource)],
+    ['Annotation', b => cmpLong(b.annotation)],
+    ['Annotation method', b => !isNA(b.annotationMethod) ? `<span class="cell-box">${esc(b.annotationMethod)}</span>` : '—'],
+  ]},
+  { header: 'Evaluation', attrs: [
+    ['Tasks', b => (b.tasks && b.tasks.length) ? b.tasks.map(t => `<span class="tag">${esc(t)}</span>`).join('') : '—'],
+    ['Methods', b => (b.methods && b.methods.length) ? b.methods.map(m => `<span class="cmp-longtext">${esc(m)}</span>`).join('<br>') : '—'],
+    ['Metrics', b => (b.metrics && b.metrics.length) ? b.metrics.map(m => `<span class="tag metric-tag">${esc(m)}</span>`).join('') : '—'],
+  ]},
+  { header: 'Risk & Similar', attrs: [
+    ['AI Risk Atlas', b => (b.atlasRisks && b.atlasRisks.length) ? b.atlasRisks.map(r => `<span class="tag risk-tag">${esc(r.category)}</span>`).join('')
+                          : ((b.risks && b.risks.length) ? b.risks.map(r => `<span class="tag risk-tag">${esc(r)}</span>`).join('') : '—')],
+    ['Similar benchmarks', b => (b.similar && b.similar.length) ? b.similar.map(s => `<span class="tag">${esc(s)}</span>`).join('') : '—'],
+    ['Links', b => [linkChip(b.paper, 'Paper'), linkChip(b.github, 'GitHub'), linkChip(b.huggingface, 'HF'), linkChip(b.homepage, 'Home')].filter(Boolean).join(' ') || '—'],
+  ]},
 ];
 
 function escClose(e){ if (e.key === 'Escape') closeComparison(); }
@@ -509,19 +571,25 @@ export function openComparison(list){
     modal.className = 'modal-overlay';
     document.body.appendChild(modal);
   }
-  const cols = list.map(b => `<th>${esc(b.name)}</th>`).join('');
-  const rows = CMP_ATTRS.map(([label, fn]) =>
-    `<tr><th class="attr">${label}</th>${list.map(b => `<td>${fn(b)}</td>`).join('')}</tr>`).join('');
+  const cols = list.map(b => `<th class="cmp-bench-name">${esc(b.name)}</th>`).join('');
+  let rows = '';
+  CMP_SECTIONS.forEach(section => {
+    rows += `<tr class="cmp-section-row"><td class="cmp-section-header" colspan="${list.length + 1}">${section.header}</td></tr>`;
+    section.attrs.forEach(([label, fn]) => {
+      rows += `<tr><th class="attr">${label}</th>${list.map(b => `<td>${fn(b)}</td>`).join('')}</tr>`;
+    });
+  });
   modal.innerHTML = `<div class="modal-card">
     <div class="modal-head">
       <h2>Benchmark Comparison <span class="modal-sub">${list.length} selected</span></h2>
-      <button class="modal-close" type="button" aria-label="Close">×</button>
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
     </div>
     <div class="modal-body">
       <table class="cmp-table">
         <thead><tr><th class="attr">Attribute</th>${cols}</tr></thead>
         <tbody>${rows}</tbody>
       </table>
+      <div class="cmp-ai-notice"><i class="fa-solid fa-robot"></i> Cards are auto-generated by AI and may contain inaccuracies. Benchmark authors can submit corrections via GitHub.</div>
     </div>
   </div>`;
   modal.hidden = false;

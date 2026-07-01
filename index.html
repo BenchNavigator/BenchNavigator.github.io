@@ -147,7 +147,7 @@
       <table class="results-table" aria-label="Benchmark results">
         <thead>
           <tr>
-            <th class="col-compare">Compare</th>
+            <th class="col-compare"><input type="checkbox" id="selectAll" class="cmp-check" title="Select all visible" /></th>
             <th class="sortable" data-sort="name">Name</th>
             <th class="sortable" data-sort="domain">Domain</th>
             <th class="sortable" data-sort="task">Task</th>
@@ -187,6 +187,10 @@
       </div>
     </div>
   </div>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" hidden>
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
   <footer class="site-footer">
     <div class="container">
